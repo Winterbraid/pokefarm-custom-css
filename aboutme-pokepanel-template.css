@@ -118,7 +118,8 @@ li::marker {
     right: 0;
 }
 
-.party .berrybuttons > a {
+.party .berrybuttons > *,
+.party .action > table {
     display: none;
 }
 
@@ -140,11 +141,20 @@ li::marker {
     border-color: #004000;
 }
 
+.party .action.working .berrybuttons > a {
+    background-color: #6c6;
+}
+
+.party .action.working .berrybuttons > a > img {
+    content: url('https://pfq-static.com/img/pkmn/heart_2.png')!important;
+}
+
 .party .berrybuttons > a::after {
     content: none;
 }
 
 .party .berrybuttons > a > img {
+    display: block;
     width: 24px;
     height: 24px;
     position: absolute;
