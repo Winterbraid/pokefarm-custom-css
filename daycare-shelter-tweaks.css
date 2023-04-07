@@ -1,0 +1,12 @@
+#orusereloader,
+#thisisyourprofile {
+    display:none;
+}
+
+#eggreload:not([disabled]) {
+    box-shadow: 0 0 5px 5px #0f08;
+}
+
+#shelter:has(.shelterfoundme) {
+    box-shadow: 0 0 15px 15px #f008;
+}
