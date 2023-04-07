@@ -1,0 +1,62 @@
+#partybox .party {
+    z-index: 999;
+}
+
+.mu_navlink.next {
+    z-index: 888;
+}
+
+#content #partybox .action a::before {
+    z-index: 999!important;
+}
+
+.mu_navlink.next::before,
+#partybox .action > [data-berry='aspear']::before,
+#partybox [data-up='any'] > [data-berry='aspear']::before,
+#partybox [data-up='sour'] > [data-berry='aspear']::before,
+#partybox [data-up='spicy'] > [data-berry='cheri']::before,
+#partybox [data-up='dry'] > [data-berry='chesto']::before,
+#partybox [data-up='sweet'] > [data-berry='pecha']::before,
+#partybox [data-up='bitter'] > [data-berry='rawst']::before {
+    content: 'Feed 🍐';
+    color: #040;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 32px;
+    background-color: #d2e8af;
+    border-top: 3px solid #040;
+    position: fixed!important;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 120px 0;
+    transform-origin: 0px 0px;
+}
+
+#partybox [data-up='spicy'] > [data-berry='cheri']::before {
+    content: 'Feed 🍒';
+}
+
+#partybox [data-up='dry'] > [data-berry='chesto']::before {
+    content: 'Feed 🌰';
+}
+
+#partybox [data-up='sweet'] > [data-berry='pecha']::before {
+    content: 'Feed 🍑';
+}
+
+#partybox [data-up='bitter'] > [data-berry='rawst']::before {
+    content: 'Feed 🍓';
+}
+
+#partybox .action > [data-berry='aspear']::before {
+    content: 'Hold 🥚';
+}
+
+.mu_navlink.next::before {
+    content: 'Next 👉';
+}
+
+.mu_navlink.next.disabled::before {
+    visibility: hidden;
+}
