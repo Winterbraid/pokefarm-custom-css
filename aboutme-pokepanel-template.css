@@ -1,3 +1,27 @@
+ul {
+    width: 300px;
+    margin: 1px;
+    padding: 8px 0;
+    background-color: #e2ffcd;
+    border: 2px solid #9ec690;
+    border-radius: 8px;
+    font-size: 10pt;
+    text-align: center;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+li::before, li::after {
+    content: '⭐';
+}
+
+li::marker {
+    content: none;
+}
+
 .party,
 .party div,
 .party img,
