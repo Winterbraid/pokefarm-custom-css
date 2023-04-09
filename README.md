@@ -7,7 +7,7 @@ CSS I use for my About section. Turns default interactive pokepanels (`[pkmnpane
 ![image](https://user-images.githubusercontent.com/720348/230773819-5de31c90-b675-4649-9a84-18ff53b53e1c.png)
 
 ## egg-labels.css
-Reveals the names of eggs (even unhatched ones) in Lab, Party, Shelter and Daycare (requires SpyGlass). **This is a very long file** as it aims to contain every possible egg sprite filename and name, so make sure to copy and paste everything from start to finish!
+Reveals the names of eggs (even previously unhatched ones) in Lab, Party, Shelter and Daycare (requires SpyGlass). **This is a very long file** as it aims to contain every possible egg sprite filename and name, so make sure to copy and paste everything from start to finish!
 
 ***Only fully tested and supported in Chrome!***
 
