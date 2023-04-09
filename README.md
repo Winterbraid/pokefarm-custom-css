@@ -2,7 +2,7 @@
 A collection of custom CSS rulesheets for PokéFarm Q
 
 ## aboutme-pokepanel-template.css
-CSS I use for my About section. Turns default interactive pokepanels into compact buttons (fits 3 per line). Wrap everything in [center] tags for proper spacing, use unordered lists for text.
+CSS I use for my About section. Turns default interactive pokepanels into compact buttons (fits 3 per line). Wrap everything in `[center]` tags for tigher vertical spacing, use unordered lists for text.
 
 ## egg-labels.css
 Reveals the names of eggs (even unhatched ones) in Lab, Party, Shelter and Daycare (requires SpyGlass). ***Only fully tested and supported in Chrome!*** Notably, this is an experimental feature in Firefox and requires [enabling the `:has` selector flag](https://stackoverflow.com/questions/73936048/how-do-you-enable-has-selector-on-firefox). Even then, in Firefox the Lab labels don't seem to work properly, but the other labels should.
