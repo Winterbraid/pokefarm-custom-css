@@ -13,7 +13,7 @@ Reveals the names of eggs (even unhatched ones) in Lab, Party, Shelter and Dayca
 
 Notably, this is an experimental feature in Firefox and requires [enabling the `:has` selector flag](https://stackoverflow.com/questions/73936048/how-do-you-enable-has-selector-on-firefox). Even then, in Firefox the Lab labels don't seem to work properly, but the other labels should.
 
-![image](https://user-images.githubusercontent.com/720348/230773749-52e48afa-8491-468d-a09f-a10ed0d4d634.png)
+![image](https://user-images.githubusercontent.com/720348/230774149-47490ab4-8d09-484f-aeea-c0f14f4280c9.png)
 
 ![image](https://user-images.githubusercontent.com/720348/230773697-ef319af8-19d6-4309-81a8-7fe1405f9ddd.png)
 
