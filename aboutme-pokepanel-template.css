@@ -1,3 +1,19 @@
+* {
+    color: #040;
+}
+
+a {
+    color: #00c;
+}
+
+a:visited {
+    color: #808;
+}
+
+a:active {
+    color: #c00;
+}
+
 .center {
     margin: 0;
     padding: 0;
