@@ -1,10 +1,5 @@
-[pkmnpanel=ZGMkS][
-][pkmnpanel=Z-xSp][
-][pkmnpanel=ZR-vw][
-][pkmnpanel=Z7L13][
-][pkmnpanel=ZMCms][
-][pkmnpanel=Z6Bds][
-][style]
+[pkmnpanel=ZGMkS][pkmnpanel=Z-xSp][pkmnpanel=ZR-vw]
+[style]
 .party,
 .party div,
 .party img,
