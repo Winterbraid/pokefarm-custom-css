@@ -1,0 +1,148 @@
+[pkmnpanel=ZGMkS][
+][pkmnpanel=Z-xSp][
+][pkmnpanel=ZR-vw][
+][pkmnpanel=Z7L13][
+][pkmnpanel=ZMCms][
+][pkmnpanel=Z6Bds][
+][style]
+.party,
+.party div,
+.party img,
+.party a {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    background-color: transparent;
+    border-style: none;
+    border-width: 2px;
+    border-color: #9ec690;
+}
+
+.party {
+    margin: 1px;
+    display: inline-block;
+}
+
+.party,
+.party > div {
+    width: 100px!important;
+}
+
+.party .pkmn::before,
+.party .helditem,
+.party .expbar,
+.party .taste,
+.party .tooltip_content,
+.party .extra {
+    display: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+}
+
+.party .pokemon {
+    width: 96px;
+    height: 96px;
+    background-color: #d2e8af;
+    background-position: center center;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.party .name {
+    width: 90px;
+    height: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #e2ffcd;
+    border-style: solid;
+    border-radius: 8px;
+    padding: 0 3px;
+}
+
+.party .name:hover {
+    border-color: #004000;
+}
+
+.party .name img {
+    position: relative;
+    bottom: 1px;
+    pointer-events: none;
+}
+
+.party .summarylink {
+    width: 58px!important;
+    color: #004000;
+    font-family: arial;
+    text-decoration: none;
+    font-size: 10pt;
+    font-weight: normal;
+    letter-spacing: 0;
+}
+
+.party .summarylink::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 22px;
+    margin: -2px;
+}
+
+.party .action {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.party .berrybuttons > *,
+.party .action > table {
+    display: none;
+}
+
+.party .berrybuttons[data-up='any'] > [data-berry='aspear'],
+.party .berrybuttons[data-up='sour'] > [data-berry='aspear'],
+.party .berrybuttons[data-up='spicy'] > [data-berry='cheri'],
+.party .berrybuttons[data-up='dry'] > [data-berry='chesto'],
+.party .berrybuttons[data-up='sweet'] > [data-berry='pecha'],
+.party .berrybuttons[data-up='bitter'] > [data-berry='rawst'] {
+    display: block;
+    width: 32px;
+    height: 32px;
+    background-color: #e2ffcd;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.party .berrybuttons > a:hover {
+    border-color: #004000;
+}
+
+.party .action.working .berrybuttons > a {
+    background-color: #6c6;
+}
+
+.party .action.working .berrybuttons > a > img {
+    content: url('https://pfq-static.com/img/pkmn/heart_2.png')!important;
+}
+
+.party .berrybuttons > a::after {
+    content: none;
+}
+
+.party .berrybuttons > a > img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -12px;
+}
+[/style]
