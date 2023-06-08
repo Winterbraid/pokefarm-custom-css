@@ -1,0 +1,84 @@
+#footbar::after {
+    content: 'WARNING: This CSS file uses the :has selector, which may be disabled by default. To enable :has in Firefox, visit about:config and toggle layout.css.has-selector.enabled.';
+    font-size: 10pt;
+    font-family: consolas, monospace;
+    color: black;
+    border: 1px solid darkred;
+    background-color: lightpink;
+    display: block;
+    position: fixed;
+    width: 250px;
+    padding: 3px 5px;
+    margin: 5px;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+} #footbar:has(*)::after { content: none; }
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="fighting.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/fighting.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="flying.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/flying.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="poison.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/poison.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="ground.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/ground.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="rock.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/rock.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="bug.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/bug.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="ghost.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/ghost.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="steel.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/steel.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="fire.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/fire.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="water.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/water.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="grass.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/grass.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="electric.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/electric.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="psychic.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/psychic.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="ice.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/ice.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="dragon.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/dragon.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="dark.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/dark.png)!important;
+}
+
+.field[style*="unknown"]:has(.tooltip_content:first-of-type img:first-of-type[src*="fairy.png"]) {
+    background-image: url(https://pokefarm.com/upload/:JnPv/fields/fairy.png)!important;
+}
