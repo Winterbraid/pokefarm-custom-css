@@ -16,14 +16,3 @@ Notably, this is an experimental feature in Firefox and requires [enabling the `
 ![image](https://user-images.githubusercontent.com/720348/230774149-47490ab4-8d09-484f-aeea-c0f14f4280c9.png)
 
 ![image](https://user-images.githubusercontent.com/720348/230773697-ef319af8-19d6-4309-81a8-7fe1405f9ddd.png)
-
-## field-tweaks.css
-A collection of Field tweaks designed to work alongside the [QoL](https://pokefarm.com/farm#tab=5.6) "Sort by berries" setting. Repositions and enlarges the correct berry recipients and truncates long field names to enable mass clicking without ever moving the mouse (can still view full field name by hovering the mouse cursor over it). Also makes the fed/unfed counter more visible.
-
-## lab-daycare-tweaks.css
-Assorted minor tweaks such as: hide the option to use Lab Reloaders, highlight Lab Reload button when ready, highlight shelter area when QoL has found eggs, hide own profile notification from multi-profile view.
-
-## party-big-buttons.css
-Places a ***massive*** button on the bottom of the screen to easily click through whole parties in single and multi view. Works with or without QoL.
-
-![image](https://user-images.githubusercontent.com/720348/230774093-ccbb2db0-4e60-450f-bda0-638504b8a8ac.png)
