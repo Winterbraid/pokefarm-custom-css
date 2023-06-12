@@ -1,0 +1,103 @@
+#footbar::after {
+    content: 'WARNING: This CSS file uses the :has selector, which may be disabled by default. To enable :has in Firefox, visit about:config and toggle layout.css.has-selector.enabled.';
+    font-size: 10pt;
+    font-family: consolas, monospace;
+    color: black;
+    border: 1px solid darkred;
+    background-color: lightpink;
+    display: block;
+    position: fixed;
+    width: 250px;
+    padding: 3px 5px;
+    margin: 5px;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+} #footbar:has(*)::after { content: none; }
+
+#field_field {
+    user-select: none;
+}
+
+#field_berries.selected > div > a {
+    opacity: 1;
+}
+
+#field_berries.selected > div > a > img {
+    opacity: 0.5;
+    transition: opacity 0.4s linear;
+}
+
+#field_berries.selected > div > a.selected > img {
+    opacity: 1;
+}
+
+[href='/user/~online']::before,
+#field_nav button[data-action='next']::before,
+#field_berries a[data-berry]::before,
+.fieldmon.cormyr::before,
+[href='/user/~online']::before {
+    cursor: pointer;
+    font-size: 48pt;
+    line-height: 0;
+    text-align: center;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 16px;
+    position: fixed;
+    width: clamp(120px, calc(50% - 340px), 300px);
+    height: 0;
+    padding: clamp(60px, calc(25% - 170px), 150px) 0;
+    bottom: 30px;
+    right: 15px;
+    transform-origin: 0px 0px;
+    z-index: 999;
+}
+
+#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]) [href='/user/~online']::before {
+    content: '👥';
+}
+
+#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has([data-action='jump'][disabled]) [href='/user/~online']::before {
+    content: none;
+}
+
+button[data-action='next']:not([disabled])::before {
+    content: '👉';
+}
+
+#content:has(#field_field[data-mode='private']) button[data-action='next']::before,
+#content:has(.fieldmon:not(.nothungry)) button[data-action='next']::before,
+#core:has(#field_field[data-mode='public']):has(button[data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~online']::before {
+    content: none;
+}
+
+#content:has(.fieldmon[data-flavour^='sour']:not(.nothungry)) a[data-berry='aspear']::before,
+#content:has(.fieldmon[data-flavour^='any']:not(.nothungry)) a[data-berry='aspear']::before,
+#content:has(a.selected[data-berry='aspear']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🍐';
+}
+
+#content:has(.fieldmon[data-flavour^='spicy']:not(.nothungry)) a[data-berry='cheri']::before,
+#content:has(a.selected[data-berry='cheri']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🍒';
+}
+
+#content:has(.fieldmon[data-flavour^='dry']:not(.nothungry)) a[data-berry='chesto']::before,
+#content:has(a.selected[data-berry='chesto']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🌰';
+}
+
+#content:has(.fieldmon[data-flavour^='sweet']:not(.nothungry)) a[data-berry='pecha']::before,
+#content:has(a.selected[data-berry='pecha']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🍑';
+}
+
+#content:has(.fieldmon[data-flavour^='bitter']:not(.nothungry)) a[data-berry='rawst']::before,
+#content:has(a.selected[data-berry='rawst']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🍓';
+}
+
+#content:has(.fieldmon.cormyr:not(.nothungry)) a[data-berry]::before {
+    content: none;
+}
