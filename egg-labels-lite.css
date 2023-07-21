@@ -1,0 +1,705 @@
+#egglist > div:has(img),
+#dcegglist > li {
+    position: relative;
+}
+
+#shelterarea > .qolpokemongrid.pokemon[data-stage="egg"] {
+    flex-direction: column;
+}
+
+#egglist > div > img + p::before,
+div.egg[style*="pkmn"]::before,
+#shelterarea > .pokemon[data-stage="egg"]::after,
+#dcegglist > li > img + div::after {
+    pointer-events: none;
+    text-align: center;
+    font-size: 10pt;
+    color: black;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white, 0 -1px 0 white, 0 1px 0 white, -1px 0 0 white, 1px 0 0 white;
+    display: block;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+
+#dcegglist > li > img + div::after {
+    bottom: 50px;
+}
+
+#egglist > div > img + p::before {
+    top: 60px;
+}
+
+div.egg[style*="pkmn"]::before {
+    top: 83px;
+}
+
+#holon div.egg[style*="pkmn"]::before {
+    top: 33px;
+}
+
+#shelterarea > .pokemon[data-stage="egg"]::after {
+    z-index: 999;
+    margin-top: -12px;
+}
+
+#shelterarea > .qolpokemongrid.pokemon[data-stage="egg"]::after {
+    position: static;
+    width: 100%;
+    height: 0;
+    margin-left: 0;
+    margin-right: 0px;
+    margin-top: -12px;
+}
+
+#egglist > div > img[src*='img/pkmn/c/0/7.png'] + p::before, div.egg[style*='img/pkmn/c/0/7.png']::before, #dcegglist > li > img[src*='img/pkmn/c/0/7.png'] + div::after {content: "Bulbasaur";}
+#egglist > div > img[src*='img/pkmn/f/d/w.png'] + p::before, div.egg[style*='img/pkmn/f/d/w.png']::before, #dcegglist > li > img[src*='img/pkmn/f/d/w.png'] + div::after {content: "Charmander";}
+#egglist > div > img[src*='img/pkmn/l/w/s.png'] + p::before, div.egg[style*='img/pkmn/l/w/s.png']::before, #dcegglist > li > img[src*='img/pkmn/l/w/s.png'] + div::after {content: "Squirtle";}
+#egglist > div > img[src*='img/pkmn/j/n/z.png'] + p::before, div.egg[style*='img/pkmn/j/n/z.png']::before, #dcegglist > li > img[src*='img/pkmn/j/n/z.png'] + div::after {content: "Caterpie";}
+#egglist > div > img[src*='img/pkmn/a/1.png'] + p::before, div.egg[style*='img/pkmn/a/1.png']::before, #dcegglist > li > img[src*='img/pkmn/a/1.png'] + div::after {content: "Weedle";}
+#egglist > div > img[src*='img/pkmn/b/y.png'] + p::before, div.egg[style*='img/pkmn/b/y.png']::before, #dcegglist > li > img[src*='img/pkmn/b/y.png'] + div::after {content: "Pidgey";}
+#egglist > div > img[src*='img/pkmn/5/j/w.png'] + p::before, div.egg[style*='img/pkmn/5/j/w.png']::before, #dcegglist > li > img[src*='img/pkmn/5/j/w.png'] + div::after {content: "Rattata";}
+#egglist > div > img[src*='img/pkmn/s/y/w/b.png'] + p::before, div.egg[style*='img/pkmn/s/y/w/b.png']::before, #dcegglist > li > img[src*='img/pkmn/s/y/w/b.png'] + div::after {content: "Alolan Rattata";}
+#egglist > div > img[src*='img/pkmn/i/m/r.png'] + p::before, div.egg[style*='img/pkmn/i/m/r.png']::before, #dcegglist > li > img[src*='img/pkmn/i/m/r.png'] + div::after {content: "Spearow";}
+#egglist > div > img[src*='img/pkmn/n/q/8.png'] + p::before, div.egg[style*='img/pkmn/n/q/8.png']::before, #dcegglist > li > img[src*='img/pkmn/n/q/8.png'] + div::after {content: "Ekans";}
+#egglist > div > img[src*='img/pkmn/g/s/8.png'] + p::before, div.egg[style*='img/pkmn/g/s/8.png']::before, #dcegglist > li > img[src*='img/pkmn/g/s/8.png'] + div::after {content: "Pichu";}
+#egglist > div > img[src*='img/pkmn/1/i/1.png'] + p::before, div.egg[style*='img/pkmn/1/i/1.png']::before, #dcegglist > li > img[src*='img/pkmn/1/i/1.png'] + div::after {content: "Sandshrew";}
+#egglist > div > img[src*='img/pkmn/r/2/t/g.png'] + p::before, div.egg[style*='img/pkmn/r/2/t/g.png']::before, #dcegglist > li > img[src*='img/pkmn/r/2/t/g.png'] + div::after {content: "Alolan Sandshrew";}
+#egglist > div > img[src*='img/pkmn/1/8/7.png'] + p::before, div.egg[style*='img/pkmn/1/8/7.png']::before, #dcegglist > li > img[src*='img/pkmn/1/8/7.png'] + div::after {content: "Nidoran";}
+#egglist > div > img[src*='img/pkmn/g/i/1.png'] + p::before, div.egg[style*='img/pkmn/g/i/1.png']::before, #dcegglist > li > img[src*='img/pkmn/g/i/1.png'] + div::after {content: "Cleffa";}
+#egglist > div > img[src*='img/pkmn/7/z/0.png'] + p::before, div.egg[style*='img/pkmn/7/z/0.png']::before, #dcegglist > li > img[src*='img/pkmn/7/z/0.png'] + div::after {content: "Vulpix";}
+#egglist > div > img[src*='img/pkmn/b/y/1/6.png'] + p::before, div.egg[style*='img/pkmn/b/y/1/6.png']::before, #dcegglist > li > img[src*='img/pkmn/b/y/1/6.png'] + div::after {content: "Alolan Vulpix";}
+#egglist > div > img[src*='img/pkmn/m/n/s.png'] + p::before, div.egg[style*='img/pkmn/m/n/s.png']::before, #dcegglist > li > img[src*='img/pkmn/m/n/s.png'] + div::after {content: "Igglybuff";}
+#egglist > div > img[src*='img/pkmn/7/s/7.png'] + p::before, div.egg[style*='img/pkmn/7/s/7.png']::before, #dcegglist > li > img[src*='img/pkmn/7/s/7.png'] + div::after {content: "Zubat";}
+#egglist > div > img[src*='img/pkmn/g/s/n.png'] + p::before, div.egg[style*='img/pkmn/g/s/n.png']::before, #dcegglist > li > img[src*='img/pkmn/g/s/n.png'] + div::after {content: "Oddish";}
+#egglist > div > img[src*='img/pkmn/d/m/w.png'] + p::before, div.egg[style*='img/pkmn/d/m/w.png']::before, #dcegglist > li > img[src*='img/pkmn/d/m/w.png'] + div::after {content: "Paras";}
+#egglist > div > img[src*='img/pkmn/i/i/f.png'] + p::before, div.egg[style*='img/pkmn/i/i/f.png']::before, #dcegglist > li > img[src*='img/pkmn/i/i/f.png'] + div::after {content: "Venonat";}
+#egglist > div > img[src*='img/pkmn/6/1/e.png'] + p::before, div.egg[style*='img/pkmn/6/1/e.png']::before, #dcegglist > li > img[src*='img/pkmn/6/1/e.png'] + div::after {content: "Diglett";}
+#egglist > div > img[src*='img/pkmn/p/p/g/x.png'] + p::before, div.egg[style*='img/pkmn/p/p/g/x.png']::before, #dcegglist > li > img[src*='img/pkmn/p/p/g/x.png'] + div::after {content: "Alolan Diglett";}
+#egglist > div > img[src*='img/pkmn/o/r/x.png'] + p::before, div.egg[style*='img/pkmn/o/r/x.png']::before, #dcegglist > li > img[src*='img/pkmn/o/r/x.png'] + div::after {content: "Meowth";}
+#egglist > div > img[src*='img/pkmn/9/v/c/y.png'] + p::before, div.egg[style*='img/pkmn/9/v/c/y.png']::before, #dcegglist > li > img[src*='img/pkmn/9/v/c/y.png'] + div::after {content: "Alolan Meowth";}
+#egglist > div > img[src*='img/pkmn/w/a/h/3.png'] + p::before, div.egg[style*='img/pkmn/w/a/h/3.png']::before, #dcegglist > li > img[src*='img/pkmn/w/a/h/3.png'] + div::after {content: "Galarian Meowth";}
+#egglist > div > img[src*='img/pkmn/3/z/u.png'] + p::before, div.egg[style*='img/pkmn/3/z/u.png']::before, #dcegglist > li > img[src*='img/pkmn/3/z/u.png'] + div::after {content: "Psyduck";}
+#egglist > div > img[src*='img/pkmn/t/j.png'] + p::before, div.egg[style*='img/pkmn/t/j.png']::before, #dcegglist > li > img[src*='img/pkmn/t/j.png'] + div::after {content: "Mankey";}
+#egglist > div > img[src*='img/pkmn/k/n/x.png'] + p::before, div.egg[style*='img/pkmn/k/n/x.png']::before, #dcegglist > li > img[src*='img/pkmn/k/n/x.png'] + div::after {content: "Growlithe";}
+#egglist > div > img[src*='img/pkmn/p/x/g/c.png'] + p::before, div.egg[style*='img/pkmn/p/x/g/c.png']::before, #dcegglist > li > img[src*='img/pkmn/p/x/g/c.png'] + div::after {content: "Hisuian Growlithe";}
+#egglist > div > img[src*='img/pkmn/l/m/7.png'] + p::before, div.egg[style*='img/pkmn/l/m/7.png']::before, #dcegglist > li > img[src*='img/pkmn/l/m/7.png'] + div::after {content: "Poliwag";}
+#egglist > div > img[src*='img/pkmn/4/y/r.png'] + p::before, div.egg[style*='img/pkmn/4/y/r.png']::before, #dcegglist > li > img[src*='img/pkmn/4/y/r.png'] + div::after {content: "Abra";}
+#egglist > div > img[src*='img/pkmn/a/2/d.png'] + p::before, div.egg[style*='img/pkmn/a/2/d.png']::before, #dcegglist > li > img[src*='img/pkmn/a/2/d.png'] + div::after {content: "Machop";}
+#egglist > div > img[src*='img/pkmn/l/t/r.png'] + p::before, div.egg[style*='img/pkmn/l/t/r.png']::before, #dcegglist > li > img[src*='img/pkmn/l/t/r.png'] + div::after {content: "Bellsprout";}
+#egglist > div > img[src*='img/pkmn/d/6/h.png'] + p::before, div.egg[style*='img/pkmn/d/6/h.png']::before, #dcegglist > li > img[src*='img/pkmn/d/6/h.png'] + div::after {content: "Tentacool";}
+#egglist > div > img[src*='img/pkmn/1/y/t.png'] + p::before, div.egg[style*='img/pkmn/1/y/t.png']::before, #dcegglist > li > img[src*='img/pkmn/1/y/t.png'] + div::after {content: "Geodude";}
+#egglist > div > img[src*='img/pkmn/i/y/y/3.png'] + p::before, div.egg[style*='img/pkmn/i/y/y/3.png']::before, #dcegglist > li > img[src*='img/pkmn/i/y/y/3.png'] + div::after {content: "Alolan Geodude";}
+#egglist > div > img[src*='img/pkmn/6/6/5.png'] + p::before, div.egg[style*='img/pkmn/6/6/5.png']::before, #dcegglist > li > img[src*='img/pkmn/6/6/5.png'] + div::after {content: "Ponyta";}
+#egglist > div > img[src*='img/pkmn/r/o/k/p.png'] + p::before, div.egg[style*='img/pkmn/r/o/k/p.png']::before, #dcegglist > li > img[src*='img/pkmn/r/o/k/p.png'] + div::after {content: "Galarian Ponyta";}
+#egglist > div > img[src*='img/pkmn/c/1/y.png'] + p::before, div.egg[style*='img/pkmn/c/1/y.png']::before, #dcegglist > li > img[src*='img/pkmn/c/1/y.png'] + div::after {content: "Slowpoke";}
+#egglist > div > img[src*='img/pkmn/l/u/i/i.png'] + p::before, div.egg[style*='img/pkmn/l/u/i/i.png']::before, #dcegglist > li > img[src*='img/pkmn/l/u/i/i.png'] + div::after {content: "Galarian Slowpoke";}
+#egglist > div > img[src*='img/pkmn/9/g/4.png'] + p::before, div.egg[style*='img/pkmn/9/g/4.png']::before, #dcegglist > li > img[src*='img/pkmn/9/g/4.png'] + div::after {content: "Magnemite";}
+#egglist > div > img[src*='img/pkmn/h/d.png'] + p::before, div.egg[style*='img/pkmn/h/d.png']::before, #dcegglist > li > img[src*='img/pkmn/h/d.png'] + div::after {content: "Farfetch'd";}
+#egglist > div > img[src*='img/pkmn/z/k/x/9.png'] + p::before, div.egg[style*='img/pkmn/z/k/x/9.png']::before, #dcegglist > li > img[src*='img/pkmn/z/k/x/9.png'] + div::after {content: "Galarian Farfetch'd";}
+#egglist > div > img[src*='img/pkmn/5/b/1.png'] + p::before, div.egg[style*='img/pkmn/5/b/1.png']::before, #dcegglist > li > img[src*='img/pkmn/5/b/1.png'] + div::after {content: "Doduo";}
+#egglist > div > img[src*='img/pkmn/9/5/7.png'] + p::before, div.egg[style*='img/pkmn/9/5/7.png']::before, #dcegglist > li > img[src*='img/pkmn/9/5/7.png'] + div::after {content: "Seel";}
+#egglist > div > img[src*='img/pkmn/n/a/i.png'] + p::before, div.egg[style*='img/pkmn/n/a/i.png']::before, #dcegglist > li > img[src*='img/pkmn/n/a/i.png'] + div::after {content: "Grimer";}
+#egglist > div > img[src*='img/pkmn/8/s/i/r.png'] + p::before, div.egg[style*='img/pkmn/8/s/i/r.png']::before, #dcegglist > li > img[src*='img/pkmn/8/s/i/r.png'] + div::after {content: "Alolan Grimer";}
+#egglist > div > img[src*='img/pkmn/3/1/u.png'] + p::before, div.egg[style*='img/pkmn/3/1/u.png']::before, #dcegglist > li > img[src*='img/pkmn/3/1/u.png'] + div::after {content: "Shellder";}
+#egglist > div > img[src*='img/pkmn/f/b/0.png'] + p::before, div.egg[style*='img/pkmn/f/b/0.png']::before, #dcegglist > li > img[src*='img/pkmn/f/b/0.png'] + div::after {content: "Gastly";}
+#egglist > div > img[src*='img/pkmn/6/d/s.png'] + p::before, div.egg[style*='img/pkmn/6/d/s.png']::before, #dcegglist > li > img[src*='img/pkmn/6/d/s.png'] + div::after {content: "Onix";}
+#egglist > div > img[src*='img/pkmn/b/v/d.png'] + p::before, div.egg[style*='img/pkmn/b/v/d.png']::before, #dcegglist > li > img[src*='img/pkmn/b/v/d.png'] + div::after {content: "Drowzee";}
+#egglist > div > img[src*='img/pkmn/b/f/k.png'] + p::before, div.egg[style*='img/pkmn/b/f/k.png']::before, #dcegglist > li > img[src*='img/pkmn/b/f/k.png'] + div::after {content: "Krabby";}
+#egglist > div > img[src*='img/pkmn/j/p/g.png'] + p::before, div.egg[style*='img/pkmn/j/p/g.png']::before, #dcegglist > li > img[src*='img/pkmn/j/p/g.png'] + div::after {content: "Voltorb";}
+#egglist > div > img[src*='img/pkmn/q/w/s/9.png'] + p::before, div.egg[style*='img/pkmn/q/w/s/9.png']::before, #dcegglist > li > img[src*='img/pkmn/q/w/s/9.png'] + div::after {content: "Hisuian Voltorb";}
+#egglist > div > img[src*='img/pkmn/n/k/h.png'] + p::before, div.egg[style*='img/pkmn/n/k/h.png']::before, #dcegglist > li > img[src*='img/pkmn/n/k/h.png'] + div::after {content: "Exeggcute";}
+#egglist > div > img[src*='img/pkmn/h/6/b.png'] + p::before, div.egg[style*='img/pkmn/h/6/b.png']::before, #dcegglist > li > img[src*='img/pkmn/h/6/b.png'] + div::after {content: "Cubone";}
+#egglist > div > img[src*='img/pkmn/c/8/n.png'] + p::before, div.egg[style*='img/pkmn/c/8/n.png']::before, #dcegglist > li > img[src*='img/pkmn/c/8/n.png'] + div::after {content: "Lickitung";}
+#egglist > div > img[src*='img/pkmn/b/d/m.png'] + p::before, div.egg[style*='img/pkmn/b/d/m.png']::before, #dcegglist > li > img[src*='img/pkmn/b/d/m.png'] + div::after {content: "Koffing";}
+#egglist > div > img[src*='img/pkmn/9/b/0.png'] + p::before, div.egg[style*='img/pkmn/9/b/0.png']::before, #dcegglist > li > img[src*='img/pkmn/9/b/0.png'] + div::after {content: "Rhyhorn";}
+#egglist > div > img[src*='img/pkmn/k/b/3.png'] + p::before, div.egg[style*='img/pkmn/k/b/3.png']::before, #dcegglist > li > img[src*='img/pkmn/k/b/3.png'] + div::after {content: "Tangela";}
+#egglist > div > img[src*='img/pkmn/d/5/0.png'] + p::before, div.egg[style*='img/pkmn/d/5/0.png']::before, #dcegglist > li > img[src*='img/pkmn/d/5/0.png'] + div::after {content: "Kangaskhan";}
+#egglist > div > img[src*='img/pkmn/q/8.png'] + p::before, div.egg[style*='img/pkmn/q/8.png']::before, #dcegglist > li > img[src*='img/pkmn/q/8.png'] + div::after {content: "Horsea";}
+#egglist > div > img[src*='img/pkmn/l/k/a.png'] + p::before, div.egg[style*='img/pkmn/l/k/a.png']::before, #dcegglist > li > img[src*='img/pkmn/l/k/a.png'] + div::after {content: "Goldeen";}
+#egglist > div > img[src*='img/pkmn/l/r/1.png'] + p::before, div.egg[style*='img/pkmn/l/r/1.png']::before, #dcegglist > li > img[src*='img/pkmn/l/r/1.png'] + div::after {content: "Staryu";}
+#egglist > div > img[src*='img/pkmn/m/q/k.png'] + p::before, div.egg[style*='img/pkmn/m/q/k.png']::before, #dcegglist > li > img[src*='img/pkmn/m/q/k.png'] + div::after {content: "Mime Jr.";}
+#egglist > div > img[src*='img/pkmn/q/6/d/0.png'] + p::before, div.egg[style*='img/pkmn/q/6/d/0.png']::before, #dcegglist > li > img[src*='img/pkmn/q/6/d/0.png'] + div::after {content: "Mr. Mime";}
+#egglist > div > img[src*='img/pkmn/y/j/q/z.png'] + p::before, div.egg[style*='img/pkmn/y/j/q/z.png']::before, #dcegglist > li > img[src*='img/pkmn/y/j/q/z.png'] + div::after {content: "Galarian Mr. Mime";}
+#egglist > div > img[src*='img/pkmn/7/9/t.png'] + p::before, div.egg[style*='img/pkmn/7/9/t.png']::before, #dcegglist > li > img[src*='img/pkmn/7/9/t.png'] + div::after {content: "Scyther";}
+#egglist > div > img[src*='img/pkmn/o/b/7.png'] + p::before, div.egg[style*='img/pkmn/o/b/7.png']::before, #dcegglist > li > img[src*='img/pkmn/o/b/7.png'] + div::after {content: "Smoochum";}
+#egglist > div > img[src*='img/pkmn/b/x/s.png'] + p::before, div.egg[style*='img/pkmn/b/x/s.png']::before, #dcegglist > li > img[src*='img/pkmn/b/x/s.png'] + div::after {content: "Pinsir";}
+#egglist > div > img[src*='img/pkmn/d/q/n.png'] + p::before, div.egg[style*='img/pkmn/d/q/n.png']::before, #dcegglist > li > img[src*='img/pkmn/d/q/n.png'] + div::after {content: "Tauros";}
+#egglist > div > img[src*='img/pkmn/8/r/q.png'] + p::before, div.egg[style*='img/pkmn/8/r/q.png']::before, #dcegglist > li > img[src*='img/pkmn/8/r/q.png'] + div::after {content: "Magikarp";}
+#egglist > div > img[src*='img/pkmn/h/h/h.png'] + p::before, div.egg[style*='img/pkmn/h/h/h.png']::before, #dcegglist > li > img[src*='img/pkmn/h/h/h.png'] + div::after {content: "Lapras";}
+#egglist > div > img[src*='img/pkmn/e/h/x.png'] + p::before, div.egg[style*='img/pkmn/e/h/x.png']::before, #dcegglist > li > img[src*='img/pkmn/e/h/x.png'] + div::after {content: "Ditto";}
+#egglist > div > img[src*='img/pkmn/3/e/l.png'] + p::before, div.egg[style*='img/pkmn/3/e/l.png']::before, #dcegglist > li > img[src*='img/pkmn/3/e/l.png'] + div::after {content: "Eevee";}
+#egglist > div > img[src*='img/pkmn/1/5/l.png'] + p::before, div.egg[style*='img/pkmn/1/5/l.png']::before, #dcegglist > li > img[src*='img/pkmn/1/5/l.png'] + div::after {content: "Omanyte";}
+#egglist > div > img[src*='img/pkmn/6/n/4.png'] + p::before, div.egg[style*='img/pkmn/6/n/4.png']::before, #dcegglist > li > img[src*='img/pkmn/6/n/4.png'] + div::after {content: "Kabuto";}
+#egglist > div > img[src*='img/pkmn/5/d/f.png'] + p::before, div.egg[style*='img/pkmn/5/d/f.png']::before, #dcegglist > li > img[src*='img/pkmn/5/d/f.png'] + div::after {content: "Aerodactyl";}
+#egglist > div > img[src*='img/pkmn/4/u/j.png'] + p::before, div.egg[style*='img/pkmn/4/u/j.png']::before, #dcegglist > li > img[src*='img/pkmn/4/u/j.png'] + div::after {content: "Munchlax";}
+#egglist > div > img[src*='img/pkmn/8/t/3/u.png'] + p::before, div.egg[style*='img/pkmn/8/t/3/u.png']::before, #dcegglist > li > img[src*='img/pkmn/8/t/3/u.png'] + div::after {content: "Snorlax";}
+#egglist > div > img[src*='img/pkmn/f/m/u.png'] + p::before, div.egg[style*='img/pkmn/f/m/u.png']::before, #dcegglist > li > img[src*='img/pkmn/f/m/u.png'] + div::after {content: "Articuno";}
+#egglist > div > img[src*='img/pkmn/s/7/d/t.png'] + p::before, div.egg[style*='img/pkmn/s/7/d/t.png']::before, #dcegglist > li > img[src*='img/pkmn/s/7/d/t.png'] + div::after {content: "Galarian Articuno";}
+#egglist > div > img[src*='img/pkmn/o/2/t.png'] + p::before, div.egg[style*='img/pkmn/o/2/t.png']::before, #dcegglist > li > img[src*='img/pkmn/o/2/t.png'] + div::after {content: "Zapdos";}
+#egglist > div > img[src*='img/pkmn/u/s/y/s.png'] + p::before, div.egg[style*='img/pkmn/u/s/y/s.png']::before, #dcegglist > li > img[src*='img/pkmn/u/s/y/s.png'] + div::after {content: "Galarian Zapdos";}
+#egglist > div > img[src*='img/pkmn/k/z/u.png'] + p::before, div.egg[style*='img/pkmn/k/z/u.png']::before, #dcegglist > li > img[src*='img/pkmn/k/z/u.png'] + div::after {content: "Moltres";}
+#egglist > div > img[src*='img/pkmn/o/r/b/p.png'] + p::before, div.egg[style*='img/pkmn/o/r/b/p.png']::before, #dcegglist > li > img[src*='img/pkmn/o/r/b/p.png'] + div::after {content: "Galarian Moltres";}
+#egglist > div > img[src*='img/pkmn/a/x/w.png'] + p::before, div.egg[style*='img/pkmn/a/x/w.png']::before, #dcegglist > li > img[src*='img/pkmn/a/x/w.png'] + div::after {content: "Dratini";}
+#egglist > div > img[src*='img/pkmn/j/t/q.png'] + p::before, div.egg[style*='img/pkmn/j/t/q.png']::before, #dcegglist > li > img[src*='img/pkmn/j/t/q.png'] + div::after {content: "Mewtwo";}
+#egglist > div > img[src*='img/pkmn/4/3/u.png'] + p::before, div.egg[style*='img/pkmn/4/3/u.png']::before, #dcegglist > li > img[src*='img/pkmn/4/3/u.png'] + div::after {content: "Mew";}
+#egglist > div > img[src*='img/pkmn/c/z/0.png'] + p::before, div.egg[style*='img/pkmn/c/z/0.png']::before, #dcegglist > li > img[src*='img/pkmn/c/z/0.png'] + div::after {content: "Chikorita";}
+#egglist > div > img[src*='img/pkmn/4/2/a.png'] + p::before, div.egg[style*='img/pkmn/4/2/a.png']::before, #dcegglist > li > img[src*='img/pkmn/4/2/a.png'] + div::after {content: "Cyndaquil";}
+#egglist > div > img[src*='img/pkmn/4/3/r.png'] + p::before, div.egg[style*='img/pkmn/4/3/r.png']::before, #dcegglist > li > img[src*='img/pkmn/4/3/r.png'] + div::after {content: "Totodile";}
+#egglist > div > img[src*='img/pkmn/h/j/d.png'] + p::before, div.egg[style*='img/pkmn/h/j/d.png']::before, #dcegglist > li > img[src*='img/pkmn/h/j/d.png'] + div::after {content: "Sentret";}
+#egglist > div > img[src*='img/pkmn/m/f/t.png'] + p::before, div.egg[style*='img/pkmn/m/f/t.png']::before, #dcegglist > li > img[src*='img/pkmn/m/f/t.png'] + div::after {content: "Hoothoot";}
+#egglist > div > img[src*='img/pkmn/p/6/f.png'] + p::before, div.egg[style*='img/pkmn/p/6/f.png']::before, #dcegglist > li > img[src*='img/pkmn/p/6/f.png'] + div::after {content: "Ledyba";}
+#egglist > div > img[src*='img/pkmn/2/6.png'] + p::before, div.egg[style*='img/pkmn/2/6.png']::before, #dcegglist > li > img[src*='img/pkmn/2/6.png'] + div::after {content: "Spinarak";}
+#egglist > div > img[src*='img/pkmn/d/9/6.png'] + p::before, div.egg[style*='img/pkmn/d/9/6.png']::before, #dcegglist > li > img[src*='img/pkmn/d/9/6.png'] + div::after {content: "Chinchou";}
+#egglist > div > img[src*='img/pkmn/c/a/a.png'] + p::before, div.egg[style*='img/pkmn/c/a/a.png']::before, #dcegglist > li > img[src*='img/pkmn/c/a/a.png'] + div::after {content: "Togepi";}
+#egglist > div > img[src*='img/pkmn/2/h/q.png'] + p::before, div.egg[style*='img/pkmn/2/h/q.png']::before, #dcegglist > li > img[src*='img/pkmn/2/h/q.png'] + div::after {content: "Natu";}
+#egglist > div > img[src*='img/pkmn/3/2/r.png'] + p::before, div.egg[style*='img/pkmn/3/2/r.png']::before, #dcegglist > li > img[src*='img/pkmn/3/2/r.png'] + div::after {content: "Mareep";}
+#egglist > div > img[src*='img/pkmn/g/i/c.png'] + p::before, div.egg[style*='img/pkmn/g/i/c.png']::before, #dcegglist > li > img[src*='img/pkmn/g/i/c.png'] + div::after {content: "Azurill";}
+#egglist > div > img[src*='img/pkmn/b/2/f/n.png'] + p::before, div.egg[style*='img/pkmn/b/2/f/n.png']::before, #dcegglist > li > img[src*='img/pkmn/b/2/f/n.png'] + div::after {content: "Marill";}
+#egglist > div > img[src*='img/pkmn/o/8/a.png'] + p::before, div.egg[style*='img/pkmn/o/8/a.png']::before, #dcegglist > li > img[src*='img/pkmn/o/8/a.png'] + div::after {content: "Bonsly";}
+#egglist > div > img[src*='img/pkmn/a/6/6/v.png'] + p::before, div.egg[style*='img/pkmn/a/6/6/v.png']::before, #dcegglist > li > img[src*='img/pkmn/a/6/6/v.png'] + div::after {content: "Sudowoodo";}
+#egglist > div > img[src*='img/pkmn/o/l/o.png'] + p::before, div.egg[style*='img/pkmn/o/l/o.png']::before, #dcegglist > li > img[src*='img/pkmn/o/l/o.png'] + div::after {content: "Hoppip";}
+#egglist > div > img[src*='img/pkmn/g/d/0.png'] + p::before, div.egg[style*='img/pkmn/g/d/0.png']::before, #dcegglist > li > img[src*='img/pkmn/g/d/0.png'] + div::after {content: "Aipom";}
+#egglist > div > img[src*='img/pkmn/b/b/e.png'] + p::before, div.egg[style*='img/pkmn/b/b/e.png']::before, #dcegglist > li > img[src*='img/pkmn/b/b/e.png'] + div::after {content: "Sunkern";}
+#egglist > div > img[src*='img/pkmn/d/q/b.png'] + p::before, div.egg[style*='img/pkmn/d/q/b.png']::before, #dcegglist > li > img[src*='img/pkmn/d/q/b.png'] + div::after {content: "Yanma";}
+#egglist > div > img[src*='img/pkmn/2/v/k.png'] + p::before, div.egg[style*='img/pkmn/2/v/k.png']::before, #dcegglist > li > img[src*='img/pkmn/2/v/k.png'] + div::after {content: "Wooper";}
+#egglist > div > img[src*='img/pkmn/i/h/o.png'] + p::before, div.egg[style*='img/pkmn/i/h/o.png']::before, #dcegglist > li > img[src*='img/pkmn/i/h/o.png'] + div::after {content: "Murkrow";}
+#egglist > div > img[src*='img/pkmn/6/u/u.png'] + p::before, div.egg[style*='img/pkmn/6/u/u.png']::before, #dcegglist > li > img[src*='img/pkmn/6/u/u.png'] + div::after {content: "Misdreavus";}
+#egglist > div > img[src*='img/pkmn/r/t.png'] + p::before, div.egg[style*='img/pkmn/r/t.png']::before, #dcegglist > li > img[src*='img/pkmn/r/t.png'] + div::after {content: "Girafarig";}
+#egglist > div > img[src*='img/pkmn/d/n/x.png'] + p::before, div.egg[style*='img/pkmn/d/n/x.png']::before, #dcegglist > li > img[src*='img/pkmn/d/n/x.png'] + div::after {content: "Pineco";}
+#egglist > div > img[src*='img/pkmn/o/0/q.png'] + p::before, div.egg[style*='img/pkmn/o/0/q.png']::before, #dcegglist > li > img[src*='img/pkmn/o/0/q.png'] + div::after {content: "Dunsparce";}
+#egglist > div > img[src*='img/pkmn/m/3/m.png'] + p::before, div.egg[style*='img/pkmn/m/3/m.png']::before, #dcegglist > li > img[src*='img/pkmn/m/3/m.png'] + div::after {content: "Gligar";}
+#egglist > div > img[src*='img/pkmn/5/8/4.png'] + p::before, div.egg[style*='img/pkmn/5/8/4.png']::before, #dcegglist > li > img[src*='img/pkmn/5/8/4.png'] + div::after {content: "Snubbull";}
+#egglist > div > img[src*='img/pkmn/h/q/c.png'] + p::before, div.egg[style*='img/pkmn/h/q/c.png']::before, #dcegglist > li > img[src*='img/pkmn/h/q/c.png'] + div::after {content: "Qwilfish";}
+#egglist > div > img[src*='img/pkmn/j/8/0/7.png'] + p::before, div.egg[style*='img/pkmn/j/8/0/7.png']::before, #dcegglist > li > img[src*='img/pkmn/j/8/0/7.png'] + div::after {content: "Hisuian Qwilfish";}
+#egglist > div > img[src*='img/pkmn/l/5/e.png'] + p::before, div.egg[style*='img/pkmn/l/5/e.png']::before, #dcegglist > li > img[src*='img/pkmn/l/5/e.png'] + div::after {content: "Shuckle";}
+#egglist > div > img[src*='img/pkmn/j/x/b.png'] + p::before, div.egg[style*='img/pkmn/j/x/b.png']::before, #dcegglist > li > img[src*='img/pkmn/j/x/b.png'] + div::after {content: "Heracross";}
+#egglist > div > img[src*='img/pkmn/h/p/h.png'] + p::before, div.egg[style*='img/pkmn/h/p/h.png']::before, #dcegglist > li > img[src*='img/pkmn/h/p/h.png'] + div::after {content: "Sneasel";}
+#egglist > div > img[src*='img/pkmn/4/a/5/6.png'] + p::before, div.egg[style*='img/pkmn/4/a/5/6.png']::before, #dcegglist > li > img[src*='img/pkmn/4/a/5/6.png'] + div::after {content: "Hisuian Sneasel";}
+#egglist > div > img[src*='img/pkmn/8/2/i.png'] + p::before, div.egg[style*='img/pkmn/8/2/i.png']::before, #dcegglist > li > img[src*='img/pkmn/8/2/i.png'] + div::after {content: "Teddiursa";}
+#egglist > div > img[src*='img/pkmn/f/f/i.png'] + p::before, div.egg[style*='img/pkmn/f/f/i.png']::before, #dcegglist > li > img[src*='img/pkmn/f/f/i.png'] + div::after {content: "Slugma";}
+#egglist > div > img[src*='img/pkmn/j/z/s.png'] + p::before, div.egg[style*='img/pkmn/j/z/s.png']::before, #dcegglist > li > img[src*='img/pkmn/j/z/s.png'] + div::after {content: "Swinub";}
+#egglist > div > img[src*='img/pkmn/f/o/v.png'] + p::before, div.egg[style*='img/pkmn/f/o/v.png']::before, #dcegglist > li > img[src*='img/pkmn/f/o/v.png'] + div::after {content: "Corsola";}
+#egglist > div > img[src*='img/pkmn/m/l/n/8.png'] + p::before, div.egg[style*='img/pkmn/m/l/n/8.png']::before, #dcegglist > li > img[src*='img/pkmn/m/l/n/8.png'] + div::after {content: "Galarian Corsola";}
+#egglist > div > img[src*='img/pkmn/m/x/3.png'] + p::before, div.egg[style*='img/pkmn/m/x/3.png']::before, #dcegglist > li > img[src*='img/pkmn/m/x/3.png'] + div::after {content: "Remoraid";}
+#egglist > div > img[src*='img/pkmn/d/z/3.png'] + p::before, div.egg[style*='img/pkmn/d/z/3.png']::before, #dcegglist > li > img[src*='img/pkmn/d/z/3.png'] + div::after {content: "Delibird";}
+#egglist > div > img[src*='img/pkmn/2/v/d.png'] + p::before, div.egg[style*='img/pkmn/2/v/d.png']::before, #dcegglist > li > img[src*='img/pkmn/2/v/d.png'] + div::after {content: "Skarmory";}
+#egglist > div > img[src*='img/pkmn/a/8/b.png'] + p::before, div.egg[style*='img/pkmn/a/8/b.png']::before, #dcegglist > li > img[src*='img/pkmn/a/8/b.png'] + div::after {content: "Houndour";}
+#egglist > div > img[src*='img/pkmn/i/1/e.png'] + p::before, div.egg[style*='img/pkmn/i/1/e.png']::before, #dcegglist > li > img[src*='img/pkmn/i/1/e.png'] + div::after {content: "Phanpy";}
+#egglist > div > img[src*='img/pkmn/a/y/f.png'] + p::before, div.egg[style*='img/pkmn/a/y/f.png']::before, #dcegglist > li > img[src*='img/pkmn/a/y/f.png'] + div::after {content: "Stantler";}
+#egglist > div > img[src*='img/pkmn/6/5/i.png'] + p::before, div.egg[style*='img/pkmn/6/5/i.png']::before, #dcegglist > li > img[src*='img/pkmn/6/5/i.png'] + div::after {content: "Smeargle";}
+#egglist > div > img[src*='img/pkmn/h/5/v.png'] + p::before, div.egg[style*='img/pkmn/h/5/v.png']::before, #dcegglist > li > img[src*='img/pkmn/h/5/v.png'] + div::after {content: "Tyrogue";}
+#egglist > div > img[src*='img/pkmn/7/2/l.png'] + p::before, div.egg[style*='img/pkmn/7/2/l.png']::before, #dcegglist > li > img[src*='img/pkmn/7/2/l.png'] + div::after {content: "Elekid";}
+#egglist > div > img[src*='img/pkmn/c/w/w.png'] + p::before, div.egg[style*='img/pkmn/c/w/w.png']::before, #dcegglist > li > img[src*='img/pkmn/c/w/w.png'] + div::after {content: "Magby";}
+#egglist > div > img[src*='img/pkmn/i/4/2.png'] + p::before, div.egg[style*='img/pkmn/i/4/2.png']::before, #dcegglist > li > img[src*='img/pkmn/i/4/2.png'] + div::after {content: "Miltank";}
+#egglist > div > img[src*='img/pkmn/d/u/t.png'] + p::before, div.egg[style*='img/pkmn/d/u/t.png']::before, #dcegglist > li > img[src*='img/pkmn/d/u/t.png'] + div::after {content: "Raikou";}
+#egglist > div > img[src*='img/pkmn/j/a/6.png'] + p::before, div.egg[style*='img/pkmn/j/a/6.png']::before, #dcegglist > li > img[src*='img/pkmn/j/a/6.png'] + div::after {content: "Entei";}
+#egglist > div > img[src*='img/pkmn/4/v/s.png'] + p::before, div.egg[style*='img/pkmn/4/v/s.png']::before, #dcegglist > li > img[src*='img/pkmn/4/v/s.png'] + div::after {content: "Suicune";}
+#egglist > div > img[src*='img/pkmn/l/z/2.png'] + p::before, div.egg[style*='img/pkmn/l/z/2.png']::before, #dcegglist > li > img[src*='img/pkmn/l/z/2.png'] + div::after {content: "Larvitar";}
+#egglist > div > img[src*='img/pkmn/j/j/2.png'] + p::before, div.egg[style*='img/pkmn/j/j/2.png']::before, #dcegglist > li > img[src*='img/pkmn/j/j/2.png'] + div::after {content: "Lugia";}
+#egglist > div > img[src*='img/pkmn/5/0/g.png'] + p::before, div.egg[style*='img/pkmn/5/0/g.png']::before, #dcegglist > li > img[src*='img/pkmn/5/0/g.png'] + div::after {content: "Ho-oh";}
+#egglist > div > img[src*='img/pkmn/5/d/v.png'] + p::before, div.egg[style*='img/pkmn/5/d/v.png']::before, #dcegglist > li > img[src*='img/pkmn/5/d/v.png'] + div::after {content: "Celebi";}
+#egglist > div > img[src*='img/pkmn/e/p/g.png'] + p::before, div.egg[style*='img/pkmn/e/p/g.png']::before, #dcegglist > li > img[src*='img/pkmn/e/p/g.png'] + div::after {content: "Unown";}
+#egglist > div > img[src*='img/pkmn/i/0/k.png'] + p::before, div.egg[style*='img/pkmn/i/0/k.png']::before, #dcegglist > li > img[src*='img/pkmn/i/0/k.png'] + div::after {content: "Treecko";}
+#egglist > div > img[src*='img/pkmn/8/v/w.png'] + p::before, div.egg[style*='img/pkmn/8/v/w.png']::before, #dcegglist > li > img[src*='img/pkmn/8/v/w.png'] + div::after {content: "Torchic";}
+#egglist > div > img[src*='img/pkmn/b/5/9.png'] + p::before, div.egg[style*='img/pkmn/b/5/9.png']::before, #dcegglist > li > img[src*='img/pkmn/b/5/9.png'] + div::after {content: "Mudkip";}
+#egglist > div > img[src*='img/pkmn/m/f/c.png'] + p::before, div.egg[style*='img/pkmn/m/f/c.png']::before, #dcegglist > li > img[src*='img/pkmn/m/f/c.png'] + div::after {content: "Poochyena";}
+#egglist > div > img[src*='img/pkmn/j/9/n.png'] + p::before, div.egg[style*='img/pkmn/j/9/n.png']::before, #dcegglist > li > img[src*='img/pkmn/j/9/n.png'] + div::after {content: "Zigzagoon";}
+#egglist > div > img[src*='img/pkmn/l/w/a/d.png'] + p::before, div.egg[style*='img/pkmn/l/w/a/d.png']::before, #dcegglist > li > img[src*='img/pkmn/l/w/a/d.png'] + div::after {content: "Galarian Zigzagoon";}
+#egglist > div > img[src*='img/pkmn/8/b/v.png'] + p::before, div.egg[style*='img/pkmn/8/b/v.png']::before, #dcegglist > li > img[src*='img/pkmn/8/b/v.png'] + div::after {content: "Wurmple";}
+#egglist > div > img[src*='img/pkmn/8/a/n.png'] + p::before, div.egg[style*='img/pkmn/8/a/n.png']::before, #dcegglist > li > img[src*='img/pkmn/8/a/n.png'] + div::after {content: "Lotad";}
+#egglist > div > img[src*='img/pkmn/m/z/8.png'] + p::before, div.egg[style*='img/pkmn/m/z/8.png']::before, #dcegglist > li > img[src*='img/pkmn/m/z/8.png'] + div::after {content: "Seedot";}
+#egglist > div > img[src*='img/pkmn/m/x/d.png'] + p::before, div.egg[style*='img/pkmn/m/x/d.png']::before, #dcegglist > li > img[src*='img/pkmn/m/x/d.png'] + div::after {content: "Taillow";}
+#egglist > div > img[src*='img/pkmn/j/c/2.png'] + p::before, div.egg[style*='img/pkmn/j/c/2.png']::before, #dcegglist > li > img[src*='img/pkmn/j/c/2.png'] + div::after {content: "Wingull";}
+#egglist > div > img[src*='img/pkmn/m/u/8.png'] + p::before, div.egg[style*='img/pkmn/m/u/8.png']::before, #dcegglist > li > img[src*='img/pkmn/m/u/8.png'] + div::after {content: "Ralts";}
+#egglist > div > img[src*='img/pkmn/1/9/q.png'] + p::before, div.egg[style*='img/pkmn/1/9/q.png']::before, #dcegglist > li > img[src*='img/pkmn/1/9/q.png'] + div::after {content: "Surskit";}
+#egglist > div > img[src*='img/pkmn/8/b/g.png'] + p::before, div.egg[style*='img/pkmn/8/b/g.png']::before, #dcegglist > li > img[src*='img/pkmn/8/b/g.png'] + div::after {content: "Shroomish";}
+#egglist > div > img[src*='img/pkmn/f/w/s.png'] + p::before, div.egg[style*='img/pkmn/f/w/s.png']::before, #dcegglist > li > img[src*='img/pkmn/f/w/s.png'] + div::after {content: "Slakoth";}
+#egglist > div > img[src*='img/pkmn/n/y/x.png'] + p::before, div.egg[style*='img/pkmn/n/y/x.png']::before, #dcegglist > li > img[src*='img/pkmn/n/y/x.png'] + div::after {content: "Nincada";}
+#egglist > div > img[src*='img/pkmn/n/d/x.png'] + p::before, div.egg[style*='img/pkmn/n/d/x.png']::before, #dcegglist > li > img[src*='img/pkmn/n/d/x.png'] + div::after {content: "Whismur";}
+#egglist > div > img[src*='img/pkmn/l/6/d.png'] + p::before, div.egg[style*='img/pkmn/l/6/d.png']::before, #dcegglist > li > img[src*='img/pkmn/l/6/d.png'] + div::after {content: "Makuhita";}
+#egglist > div > img[src*='img/pkmn/b/l/l.png'] + p::before, div.egg[style*='img/pkmn/b/l/l.png']::before, #dcegglist > li > img[src*='img/pkmn/b/l/l.png'] + div::after {content: "Nosepass";}
+#egglist > div > img[src*='img/pkmn/h/n/8.png'] + p::before, div.egg[style*='img/pkmn/h/n/8.png']::before, #dcegglist > li > img[src*='img/pkmn/h/n/8.png'] + div::after {content: "Skitty";}
+#egglist > div > img[src*='img/pkmn/s/5.png'] + p::before, div.egg[style*='img/pkmn/s/5.png']::before, #dcegglist > li > img[src*='img/pkmn/s/5.png'] + div::after {content: "Sableye";}
+#egglist > div > img[src*='img/pkmn/8/7/x.png'] + p::before, div.egg[style*='img/pkmn/8/7/x.png']::before, #dcegglist > li > img[src*='img/pkmn/8/7/x.png'] + div::after {content: "Mawile";}
+#egglist > div > img[src*='img/pkmn/i/o/3.png'] + p::before, div.egg[style*='img/pkmn/i/o/3.png']::before, #dcegglist > li > img[src*='img/pkmn/i/o/3.png'] + div::after {content: "Aron";}
+#egglist > div > img[src*='img/pkmn/7/d/y.png'] + p::before, div.egg[style*='img/pkmn/7/d/y.png']::before, #dcegglist > li > img[src*='img/pkmn/7/d/y.png'] + div::after {content: "Meditite";}
+#egglist > div > img[src*='img/pkmn/7/7/x.png'] + p::before, div.egg[style*='img/pkmn/7/7/x.png']::before, #dcegglist > li > img[src*='img/pkmn/7/7/x.png'] + div::after {content: "Electrike";}
+#egglist > div > img[src*='img/pkmn/m/v/v.png'] + p::before, div.egg[style*='img/pkmn/m/v/v.png']::before, #dcegglist > li > img[src*='img/pkmn/m/v/v.png'] + div::after {content: "Plusle";}
+#egglist > div > img[src*='img/pkmn/2/g/h.png'] + p::before, div.egg[style*='img/pkmn/2/g/h.png']::before, #dcegglist > li > img[src*='img/pkmn/2/g/h.png'] + div::after {content: "Minun";}
+#egglist > div > img[src*='img/pkmn/b/5/8.png'] + p::before, div.egg[style*='img/pkmn/b/5/8.png']::before, #dcegglist > li > img[src*='img/pkmn/b/5/8.png'] + div::after {content: "Volbeat";}
+#egglist > div > img[src*='img/pkmn/h/a/c.png'] + p::before, div.egg[style*='img/pkmn/h/a/c.png']::before, #dcegglist > li > img[src*='img/pkmn/h/a/c.png'] + div::after {content: "Illumise";}
+#egglist > div > img[src*='img/pkmn/a/q/1.png'] + p::before, div.egg[style*='img/pkmn/a/q/1.png']::before, #dcegglist > li > img[src*='img/pkmn/a/q/1.png'] + div::after {content: "Gulpin";}
+#egglist > div > img[src*='img/pkmn/g/g/v.png'] + p::before, div.egg[style*='img/pkmn/g/g/v.png']::before, #dcegglist > li > img[src*='img/pkmn/g/g/v.png'] + div::after {content: "Carvanha";}
+#egglist > div > img[src*='img/pkmn/e/1/3.png'] + p::before, div.egg[style*='img/pkmn/e/1/3.png']::before, #dcegglist > li > img[src*='img/pkmn/e/1/3.png'] + div::after {content: "Wailmer";}
+#egglist > div > img[src*='img/pkmn/k/7/e.png'] + p::before, div.egg[style*='img/pkmn/k/7/e.png']::before, #dcegglist > li > img[src*='img/pkmn/k/7/e.png'] + div::after {content: "Numel";}
+#egglist > div > img[src*='img/pkmn/e/9/e.png'] + p::before, div.egg[style*='img/pkmn/e/9/e.png']::before, #dcegglist > li > img[src*='img/pkmn/e/9/e.png'] + div::after {content: "Torkoal";}
+#egglist > div > img[src*='img/pkmn/4/q/o.png'] + p::before, div.egg[style*='img/pkmn/4/q/o.png']::before, #dcegglist > li > img[src*='img/pkmn/4/q/o.png'] + div::after {content: "Spoink";}
+#egglist > div > img[src*='img/pkmn/l/1/7.png'] + p::before, div.egg[style*='img/pkmn/l/1/7.png']::before, #dcegglist > li > img[src*='img/pkmn/l/1/7.png'] + div::after {content: "Spinda";}
+#egglist > div > img[src*='img/pkmn/1/i/7.png'] + p::before, div.egg[style*='img/pkmn/1/i/7.png']::before, #dcegglist > li > img[src*='img/pkmn/1/i/7.png'] + div::after {content: "Trapinch";}
+#egglist > div > img[src*='img/pkmn/7/1/v.png'] + p::before, div.egg[style*='img/pkmn/7/1/v.png']::before, #dcegglist > li > img[src*='img/pkmn/7/1/v.png'] + div::after {content: "Cacnea";}
+#egglist > div > img[src*='img/pkmn/6/l/n.png'] + p::before, div.egg[style*='img/pkmn/6/l/n.png']::before, #dcegglist > li > img[src*='img/pkmn/6/l/n.png'] + div::after {content: "Swablu";}
+#egglist > div > img[src*='img/pkmn/l/x/b.png'] + p::before, div.egg[style*='img/pkmn/l/x/b.png']::before, #dcegglist > li > img[src*='img/pkmn/l/x/b.png'] + div::after {content: "Zangoose";}
+#egglist > div > img[src*='img/pkmn/b/m/6.png'] + p::before, div.egg[style*='img/pkmn/b/m/6.png']::before, #dcegglist > li > img[src*='img/pkmn/b/m/6.png'] + div::after {content: "Seviper";}
+#egglist > div > img[src*='img/pkmn/i/i/g.png'] + p::before, div.egg[style*='img/pkmn/i/i/g.png']::before, #dcegglist > li > img[src*='img/pkmn/i/i/g.png'] + div::after {content: "Lunatone";}
+#egglist > div > img[src*='img/pkmn/a/g/q.png'] + p::before, div.egg[style*='img/pkmn/a/g/q.png']::before, #dcegglist > li > img[src*='img/pkmn/a/g/q.png'] + div::after {content: "Solrock";}
+#egglist > div > img[src*='img/pkmn/a/v/p.png'] + p::before, div.egg[style*='img/pkmn/a/v/p.png']::before, #dcegglist > li > img[src*='img/pkmn/a/v/p.png'] + div::after {content: "Barboach";}
+#egglist > div > img[src*='img/pkmn/c/q.png'] + p::before, div.egg[style*='img/pkmn/c/q.png']::before, #dcegglist > li > img[src*='img/pkmn/c/q.png'] + div::after {content: "Corphish";}
+#egglist > div > img[src*='img/pkmn/a/q/0.png'] + p::before, div.egg[style*='img/pkmn/a/q/0.png']::before, #dcegglist > li > img[src*='img/pkmn/a/q/0.png'] + div::after {content: "Baltoy";}
+#egglist > div > img[src*='img/pkmn/y/r.png'] + p::before, div.egg[style*='img/pkmn/y/r.png']::before, #dcegglist > li > img[src*='img/pkmn/y/r.png'] + div::after {content: "Lileep";}
+#egglist > div > img[src*='img/pkmn/4/n/g.png'] + p::before, div.egg[style*='img/pkmn/4/n/g.png']::before, #dcegglist > li > img[src*='img/pkmn/4/n/g.png'] + div::after {content: "Anorith";}
+#egglist > div > img[src*='img/pkmn/i/3/m.png'] + p::before, div.egg[style*='img/pkmn/i/3/m.png']::before, #dcegglist > li > img[src*='img/pkmn/i/3/m.png'] + div::after {content: "Feebas";}
+#egglist > div > img[src*='img/pkmn/n/3/p.png'] + p::before, div.egg[style*='img/pkmn/n/3/p.png']::before, #dcegglist > li > img[src*='img/pkmn/n/3/p.png'] + div::after {content: "Castform";}
+#egglist > div > img[src*='img/pkmn/7/x/q.png'] + p::before, div.egg[style*='img/pkmn/7/x/q.png']::before, #dcegglist > li > img[src*='img/pkmn/7/x/q.png'] + div::after {content: "Kecleon";}
+#egglist > div > img[src*='img/pkmn/c/g/k.png'] + p::before, div.egg[style*='img/pkmn/c/g/k.png']::before, #dcegglist > li > img[src*='img/pkmn/c/g/k.png'] + div::after {content: "Shuppet";}
+#egglist > div > img[src*='img/pkmn/6/8/0.png'] + p::before, div.egg[style*='img/pkmn/6/8/0.png']::before, #dcegglist > li > img[src*='img/pkmn/6/8/0.png'] + div::after {content: "Duskull";}
+#egglist > div > img[src*='img/pkmn/8/q/y.png'] + p::before, div.egg[style*='img/pkmn/8/q/y.png']::before, #dcegglist > li > img[src*='img/pkmn/8/q/y.png'] + div::after {content: "Tropius";}
+#egglist > div > img[src*='img/pkmn/j/3/7.png'] + p::before, div.egg[style*='img/pkmn/j/3/7.png']::before, #dcegglist > li > img[src*='img/pkmn/j/3/7.png'] + div::after {content: "Chingling";}
+#egglist > div > img[src*='img/pkmn/d/j/y/x.png'] + p::before, div.egg[style*='img/pkmn/d/j/y/x.png']::before, #dcegglist > li > img[src*='img/pkmn/d/j/y/x.png'] + div::after {content: "Chimecho";}
+#egglist > div > img[src*='img/pkmn/j/o/e.png'] + p::before, div.egg[style*='img/pkmn/j/o/e.png']::before, #dcegglist > li > img[src*='img/pkmn/j/o/e.png'] + div::after {content: "Absol";}
+#egglist > div > img[src*='img/pkmn/8/w/9.png'] + p::before, div.egg[style*='img/pkmn/8/w/9.png']::before, #dcegglist > li > img[src*='img/pkmn/8/w/9.png'] + div::after {content: "Wynaut";}
+#egglist > div > img[src*='img/pkmn/3/t/b/5.png'] + p::before, div.egg[style*='img/pkmn/3/t/b/5.png']::before, #dcegglist > li > img[src*='img/pkmn/3/t/b/5.png'] + div::after {content: "Wobbuffet";}
+#egglist > div > img[src*='img/pkmn/7/t/f.png'] + p::before, div.egg[style*='img/pkmn/7/t/f.png']::before, #dcegglist > li > img[src*='img/pkmn/7/t/f.png'] + div::after {content: "Snorunt";}
+#egglist > div > img[src*='img/pkmn/x/2.png'] + p::before, div.egg[style*='img/pkmn/x/2.png']::before, #dcegglist > li > img[src*='img/pkmn/x/2.png'] + div::after {content: "Spheal";}
+#egglist > div > img[src*='img/pkmn/h/1/5.png'] + p::before, div.egg[style*='img/pkmn/h/1/5.png']::before, #dcegglist > li > img[src*='img/pkmn/h/1/5.png'] + div::after {content: "Clamperl";}
+#egglist > div > img[src*='img/pkmn/o/9/f.png'] + p::before, div.egg[style*='img/pkmn/o/9/f.png']::before, #dcegglist > li > img[src*='img/pkmn/o/9/f.png'] + div::after {content: "Relicanth";}
+#egglist > div > img[src*='img/pkmn/u/n.png'] + p::before, div.egg[style*='img/pkmn/u/n.png']::before, #dcegglist > li > img[src*='img/pkmn/u/n.png'] + div::after {content: "Luvdisc";}
+#egglist > div > img[src*='img/pkmn/n/9/6.png'] + p::before, div.egg[style*='img/pkmn/n/9/6.png']::before, #dcegglist > li > img[src*='img/pkmn/n/9/6.png'] + div::after {content: "Bagon";}
+#egglist > div > img[src*='img/pkmn/i/k/7.png'] + p::before, div.egg[style*='img/pkmn/i/k/7.png']::before, #dcegglist > li > img[src*='img/pkmn/i/k/7.png'] + div::after {content: "Beldum";}
+#egglist > div > img[src*='img/pkmn/o/t/z.png'] + p::before, div.egg[style*='img/pkmn/o/t/z.png']::before, #dcegglist > li > img[src*='img/pkmn/o/t/z.png'] + div::after {content: "Regirock";}
+#egglist > div > img[src*='img/pkmn/7/z/8.png'] + p::before, div.egg[style*='img/pkmn/7/z/8.png']::before, #dcegglist > li > img[src*='img/pkmn/7/z/8.png'] + div::after {content: "Regice";}
+#egglist > div > img[src*='img/pkmn/3/f/3.png'] + p::before, div.egg[style*='img/pkmn/3/f/3.png']::before, #dcegglist > li > img[src*='img/pkmn/3/f/3.png'] + div::after {content: "Registeel";}
+#egglist > div > img[src*='img/pkmn/e/h/l.png'] + p::before, div.egg[style*='img/pkmn/e/h/l.png']::before, #dcegglist > li > img[src*='img/pkmn/e/h/l.png'] + div::after {content: "Latias";}
+#egglist > div > img[src*='img/pkmn/j/j.png'] + p::before, div.egg[style*='img/pkmn/j/j.png']::before, #dcegglist > li > img[src*='img/pkmn/j/j.png'] + div::after {content: "Latios";}
+#egglist > div > img[src*='img/pkmn/d/f/s.png'] + p::before, div.egg[style*='img/pkmn/d/f/s.png']::before, #dcegglist > li > img[src*='img/pkmn/d/f/s.png'] + div::after {content: "Kyogre";}
+#egglist > div > img[src*='img/pkmn/c/x/7.png'] + p::before, div.egg[style*='img/pkmn/c/x/7.png']::before, #dcegglist > li > img[src*='img/pkmn/c/x/7.png'] + div::after {content: "Groudon";}
+#egglist > div > img[src*='img/pkmn/8/0/s.png'] + p::before, div.egg[style*='img/pkmn/8/0/s.png']::before, #dcegglist > li > img[src*='img/pkmn/8/0/s.png'] + div::after {content: "Rayquaza";}
+#egglist > div > img[src*='img/pkmn/8/b/h.png'] + p::before, div.egg[style*='img/pkmn/8/b/h.png']::before, #dcegglist > li > img[src*='img/pkmn/8/b/h.png'] + div::after {content: "Jirachi";}
+#egglist > div > img[src*='img/pkmn/c/z/q.png'] + p::before, div.egg[style*='img/pkmn/c/z/q.png']::before, #dcegglist > li > img[src*='img/pkmn/c/z/q.png'] + div::after {content: "Deoxys";}
+#egglist > div > img[src*='img/pkmn/6/t/u.png'] + p::before, div.egg[style*='img/pkmn/6/t/u.png']::before, #dcegglist > li > img[src*='img/pkmn/6/t/u.png'] + div::after {content: "Turtwig";}
+#egglist > div > img[src*='img/pkmn/g/h/g.png'] + p::before, div.egg[style*='img/pkmn/g/h/g.png']::before, #dcegglist > li > img[src*='img/pkmn/g/h/g.png'] + div::after {content: "Chimchar";}
+#egglist > div > img[src*='img/pkmn/7/p/8.png'] + p::before, div.egg[style*='img/pkmn/7/p/8.png']::before, #dcegglist > li > img[src*='img/pkmn/7/p/8.png'] + div::after {content: "Piplup";}
+#egglist > div > img[src*='img/pkmn/5/3/y.png'] + p::before, div.egg[style*='img/pkmn/5/3/y.png']::before, #dcegglist > li > img[src*='img/pkmn/5/3/y.png'] + div::after {content: "Starly";}
+#egglist > div > img[src*='img/pkmn/h/i/m.png'] + p::before, div.egg[style*='img/pkmn/h/i/m.png']::before, #dcegglist > li > img[src*='img/pkmn/h/i/m.png'] + div::after {content: "Bidoof";}
+#egglist > div > img[src*='img/pkmn/n/j/v.png'] + p::before, div.egg[style*='img/pkmn/n/j/v.png']::before, #dcegglist > li > img[src*='img/pkmn/n/j/v.png'] + div::after {content: "Kricketot";}
+#egglist > div > img[src*='img/pkmn/j/w/f.png'] + p::before, div.egg[style*='img/pkmn/j/w/f.png']::before, #dcegglist > li > img[src*='img/pkmn/j/w/f.png'] + div::after {content: "Shinx";}
+#egglist > div > img[src*='img/pkmn/m/2/2.png'] + p::before, div.egg[style*='img/pkmn/m/2/2.png']::before, #dcegglist > li > img[src*='img/pkmn/m/2/2.png'] + div::after {content: "Budew";}
+#egglist > div > img[src*='img/pkmn/q/m/6/n.png'] + p::before, div.egg[style*='img/pkmn/q/m/6/n.png']::before, #dcegglist > li > img[src*='img/pkmn/q/m/6/n.png'] + div::after {content: "Roselia";}
+#egglist > div > img[src*='img/pkmn/1/f/5.png'] + p::before, div.egg[style*='img/pkmn/1/f/5.png']::before, #dcegglist > li > img[src*='img/pkmn/1/f/5.png'] + div::after {content: "Cranidos";}
+#egglist > div > img[src*='img/pkmn/c/u/5.png'] + p::before, div.egg[style*='img/pkmn/c/u/5.png']::before, #dcegglist > li > img[src*='img/pkmn/c/u/5.png'] + div::after {content: "Shieldon";}
+#egglist > div > img[src*='img/pkmn/h/l/1.png'] + p::before, div.egg[style*='img/pkmn/h/l/1.png']::before, #dcegglist > li > img[src*='img/pkmn/h/l/1.png'] + div::after {content: "Burmy Plant";}
+#egglist > div > img[src*='img/pkmn/n/m/e.png'] + p::before, div.egg[style*='img/pkmn/n/m/e.png']::before, #dcegglist > li > img[src*='img/pkmn/n/m/e.png'] + div::after {content: "Combee";}
+#egglist > div > img[src*='img/pkmn/r/k.png'] + p::before, div.egg[style*='img/pkmn/r/k.png']::before, #dcegglist > li > img[src*='img/pkmn/r/k.png'] + div::after {content: "Pachirisu";}
+#egglist > div > img[src*='img/pkmn/4/4/t.png'] + p::before, div.egg[style*='img/pkmn/4/4/t.png']::before, #dcegglist > li > img[src*='img/pkmn/4/4/t.png'] + div::after {content: "Buizel";}
+#egglist > div > img[src*='img/pkmn/k/t/f.png'] + p::before, div.egg[style*='img/pkmn/k/t/f.png']::before, #dcegglist > li > img[src*='img/pkmn/k/t/f.png'] + div::after {content: "Cherubi";}
+#egglist > div > img[src*='img/pkmn/5/d/m.png'] + p::before, div.egg[style*='img/pkmn/5/d/m.png']::before, #dcegglist > li > img[src*='img/pkmn/5/d/m.png'] + div::after {content: "Shellos";}
+#egglist > div > img[src*='img/pkmn/l/l/q.png'] + p::before, div.egg[style*='img/pkmn/l/l/q.png']::before, #dcegglist > li > img[src*='img/pkmn/l/l/q.png'] + div::after {content: "Drifloon";}
+#egglist > div > img[src*='img/pkmn/m/j/c.png'] + p::before, div.egg[style*='img/pkmn/m/j/c.png']::before, #dcegglist > li > img[src*='img/pkmn/m/j/c.png'] + div::after {content: "Buneary";}
+#egglist > div > img[src*='img/pkmn/i/1/4.png'] + p::before, div.egg[style*='img/pkmn/i/1/4.png']::before, #dcegglist > li > img[src*='img/pkmn/i/1/4.png'] + div::after {content: "Glameow";}
+#egglist > div > img[src*='img/pkmn/h/m/b.png'] + p::before, div.egg[style*='img/pkmn/h/m/b.png']::before, #dcegglist > li > img[src*='img/pkmn/h/m/b.png'] + div::after {content: "Stunky";}
+#egglist > div > img[src*='img/pkmn/a/a/c.png'] + p::before, div.egg[style*='img/pkmn/a/a/c.png']::before, #dcegglist > li > img[src*='img/pkmn/a/a/c.png'] + div::after {content: "Bronzor";}
+#egglist > div > img[src*='img/pkmn/l/v/b.png'] + p::before, div.egg[style*='img/pkmn/l/v/b.png']::before, #dcegglist > li > img[src*='img/pkmn/l/v/b.png'] + div::after {content: "Happiny";}
+#egglist > div > img[src*='img/pkmn/k/8/c/u.png'] + p::before, div.egg[style*='img/pkmn/k/8/c/u.png']::before, #dcegglist > li > img[src*='img/pkmn/k/8/c/u.png'] + div::after {content: "Chansey";}
+#egglist > div > img[src*='img/pkmn/9/7/w.png'] + p::before, div.egg[style*='img/pkmn/9/7/w.png']::before, #dcegglist > li > img[src*='img/pkmn/9/7/w.png'] + div::after {content: "Chatot";}
+#egglist > div > img[src*='img/pkmn/m/m/g.png'] + p::before, div.egg[style*='img/pkmn/m/m/g.png']::before, #dcegglist > li > img[src*='img/pkmn/m/m/g.png'] + div::after {content: "Spiritomb";}
+#egglist > div > img[src*='img/pkmn/1/s/6.png'] + p::before, div.egg[style*='img/pkmn/1/s/6.png']::before, #dcegglist > li > img[src*='img/pkmn/1/s/6.png'] + div::after {content: "Gible";}
+#egglist > div > img[src*='img/pkmn/d/w/5.png'] + p::before, div.egg[style*='img/pkmn/d/w/5.png']::before, #dcegglist > li > img[src*='img/pkmn/d/w/5.png'] + div::after {content: "Riolu";}
+#egglist > div > img[src*='img/pkmn/k/y/r.png'] + p::before, div.egg[style*='img/pkmn/k/y/r.png']::before, #dcegglist > li > img[src*='img/pkmn/k/y/r.png'] + div::after {content: "Hippopotas";}
+#egglist > div > img[src*='img/pkmn/l/t/c.png'] + p::before, div.egg[style*='img/pkmn/l/t/c.png']::before, #dcegglist > li > img[src*='img/pkmn/l/t/c.png'] + div::after {content: "Skorupi";}
+#egglist > div > img[src*='img/pkmn/4/2/5.png'] + p::before, div.egg[style*='img/pkmn/4/2/5.png']::before, #dcegglist > li > img[src*='img/pkmn/4/2/5.png'] + div::after {content: "Croagunk";}
+#egglist > div > img[src*='img/pkmn/h/5/x.png'] + p::before, div.egg[style*='img/pkmn/h/5/x.png']::before, #dcegglist > li > img[src*='img/pkmn/h/5/x.png'] + div::after {content: "Carnivine";}
+#egglist > div > img[src*='img/pkmn/c/e/z.png'] + p::before, div.egg[style*='img/pkmn/c/e/z.png']::before, #dcegglist > li > img[src*='img/pkmn/c/e/z.png'] + div::after {content: "Finneon";}
+#egglist > div > img[src*='img/pkmn/j/3/8.png'] + p::before, div.egg[style*='img/pkmn/j/3/8.png']::before, #dcegglist > li > img[src*='img/pkmn/j/3/8.png'] + div::after {content: "Mantyke";}
+#egglist > div > img[src*='img/pkmn/d/h/7/w.png'] + p::before, div.egg[style*='img/pkmn/d/h/7/w.png']::before, #dcegglist > li > img[src*='img/pkmn/d/h/7/w.png'] + div::after {content: "Mantine";}
+#egglist > div > img[src*='img/pkmn/n/u/c.png'] + p::before, div.egg[style*='img/pkmn/n/u/c.png']::before, #dcegglist > li > img[src*='img/pkmn/n/u/c.png'] + div::after {content: "Snover";}
+#egglist > div > img[src*='img/pkmn/b/q/s.png'] + p::before, div.egg[style*='img/pkmn/b/q/s.png']::before, #dcegglist > li > img[src*='img/pkmn/b/q/s.png'] + div::after {content: "Porygon";}
+#egglist > div > img[src*='img/pkmn/h/h/6.png'] + p::before, div.egg[style*='img/pkmn/h/h/6.png']::before, #dcegglist > li > img[src*='img/pkmn/h/h/6.png'] + div::after {content: "Rotom";}
+#egglist > div > img[src*='img/pkmn/6/6/g.png'] + p::before, div.egg[style*='img/pkmn/6/6/g.png']::before, #dcegglist > li > img[src*='img/pkmn/6/6/g.png'] + div::after {content: "Uxie";}
+#egglist > div > img[src*='img/pkmn/c/i/g.png'] + p::before, div.egg[style*='img/pkmn/c/i/g.png']::before, #dcegglist > li > img[src*='img/pkmn/c/i/g.png'] + div::after {content: "Mesprit";}
+#egglist > div > img[src*='img/pkmn/f/p/6.png'] + p::before, div.egg[style*='img/pkmn/f/p/6.png']::before, #dcegglist > li > img[src*='img/pkmn/f/p/6.png'] + div::after {content: "Azelf";}
+#egglist > div > img[src*='img/pkmn/7/e/4.png'] + p::before, div.egg[style*='img/pkmn/7/e/4.png']::before, #dcegglist > li > img[src*='img/pkmn/7/e/4.png'] + div::after {content: "Dialga";}
+#egglist > div > img[src*='img/pkmn/e/j/7.png'] + p::before, div.egg[style*='img/pkmn/e/j/7.png']::before, #dcegglist > li > img[src*='img/pkmn/e/j/7.png'] + div::after {content: "Palkia";}
+#egglist > div > img[src*='img/pkmn/4/9.png'] + p::before, div.egg[style*='img/pkmn/4/9.png']::before, #dcegglist > li > img[src*='img/pkmn/4/9.png'] + div::after {content: "Heatran";}
+#egglist > div > img[src*='img/pkmn/m/f/7.png'] + p::before, div.egg[style*='img/pkmn/m/f/7.png']::before, #dcegglist > li > img[src*='img/pkmn/m/f/7.png'] + div::after {content: "Regigigas";}
+#egglist > div > img[src*='img/pkmn/5/g/0.png'] + p::before, div.egg[style*='img/pkmn/5/g/0.png']::before, #dcegglist > li > img[src*='img/pkmn/5/g/0.png'] + div::after {content: "Giratina";}
+#egglist > div > img[src*='img/pkmn/8/d/p.png'] + p::before, div.egg[style*='img/pkmn/8/d/p.png']::before, #dcegglist > li > img[src*='img/pkmn/8/d/p.png'] + div::after {content: "Cresselia";}
+#egglist > div > img[src*='img/pkmn/2/b/o.png'] + p::before, div.egg[style*='img/pkmn/2/b/o.png']::before, #dcegglist > li > img[src*='img/pkmn/2/b/o.png'] + div::after {content: "Phione";}
+#egglist > div > img[src*='img/pkmn/j/8/a.png'] + p::before, div.egg[style*='img/pkmn/j/8/a.png']::before, #dcegglist > li > img[src*='img/pkmn/j/8/a.png'] + div::after {content: "Manaphy";}
+#egglist > div > img[src*='img/pkmn/e/g/p.png'] + p::before, div.egg[style*='img/pkmn/e/g/p.png']::before, #dcegglist > li > img[src*='img/pkmn/e/g/p.png'] + div::after {content: "Darkrai";}
+#egglist > div > img[src*='img/pkmn/4/c/n.png'] + p::before, div.egg[style*='img/pkmn/4/c/n.png']::before, #dcegglist > li > img[src*='img/pkmn/4/c/n.png'] + div::after {content: "Shaymin";}
+#egglist > div > img[src*='img/pkmn/7/j/0.png'] + p::before, div.egg[style*='img/pkmn/7/j/0.png']::before, #dcegglist > li > img[src*='img/pkmn/7/j/0.png'] + div::after {content: "Arceus";}
+#egglist > div > img[src*='img/pkmn/v/a/b/f.png'] + p::before, div.egg[style*='img/pkmn/v/a/b/f.png']::before, #dcegglist > li > img[src*='img/pkmn/v/a/b/f.png'] + div::after {content: "Enamorus";}
+#egglist > div > img[src*='img/pkmn/e/g/8.png'] + p::before, div.egg[style*='img/pkmn/e/g/8.png']::before, #dcegglist > li > img[src*='img/pkmn/e/g/8.png'] + div::after {content: "Victini";}
+#egglist > div > img[src*='img/pkmn/i/4.png'] + p::before, div.egg[style*='img/pkmn/i/4.png']::before, #dcegglist > li > img[src*='img/pkmn/i/4.png'] + div::after {content: "Snivy";}
+#egglist > div > img[src*='img/pkmn/h/j/1.png'] + p::before, div.egg[style*='img/pkmn/h/j/1.png']::before, #dcegglist > li > img[src*='img/pkmn/h/j/1.png'] + div::after {content: "Tepig";}
+#egglist > div > img[src*='img/pkmn/g/2/t.png'] + p::before, div.egg[style*='img/pkmn/g/2/t.png']::before, #dcegglist > li > img[src*='img/pkmn/g/2/t.png'] + div::after {content: "Oshawott";}
+#egglist > div > img[src*='img/pkmn/9/6/3.png'] + p::before, div.egg[style*='img/pkmn/9/6/3.png']::before, #dcegglist > li > img[src*='img/pkmn/9/6/3.png'] + div::after {content: "Patrat";}
+#egglist > div > img[src*='img/pkmn/h/1/j.png'] + p::before, div.egg[style*='img/pkmn/h/1/j.png']::before, #dcegglist > li > img[src*='img/pkmn/h/1/j.png'] + div::after {content: "Lillipup";}
+#egglist > div > img[src*='img/pkmn/2/l/p.png'] + p::before, div.egg[style*='img/pkmn/2/l/p.png']::before, #dcegglist > li > img[src*='img/pkmn/2/l/p.png'] + div::after {content: "Purrloin";}
+#egglist > div > img[src*='img/pkmn/p/0/e.png'] + p::before, div.egg[style*='img/pkmn/p/0/e.png']::before, #dcegglist > li > img[src*='img/pkmn/p/0/e.png'] + div::after {content: "Pansage";}
+#egglist > div > img[src*='img/pkmn/n/s/g.png'] + p::before, div.egg[style*='img/pkmn/n/s/g.png']::before, #dcegglist > li > img[src*='img/pkmn/n/s/g.png'] + div::after {content: "Pansear";}
+#egglist > div > img[src*='img/pkmn/9/d/l.png'] + p::before, div.egg[style*='img/pkmn/9/d/l.png']::before, #dcegglist > li > img[src*='img/pkmn/9/d/l.png'] + div::after {content: "Panpour";}
+#egglist > div > img[src*='img/pkmn/9/0/8.png'] + p::before, div.egg[style*='img/pkmn/9/0/8.png']::before, #dcegglist > li > img[src*='img/pkmn/9/0/8.png'] + div::after {content: "Munna";}
+#egglist > div > img[src*='img/pkmn/h/p/m.png'] + p::before, div.egg[style*='img/pkmn/h/p/m.png']::before, #dcegglist > li > img[src*='img/pkmn/h/p/m.png'] + div::after {content: "Pidove";}
+#egglist > div > img[src*='img/pkmn/m/t/p.png'] + p::before, div.egg[style*='img/pkmn/m/t/p.png']::before, #dcegglist > li > img[src*='img/pkmn/m/t/p.png'] + div::after {content: "Blitzle";}
+#egglist > div > img[src*='img/pkmn/g/z/8.png'] + p::before, div.egg[style*='img/pkmn/g/z/8.png']::before, #dcegglist > li > img[src*='img/pkmn/g/z/8.png'] + div::after {content: "Roggenrola";}
+#egglist > div > img[src*='img/pkmn/c/6/t.png'] + p::before, div.egg[style*='img/pkmn/c/6/t.png']::before, #dcegglist > li > img[src*='img/pkmn/c/6/t.png'] + div::after {content: "Woobat";}
+#egglist > div > img[src*='img/pkmn/b/x/z.png'] + p::before, div.egg[style*='img/pkmn/b/x/z.png']::before, #dcegglist > li > img[src*='img/pkmn/b/x/z.png'] + div::after {content: "Drilbur";}
+#egglist > div > img[src*='img/pkmn/a/v/v.png'] + p::before, div.egg[style*='img/pkmn/a/v/v.png']::before, #dcegglist > li > img[src*='img/pkmn/a/v/v.png'] + div::after {content: "Audino";}
+#egglist > div > img[src*='img/pkmn/6/3/e.png'] + p::before, div.egg[style*='img/pkmn/6/3/e.png']::before, #dcegglist > li > img[src*='img/pkmn/6/3/e.png'] + div::after {content: "Timburr";}
+#egglist > div > img[src*='img/pkmn/m/h/g.png'] + p::before, div.egg[style*='img/pkmn/m/h/g.png']::before, #dcegglist > li > img[src*='img/pkmn/m/h/g.png'] + div::after {content: "Tympole";}
+#egglist > div > img[src*='img/pkmn/j/o/4.png'] + p::before, div.egg[style*='img/pkmn/j/o/4.png']::before, #dcegglist > li > img[src*='img/pkmn/j/o/4.png'] + div::after {content: "Throh";}
+#egglist > div > img[src*='img/pkmn/h/w/i.png'] + p::before, div.egg[style*='img/pkmn/h/w/i.png']::before, #dcegglist > li > img[src*='img/pkmn/h/w/i.png'] + div::after {content: "Sawk";}
+#egglist > div > img[src*='img/pkmn/l/f/b.png'] + p::before, div.egg[style*='img/pkmn/l/f/b.png']::before, #dcegglist > li > img[src*='img/pkmn/l/f/b.png'] + div::after {content: "Sewaddle";}
+#egglist > div > img[src*='img/pkmn/1/q/3.png'] + p::before, div.egg[style*='img/pkmn/1/q/3.png']::before, #dcegglist > li > img[src*='img/pkmn/1/q/3.png'] + div::after {content: "Venipede";}
+#egglist > div > img[src*='img/pkmn/h/y/x.png'] + p::before, div.egg[style*='img/pkmn/h/y/x.png']::before, #dcegglist > li > img[src*='img/pkmn/h/y/x.png'] + div::after {content: "Cottonee";}
+#egglist > div > img[src*='img/pkmn/i/4/g.png'] + p::before, div.egg[style*='img/pkmn/i/4/g.png']::before, #dcegglist > li > img[src*='img/pkmn/i/4/g.png'] + div::after {content: "Petilil";}
+#egglist > div > img[src*='img/pkmn/l/m/m.png'] + p::before, div.egg[style*='img/pkmn/l/m/m.png']::before, #dcegglist > li > img[src*='img/pkmn/l/m/m.png'] + div::after {content: "Basculin";}
+#egglist > div > img[src*='img/pkmn/d/3/3/w.png'] + p::before, div.egg[style*='img/pkmn/d/3/3/w.png']::before, #dcegglist > li > img[src*='img/pkmn/d/3/3/w.png'] + div::after {content: "White Stripe Basculin";}
+#egglist > div > img[src*='img/pkmn/h/d/l.png'] + p::before, div.egg[style*='img/pkmn/h/d/l.png']::before, #dcegglist > li > img[src*='img/pkmn/h/d/l.png'] + div::after {content: "Sandile";}
+#egglist > div > img[src*='img/pkmn/1/0.png'] + p::before, div.egg[style*='img/pkmn/1/0.png']::before, #dcegglist > li > img[src*='img/pkmn/1/0.png'] + div::after {content: "Darumaka";}
+#egglist > div > img[src*='img/pkmn/j/z/0/3.png'] + p::before, div.egg[style*='img/pkmn/j/z/0/3.png']::before, #dcegglist > li > img[src*='img/pkmn/j/z/0/3.png'] + div::after {content: "Galarian Darumaka";}
+#egglist > div > img[src*='img/pkmn/5/r/3.png'] + p::before, div.egg[style*='img/pkmn/5/r/3.png']::before, #dcegglist > li > img[src*='img/pkmn/5/r/3.png'] + div::after {content: "Maractus";}
+#egglist > div > img[src*='img/pkmn/5/c/f.png'] + p::before, div.egg[style*='img/pkmn/5/c/f.png']::before, #dcegglist > li > img[src*='img/pkmn/5/c/f.png'] + div::after {content: "Dwebble";}
+#egglist > div > img[src*='img/pkmn/7/6/1.png'] + p::before, div.egg[style*='img/pkmn/7/6/1.png']::before, #dcegglist > li > img[src*='img/pkmn/7/6/1.png'] + div::after {content: "Scraggy";}
+#egglist > div > img[src*='img/pkmn/b/d/u.png'] + p::before, div.egg[style*='img/pkmn/b/d/u.png']::before, #dcegglist > li > img[src*='img/pkmn/b/d/u.png'] + div::after {content: "Sigilyph";}
+#egglist > div > img[src*='img/pkmn/n/m/q.png'] + p::before, div.egg[style*='img/pkmn/n/m/q.png']::before, #dcegglist > li > img[src*='img/pkmn/n/m/q.png'] + div::after {content: "Yamask";}
+#egglist > div > img[src*='img/pkmn/l/u/0/t.png'] + p::before, div.egg[style*='img/pkmn/l/u/0/t.png']::before, #dcegglist > li > img[src*='img/pkmn/l/u/0/t.png'] + div::after {content: "Galarian Yamask";}
+#egglist > div > img[src*='img/pkmn/f/j/2.png'] + p::before, div.egg[style*='img/pkmn/f/j/2.png']::before, #dcegglist > li > img[src*='img/pkmn/f/j/2.png'] + div::after {content: "Tirtouga";}
+#egglist > div > img[src*='img/pkmn/a/5/8.png'] + p::before, div.egg[style*='img/pkmn/a/5/8.png']::before, #dcegglist > li > img[src*='img/pkmn/a/5/8.png'] + div::after {content: "Archen";}
+#egglist > div > img[src*='img/pkmn/9/u/9.png'] + p::before, div.egg[style*='img/pkmn/9/u/9.png']::before, #dcegglist > li > img[src*='img/pkmn/9/u/9.png'] + div::after {content: "Trubbish";}
+#egglist > div > img[src*='img/pkmn/a/h/s.png'] + p::before, div.egg[style*='img/pkmn/a/h/s.png']::before, #dcegglist > li > img[src*='img/pkmn/a/h/s.png'] + div::after {content: "Zorua";}
+#egglist > div > img[src*='img/pkmn/z/m/8/b.png'] + p::before, div.egg[style*='img/pkmn/z/m/8/b.png']::before, #dcegglist > li > img[src*='img/pkmn/z/m/8/b.png'] + div::after {content: "Hisuian Zorua";}
+#egglist > div > img[src*='img/pkmn/j/b/e.png'] + p::before, div.egg[style*='img/pkmn/j/b/e.png']::before, #dcegglist > li > img[src*='img/pkmn/j/b/e.png'] + div::after {content: "Minccino";}
+#egglist > div > img[src*='img/pkmn/i/v/v.png'] + p::before, div.egg[style*='img/pkmn/i/v/v.png']::before, #dcegglist > li > img[src*='img/pkmn/i/v/v.png'] + div::after {content: "Gothita";}
+#egglist > div > img[src*='img/pkmn/6/t/t.png'] + p::before, div.egg[style*='img/pkmn/6/t/t.png']::before, #dcegglist > li > img[src*='img/pkmn/6/t/t.png'] + div::after {content: "Solosis";}
+#egglist > div > img[src*='img/pkmn/2/f/z.png'] + p::before, div.egg[style*='img/pkmn/2/f/z.png']::before, #dcegglist > li > img[src*='img/pkmn/2/f/z.png'] + div::after {content: "Ducklett";}
+#egglist > div > img[src*='img/pkmn/c/w/4.png'] + p::before, div.egg[style*='img/pkmn/c/w/4.png']::before, #dcegglist > li > img[src*='img/pkmn/c/w/4.png'] + div::after {content: "Vanillite";}
+#egglist > div > img[src*='img/pkmn/n/u/5.png'] + p::before, div.egg[style*='img/pkmn/n/u/5.png']::before, #dcegglist > li > img[src*='img/pkmn/n/u/5.png'] + div::after {content: "Spring Deerling";}
+#egglist > div > img[src*='img/pkmn/6/7/q.png'] + p::before, div.egg[style*='img/pkmn/6/7/q.png']::before, #dcegglist > li > img[src*='img/pkmn/6/7/q.png'] + div::after {content: "Summer Deerling";}
+#egglist > div > img[src*='img/pkmn/5/k/q.png'] + p::before, div.egg[style*='img/pkmn/5/k/q.png']::before, #dcegglist > li > img[src*='img/pkmn/5/k/q.png'] + div::after {content: "Autumn Deerling";}
+#egglist > div > img[src*='img/pkmn/h/r/h.png'] + p::before, div.egg[style*='img/pkmn/h/r/h.png']::before, #dcegglist > li > img[src*='img/pkmn/h/r/h.png'] + div::after {content: "Winter Deerling";}
+#egglist > div > img[src*='img/pkmn/j/w/r.png'] + p::before, div.egg[style*='img/pkmn/j/w/r.png']::before, #dcegglist > li > img[src*='img/pkmn/j/w/r.png'] + div::after {content: "Emolga";}
+#egglist > div > img[src*='img/pkmn/4/b/8.png'] + p::before, div.egg[style*='img/pkmn/4/b/8.png']::before, #dcegglist > li > img[src*='img/pkmn/4/b/8.png'] + div::after {content: "Karrablast";}
+#egglist > div > img[src*='img/pkmn/e/u/j.png'] + p::before, div.egg[style*='img/pkmn/e/u/j.png']::before, #dcegglist > li > img[src*='img/pkmn/e/u/j.png'] + div::after {content: "Foongus";}
+#egglist > div > img[src*='img/pkmn/h/9/i.png'] + p::before, div.egg[style*='img/pkmn/h/9/i.png']::before, #dcegglist > li > img[src*='img/pkmn/h/9/i.png'] + div::after {content: "Frillish";}
+#egglist > div > img[src*='img/pkmn/i/i/t.png'] + p::before, div.egg[style*='img/pkmn/i/i/t.png']::before, #dcegglist > li > img[src*='img/pkmn/i/i/t.png'] + div::after {content: "Alomomola";}
+#egglist > div > img[src*='img/pkmn/n/p/4.png'] + p::before, div.egg[style*='img/pkmn/n/p/4.png']::before, #dcegglist > li > img[src*='img/pkmn/n/p/4.png'] + div::after {content: "Joltik";}
+#egglist > div > img[src*='img/pkmn/g/t/s.png'] + p::before, div.egg[style*='img/pkmn/g/t/s.png']::before, #dcegglist > li > img[src*='img/pkmn/g/t/s.png'] + div::after {content: "Ferroseed";}
+#egglist > div > img[src*='img/pkmn/i/m/9.png'] + p::before, div.egg[style*='img/pkmn/i/m/9.png']::before, #dcegglist > li > img[src*='img/pkmn/i/m/9.png'] + div::after {content: "Klink";}
+#egglist > div > img[src*='img/pkmn/a/e/e.png'] + p::before, div.egg[style*='img/pkmn/a/e/e.png']::before, #dcegglist > li > img[src*='img/pkmn/a/e/e.png'] + div::after {content: "Tynamo";}
+#egglist > div > img[src*='img/pkmn/6/t/r.png'] + p::before, div.egg[style*='img/pkmn/6/t/r.png']::before, #dcegglist > li > img[src*='img/pkmn/6/t/r.png'] + div::after {content: "Elgyem";}
+#egglist > div > img[src*='img/pkmn/n/3/k.png'] + p::before, div.egg[style*='img/pkmn/n/3/k.png']::before, #dcegglist > li > img[src*='img/pkmn/n/3/k.png'] + div::after {content: "Litwick";}
+#egglist > div > img[src*='img/pkmn/5/m/0.png'] + p::before, div.egg[style*='img/pkmn/5/m/0.png']::before, #dcegglist > li > img[src*='img/pkmn/5/m/0.png'] + div::after {content: "Axew";}
+#egglist > div > img[src*='img/pkmn/9/k/0.png'] + p::before, div.egg[style*='img/pkmn/9/k/0.png']::before, #dcegglist > li > img[src*='img/pkmn/9/k/0.png'] + div::after {content: "Cubchoo";}
+#egglist > div > img[src*='img/pkmn/j/h/y.png'] + p::before, div.egg[style*='img/pkmn/j/h/y.png']::before, #dcegglist > li > img[src*='img/pkmn/j/h/y.png'] + div::after {content: "Cryogonal";}
+#egglist > div > img[src*='img/pkmn/5/8/6.png'] + p::before, div.egg[style*='img/pkmn/5/8/6.png']::before, #dcegglist > li > img[src*='img/pkmn/5/8/6.png'] + div::after {content: "Shelmet";}
+#egglist > div > img[src*='img/pkmn/n/w/g.png'] + p::before, div.egg[style*='img/pkmn/n/w/g.png']::before, #dcegglist > li > img[src*='img/pkmn/n/w/g.png'] + div::after {content: "Stunfisk";}
+#egglist > div > img[src*='img/pkmn/n/m/v/m.png'] + p::before, div.egg[style*='img/pkmn/n/m/v/m.png']::before, #dcegglist > li > img[src*='img/pkmn/n/m/v/m.png'] + div::after {content: "Galarian Stunfisk";}
+#egglist > div > img[src*='img/pkmn/a/k/y.png'] + p::before, div.egg[style*='img/pkmn/a/k/y.png']::before, #dcegglist > li > img[src*='img/pkmn/a/k/y.png'] + div::after {content: "Mienfoo";}
+#egglist > div > img[src*='img/pkmn/o/6/l.png'] + p::before, div.egg[style*='img/pkmn/o/6/l.png']::before, #dcegglist > li > img[src*='img/pkmn/o/6/l.png'] + div::after {content: "Druddigon";}
+#egglist > div > img[src*='img/pkmn/m/e/4.png'] + p::before, div.egg[style*='img/pkmn/m/e/4.png']::before, #dcegglist > li > img[src*='img/pkmn/m/e/4.png'] + div::after {content: "Golett";}
+#egglist > div > img[src*='img/pkmn/i/a/w.png'] + p::before, div.egg[style*='img/pkmn/i/a/w.png']::before, #dcegglist > li > img[src*='img/pkmn/i/a/w.png'] + div::after {content: "Pawniard";}
+#egglist > div > img[src*='img/pkmn/1/f/b.png'] + p::before, div.egg[style*='img/pkmn/1/f/b.png']::before, #dcegglist > li > img[src*='img/pkmn/1/f/b.png'] + div::after {content: "Bouffalant";}
+#egglist > div > img[src*='img/pkmn/l/m/v.png'] + p::before, div.egg[style*='img/pkmn/l/m/v.png']::before, #dcegglist > li > img[src*='img/pkmn/l/m/v.png'] + div::after {content: "Rufflet";}
+#egglist > div > img[src*='img/pkmn/e/d/q.png'] + p::before, div.egg[style*='img/pkmn/e/d/q.png']::before, #dcegglist > li > img[src*='img/pkmn/e/d/q.png'] + div::after {content: "Vullaby";}
+#egglist > div > img[src*='img/pkmn/2/c/0.png'] + p::before, div.egg[style*='img/pkmn/2/c/0.png']::before, #dcegglist > li > img[src*='img/pkmn/2/c/0.png'] + div::after {content: "Heatmor";}
+#egglist > div > img[src*='img/pkmn/v/o.png'] + p::before, div.egg[style*='img/pkmn/v/o.png']::before, #dcegglist > li > img[src*='img/pkmn/v/o.png'] + div::after {content: "Durant";}
+#egglist > div > img[src*='img/pkmn/j/2/a.png'] + p::before, div.egg[style*='img/pkmn/j/2/a.png']::before, #dcegglist > li > img[src*='img/pkmn/j/2/a.png'] + div::after {content: "Deino";}
+#egglist > div > img[src*='img/pkmn/f/4/h.png'] + p::before, div.egg[style*='img/pkmn/f/4/h.png']::before, #dcegglist > li > img[src*='img/pkmn/f/4/h.png'] + div::after {content: "Larvesta";}
+#egglist > div > img[src*='img/pkmn/1/m/b.png'] + p::before, div.egg[style*='img/pkmn/1/m/b.png']::before, #dcegglist > li > img[src*='img/pkmn/1/m/b.png'] + div::after {content: "Cobalion";}
+#egglist > div > img[src*='img/pkmn/i/s/f.png'] + p::before, div.egg[style*='img/pkmn/i/s/f.png']::before, #dcegglist > li > img[src*='img/pkmn/i/s/f.png'] + div::after {content: "Terrakion";}
+#egglist > div > img[src*='img/pkmn/2/7/e.png'] + p::before, div.egg[style*='img/pkmn/2/7/e.png']::before, #dcegglist > li > img[src*='img/pkmn/2/7/e.png'] + div::after {content: "Virizion";}
+#egglist > div > img[src*='img/pkmn/f/a/4.png'] + p::before, div.egg[style*='img/pkmn/f/a/4.png']::before, #dcegglist > li > img[src*='img/pkmn/f/a/4.png'] + div::after {content: "Tornadus";}
+#egglist > div > img[src*='img/pkmn/4/e/h.png'] + p::before, div.egg[style*='img/pkmn/4/e/h.png']::before, #dcegglist > li > img[src*='img/pkmn/4/e/h.png'] + div::after {content: "Thundurus";}
+#egglist > div > img[src*='img/pkmn/2/o/w.png'] + p::before, div.egg[style*='img/pkmn/2/o/w.png']::before, #dcegglist > li > img[src*='img/pkmn/2/o/w.png'] + div::after {content: "Reshiram";}
+#egglist > div > img[src*='img/pkmn/l/w/u.png'] + p::before, div.egg[style*='img/pkmn/l/w/u.png']::before, #dcegglist > li > img[src*='img/pkmn/l/w/u.png'] + div::after {content: "Zekrom";}
+#egglist > div > img[src*='img/pkmn/o/o/7.png'] + p::before, div.egg[style*='img/pkmn/o/o/7.png']::before, #dcegglist > li > img[src*='img/pkmn/o/o/7.png'] + div::after {content: "Landorus";}
+#egglist > div > img[src*='img/pkmn/j/j/u.png'] + p::before, div.egg[style*='img/pkmn/j/j/u.png']::before, #dcegglist > li > img[src*='img/pkmn/j/j/u.png'] + div::after {content: "Kyurem";}
+#egglist > div > img[src*='img/pkmn/f/6/2.png'] + p::before, div.egg[style*='img/pkmn/f/6/2.png']::before, #dcegglist > li > img[src*='img/pkmn/f/6/2.png'] + div::after {content: "Keldeo";}
+#egglist > div > img[src*='img/pkmn/4/q/7.png'] + p::before, div.egg[style*='img/pkmn/4/q/7.png']::before, #dcegglist > li > img[src*='img/pkmn/4/q/7.png'] + div::after {content: "Meloetta";}
+#egglist > div > img[src*='img/pkmn/e/c/y.png'] + p::before, div.egg[style*='img/pkmn/e/c/y.png']::before, #dcegglist > li > img[src*='img/pkmn/e/c/y.png'] + div::after {content: "Genesect";}
+#egglist > div > img[src*='img/pkmn/f/n/h.png'] + p::before, div.egg[style*='img/pkmn/f/n/h.png']::before, #dcegglist > li > img[src*='img/pkmn/f/n/h.png'] + div::after {content: "Chespin";}
+#egglist > div > img[src*='img/pkmn/u/v/g.png'] + p::before, div.egg[style*='img/pkmn/u/v/g.png']::before, #dcegglist > li > img[src*='img/pkmn/u/v/g.png'] + div::after {content: "Fennekin";}
+#egglist > div > img[src*='img/pkmn/j/t/g.png'] + p::before, div.egg[style*='img/pkmn/j/t/g.png']::before, #dcegglist > li > img[src*='img/pkmn/j/t/g.png'] + div::after {content: "Froakie";}
+#egglist > div > img[src*='img/pkmn/2/q/q.png'] + p::before, div.egg[style*='img/pkmn/2/q/q.png']::before, #dcegglist > li > img[src*='img/pkmn/2/q/q.png'] + div::after {content: "Bunnelby";}
+#egglist > div > img[src*='img/pkmn/f/5/c.png'] + p::before, div.egg[style*='img/pkmn/f/5/c.png']::before, #dcegglist > li > img[src*='img/pkmn/f/5/c.png'] + div::after {content: "Fletchling";}
+#egglist > div > img[src*='img/pkmn/u/6/z.png'] + p::before, div.egg[style*='img/pkmn/u/6/z.png']::before, #dcegglist > li > img[src*='img/pkmn/u/6/z.png'] + div::after {content: "Scatterbug";}
+#egglist > div > img[src*='img/pkmn/s/j/m.png'] + p::before, div.egg[style*='img/pkmn/s/j/m.png']::before, #dcegglist > li > img[src*='img/pkmn/s/j/m.png'] + div::after {content: "Litleo";}
+#egglist > div > img[src*='img/pkmn/e/2/4.png'] + p::before, div.egg[style*='img/pkmn/e/2/4.png']::before, #dcegglist > li > img[src*='img/pkmn/e/2/4.png'] + div::after {content: "Flabébé";}
+#egglist > div > img[src*='img/pkmn/7/f.png'] + p::before, div.egg[style*='img/pkmn/7/f.png']::before, #dcegglist > li > img[src*='img/pkmn/7/f.png'] + div::after {content: "Skiddo";}
+#egglist > div > img[src*='img/pkmn/a/5/o.png'] + p::before, div.egg[style*='img/pkmn/a/5/o.png']::before, #dcegglist > li > img[src*='img/pkmn/a/5/o.png'] + div::after {content: "Pancham";}
+#egglist > div > img[src*='img/pkmn/6/p/n.png'] + p::before, div.egg[style*='img/pkmn/6/p/n.png']::before, #dcegglist > li > img[src*='img/pkmn/6/p/n.png'] + div::after {content: "Furfrou";}
+#egglist > div > img[src*='img/pkmn/k/3/1.png'] + p::before, div.egg[style*='img/pkmn/k/3/1.png']::before, #dcegglist > li > img[src*='img/pkmn/k/3/1.png'] + div::after {content: "Espurr";}
+#egglist > div > img[src*='img/pkmn/n/x/e.png'] + p::before, div.egg[style*='img/pkmn/n/x/e.png']::before, #dcegglist > li > img[src*='img/pkmn/n/x/e.png'] + div::after {content: "Honedge";}
+#egglist > div > img[src*='img/pkmn/6/5/9.png'] + p::before, div.egg[style*='img/pkmn/6/5/9.png']::before, #dcegglist > li > img[src*='img/pkmn/6/5/9.png'] + div::after {content: "Spritzee";}
+#egglist > div > img[src*='img/pkmn/j/u/m.png'] + p::before, div.egg[style*='img/pkmn/j/u/m.png']::before, #dcegglist > li > img[src*='img/pkmn/j/u/m.png'] + div::after {content: "Swirlix";}
+#egglist > div > img[src*='img/pkmn/r/h/6.png'] + p::before, div.egg[style*='img/pkmn/r/h/6.png']::before, #dcegglist > li > img[src*='img/pkmn/r/h/6.png'] + div::after {content: "Inkay";}
+#egglist > div > img[src*='img/pkmn/g/4/b.png'] + p::before, div.egg[style*='img/pkmn/g/4/b.png']::before, #dcegglist > li > img[src*='img/pkmn/g/4/b.png'] + div::after {content: "Binacle";}
+#egglist > div > img[src*='img/pkmn/p/5/7.png'] + p::before, div.egg[style*='img/pkmn/p/5/7.png']::before, #dcegglist > li > img[src*='img/pkmn/p/5/7.png'] + div::after {content: "Skrelp";}
+#egglist > div > img[src*='img/pkmn/v/0/1.png'] + p::before, div.egg[style*='img/pkmn/v/0/1.png']::before, #dcegglist > li > img[src*='img/pkmn/v/0/1.png'] + div::after {content: "Clauncher";}
+#egglist > div > img[src*='img/pkmn/2/h/9.png'] + p::before, div.egg[style*='img/pkmn/2/h/9.png']::before, #dcegglist > li > img[src*='img/pkmn/2/h/9.png'] + div::after {content: "Helioptile";}
+#egglist > div > img[src*='img/pkmn/k/l/k.png'] + p::before, div.egg[style*='img/pkmn/k/l/k.png']::before, #dcegglist > li > img[src*='img/pkmn/k/l/k.png'] + div::after {content: "Tyrunt";}
+#egglist > div > img[src*='img/pkmn/2/o/m.png'] + p::before, div.egg[style*='img/pkmn/2/o/m.png']::before, #dcegglist > li > img[src*='img/pkmn/2/o/m.png'] + div::after {content: "Amaura";}
+#egglist > div > img[src*='img/pkmn/d/k/d.png'] + p::before, div.egg[style*='img/pkmn/d/k/d.png']::before, #dcegglist > li > img[src*='img/pkmn/d/k/d.png'] + div::after {content: "Hawlucha";}
+#egglist > div > img[src*='img/pkmn/v/3/3.png'] + p::before, div.egg[style*='img/pkmn/v/3/3.png']::before, #dcegglist > li > img[src*='img/pkmn/v/3/3.png'] + div::after {content: "Dedenne";}
+#egglist > div > img[src*='img/pkmn/v/5/e.png'] + p::before, div.egg[style*='img/pkmn/v/5/e.png']::before, #dcegglist > li > img[src*='img/pkmn/v/5/e.png'] + div::after {content: "Carbink";}
+#egglist > div > img[src*='img/pkmn/m/q/f.png'] + p::before, div.egg[style*='img/pkmn/m/q/f.png']::before, #dcegglist > li > img[src*='img/pkmn/m/q/f.png'] + div::after {content: "Goomy";}
+#egglist > div > img[src*='img/pkmn/m/q/c.png'] + p::before, div.egg[style*='img/pkmn/m/q/c.png']::before, #dcegglist > li > img[src*='img/pkmn/m/q/c.png'] + div::after {content: "Klefki";}
+#egglist > div > img[src*='img/pkmn/8/f/n.png'] + p::before, div.egg[style*='img/pkmn/8/f/n.png']::before, #dcegglist > li > img[src*='img/pkmn/8/f/n.png'] + div::after {content: "Phantump";}
+#egglist > div > img[src*='img/pkmn/y/x.png'] + p::before, div.egg[style*='img/pkmn/y/x.png']::before, #dcegglist > li > img[src*='img/pkmn/y/x.png'] + div::after {content: "Small Pumpkaboo";}
+#egglist > div > img[src*='img/pkmn/t/z/8.png'] + p::before, div.egg[style*='img/pkmn/t/z/8.png']::before, #dcegglist > li > img[src*='img/pkmn/t/z/8.png'] + div::after {content: "Super Pumpkaboo";}
+#egglist > div > img[src*='img/pkmn/9/y/7.png'] + p::before, div.egg[style*='img/pkmn/9/y/7.png']::before, #dcegglist > li > img[src*='img/pkmn/9/y/7.png'] + div::after {content: "Bergmite";}
+#egglist > div > img[src*='img/pkmn/h/w/j.png'] + p::before, div.egg[style*='img/pkmn/h/w/j.png']::before, #dcegglist > li > img[src*='img/pkmn/h/w/j.png'] + div::after {content: "Noibat";}
+#egglist > div > img[src*='img/pkmn/6/6/t/v.png'] + p::before, div.egg[style*='img/pkmn/6/6/t/v.png']::before, #dcegglist > li > img[src*='img/pkmn/6/6/t/v.png'] + div::after {content: "Xerneas";}
+#egglist > div > img[src*='img/pkmn/3/a/l/s.png'] + p::before, div.egg[style*='img/pkmn/3/a/l/s.png']::before, #dcegglist > li > img[src*='img/pkmn/3/a/l/s.png'] + div::after {content: "Yveltal";}
+#egglist > div > img[src*='img/pkmn/1/8/n/f.png'] + p::before, div.egg[style*='img/pkmn/1/8/n/f.png']::before, #dcegglist > li > img[src*='img/pkmn/1/8/n/f.png'] + div::after {content: "Zygarde";}
+#egglist > div > img[src*='img/pkmn/y/n/e/8.png'] + p::before, div.egg[style*='img/pkmn/y/n/e/8.png']::before, #dcegglist > li > img[src*='img/pkmn/y/n/e/8.png'] + div::after {content: "Diancie";}
+#egglist > div > img[src*='img/pkmn/3/j/h/j.png'] + p::before, div.egg[style*='img/pkmn/3/j/h/j.png']::before, #dcegglist > li > img[src*='img/pkmn/3/j/h/j.png'] + div::after {content: "Hoopa";}
+#egglist > div > img[src*='img/pkmn/c/0/7/g.png'] + p::before, div.egg[style*='img/pkmn/c/0/7/g.png']::before, #dcegglist > li > img[src*='img/pkmn/c/0/7/g.png'] + div::after {content: "Volcanion";}
+#egglist > div > img[src*='img/pkmn/k/8/t/9.png'] + p::before, div.egg[style*='img/pkmn/k/8/t/9.png']::before, #dcegglist > li > img[src*='img/pkmn/k/8/t/9.png'] + div::after {content: "Rowlet";}
+#egglist > div > img[src*='img/pkmn/4/z/d/i.png'] + p::before, div.egg[style*='img/pkmn/4/z/d/i.png']::before, #dcegglist > li > img[src*='img/pkmn/4/z/d/i.png'] + div::after {content: "Litten";}
+#egglist > div > img[src*='img/pkmn/b/o/e/9.png'] + p::before, div.egg[style*='img/pkmn/b/o/e/9.png']::before, #dcegglist > li > img[src*='img/pkmn/b/o/e/9.png'] + div::after {content: "Popplio";}
+#egglist > div > img[src*='img/pkmn/t/3/n/j.png'] + p::before, div.egg[style*='img/pkmn/t/3/n/j.png']::before, #dcegglist > li > img[src*='img/pkmn/t/3/n/j.png'] + div::after {content: "Pikipek";}
+#egglist > div > img[src*='img/pkmn/k/x/0/r.png'] + p::before, div.egg[style*='img/pkmn/k/x/0/r.png']::before, #dcegglist > li > img[src*='img/pkmn/k/x/0/r.png'] + div::after {content: "Yungoos";}
+#egglist > div > img[src*='img/pkmn/3/b/v/m.png'] + p::before, div.egg[style*='img/pkmn/3/b/v/m.png']::before, #dcegglist > li > img[src*='img/pkmn/3/b/v/m.png'] + div::after {content: "Grubbin";}
+#egglist > div > img[src*='img/pkmn/c/w/0/j.png'] + p::before, div.egg[style*='img/pkmn/c/w/0/j.png']::before, #dcegglist > li > img[src*='img/pkmn/c/w/0/j.png'] + div::after {content: "Crabrawler";}
+#egglist > div > img[src*='img/pkmn/6/1/4/3.png'] + p::before, div.egg[style*='img/pkmn/6/1/4/3.png']::before, #dcegglist > li > img[src*='img/pkmn/6/1/4/3.png'] + div::after {content: "Oricorio";}
+#egglist > div > img[src*='img/pkmn/i/h/d/v.png'] + p::before, div.egg[style*='img/pkmn/i/h/d/v.png']::before, #dcegglist > li > img[src*='img/pkmn/i/h/d/v.png'] + div::after {content: "Cutiefly";}
+#egglist > div > img[src*='img/pkmn/2/o/2.png'] + p::before, div.egg[style*='img/pkmn/2/o/2.png']::before, #dcegglist > li > img[src*='img/pkmn/2/o/2.png'] + div::after {content: "Rockruff";}
+#egglist > div > img[src*='img/pkmn/e/7/2/t.png'] + p::before, div.egg[style*='img/pkmn/e/7/2/t.png']::before, #dcegglist > li > img[src*='img/pkmn/e/7/2/t.png'] + div::after {content: "Wishiwashi";}
+#egglist > div > img[src*='img/pkmn/w/i/r/f.png'] + p::before, div.egg[style*='img/pkmn/w/i/r/f.png']::before, #dcegglist > li > img[src*='img/pkmn/w/i/r/f.png'] + div::after {content: "Mareanie";}
+#egglist > div > img[src*='img/pkmn/l/t/7/0.png'] + p::before, div.egg[style*='img/pkmn/l/t/7/0.png']::before, #dcegglist > li > img[src*='img/pkmn/l/t/7/0.png'] + div::after {content: "Mudbray";}
+#egglist > div > img[src*='img/pkmn/3/g/w/n.png'] + p::before, div.egg[style*='img/pkmn/3/g/w/n.png']::before, #dcegglist > li > img[src*='img/pkmn/3/g/w/n.png'] + div::after {content: "Dewpider";}
+#egglist > div > img[src*='img/pkmn/g/9/w/3.png'] + p::before, div.egg[style*='img/pkmn/g/9/w/3.png']::before, #dcegglist > li > img[src*='img/pkmn/g/9/w/3.png'] + div::after {content: "Fomantis";}
+#egglist > div > img[src*='img/pkmn/5/5/7/6.png'] + p::before, div.egg[style*='img/pkmn/5/5/7/6.png']::before, #dcegglist > li > img[src*='img/pkmn/5/5/7/6.png'] + div::after {content: "Morelull";}
+#egglist > div > img[src*='img/pkmn/y/t/n/f.png'] + p::before, div.egg[style*='img/pkmn/y/t/n/f.png']::before, #dcegglist > li > img[src*='img/pkmn/y/t/n/f.png'] + div::after {content: "Salandit";}
+#egglist > div > img[src*='img/pkmn/m/z/n.png'] + p::before, div.egg[style*='img/pkmn/m/z/n.png']::before, #dcegglist > li > img[src*='img/pkmn/m/z/n.png'] + div::after {content: "Stufful";}
+#egglist > div > img[src*='img/pkmn/q/p/t/n.png'] + p::before, div.egg[style*='img/pkmn/q/p/t/n.png']::before, #dcegglist > li > img[src*='img/pkmn/q/p/t/n.png'] + div::after {content: "Bounsweet";}
+#egglist > div > img[src*='img/pkmn/3/p/o/k.png'] + p::before, div.egg[style*='img/pkmn/3/p/o/k.png']::before, #dcegglist > li > img[src*='img/pkmn/3/p/o/k.png'] + div::after {content: "Comfey";}
+#egglist > div > img[src*='img/pkmn/o/a/r/f.png'] + p::before, div.egg[style*='img/pkmn/o/a/r/f.png']::before, #dcegglist > li > img[src*='img/pkmn/o/a/r/f.png'] + div::after {content: "Oranguru";}
+#egglist > div > img[src*='img/pkmn/5/r/3/2.png'] + p::before, div.egg[style*='img/pkmn/5/r/3/2.png']::before, #dcegglist > li > img[src*='img/pkmn/5/r/3/2.png'] + div::after {content: "Passimian";}
+#egglist > div > img[src*='img/pkmn/v/5/u/1.png'] + p::before, div.egg[style*='img/pkmn/v/5/u/1.png']::before, #dcegglist > li > img[src*='img/pkmn/v/5/u/1.png'] + div::after {content: "Wimpod";}
+#egglist > div > img[src*='img/pkmn/l/1/p/i.png'] + p::before, div.egg[style*='img/pkmn/l/1/p/i.png']::before, #dcegglist > li > img[src*='img/pkmn/l/1/p/i.png'] + div::after {content: "Sandygast";}
+#egglist > div > img[src*='img/pkmn/k/5/c/t.png'] + p::before, div.egg[style*='img/pkmn/k/5/c/t.png']::before, #dcegglist > li > img[src*='img/pkmn/k/5/c/t.png'] + div::after {content: "Pyukumuku";}
+#egglist > div > img[src*='img/pkmn/k/3/k/2.png'] + p::before, div.egg[style*='img/pkmn/k/3/k/2.png']::before, #dcegglist > li > img[src*='img/pkmn/k/3/k/2.png'] + div::after {content: "Type Null";}
+#egglist > div > img[src*='img/pkmn/a/d/q/3.png'] + p::before, div.egg[style*='img/pkmn/a/d/q/3.png']::before, #dcegglist > li > img[src*='img/pkmn/a/d/q/3.png'] + div::after {content: "Minior";}
+#egglist > div > img[src*='img/pkmn/s/v/v/x.png'] + p::before, div.egg[style*='img/pkmn/s/v/v/x.png']::before, #dcegglist > li > img[src*='img/pkmn/s/v/v/x.png'] + div::after {content: "Komala";}
+#egglist > div > img[src*='img/pkmn/2/t/n.png'] + p::before, div.egg[style*='img/pkmn/2/t/n.png']::before, #dcegglist > li > img[src*='img/pkmn/2/t/n.png'] + div::after {content: "Turtonator";}
+#egglist > div > img[src*='img/pkmn/t/c/n/o.png'] + p::before, div.egg[style*='img/pkmn/t/c/n/o.png']::before, #dcegglist > li > img[src*='img/pkmn/t/c/n/o.png'] + div::after {content: "Togedemaru";}
+#egglist > div > img[src*='img/pkmn/s/j/7/m.png'] + p::before, div.egg[style*='img/pkmn/s/j/7/m.png']::before, #dcegglist > li > img[src*='img/pkmn/s/j/7/m.png'] + div::after {content: "Mimikyu";}
+#egglist > div > img[src*='img/pkmn/4/x/r/y.png'] + p::before, div.egg[style*='img/pkmn/4/x/r/y.png']::before, #dcegglist > li > img[src*='img/pkmn/4/x/r/y.png'] + div::after {content: "Bruxish";}
+#egglist > div > img[src*='img/pkmn/f/q/s/j.png'] + p::before, div.egg[style*='img/pkmn/f/q/s/j.png']::before, #dcegglist > li > img[src*='img/pkmn/f/q/s/j.png'] + div::after {content: "Drampa";}
+#egglist > div > img[src*='img/pkmn/5/g/a.png'] + p::before, div.egg[style*='img/pkmn/5/g/a.png']::before, #dcegglist > li > img[src*='img/pkmn/5/g/a.png'] + div::after {content: "Dhelmise";}
+#egglist > div > img[src*='img/pkmn/o/w/f/s.png'] + p::before, div.egg[style*='img/pkmn/o/w/f/s.png']::before, #dcegglist > li > img[src*='img/pkmn/o/w/f/s.png'] + div::after {content: "Jangmo-o";}
+#egglist > div > img[src*='img/pkmn/5/m/s/7.png'] + p::before, div.egg[style*='img/pkmn/5/m/s/7.png']::before, #dcegglist > li > img[src*='img/pkmn/5/m/s/7.png'] + div::after {content: "Tapu Koko";}
+#egglist > div > img[src*='img/pkmn/y/7/h/s.png'] + p::before, div.egg[style*='img/pkmn/y/7/h/s.png']::before, #dcegglist > li > img[src*='img/pkmn/y/7/h/s.png'] + div::after {content: "Tapu Lele";}
+#egglist > div > img[src*='img/pkmn/v/s/i/u.png'] + p::before, div.egg[style*='img/pkmn/v/s/i/u.png']::before, #dcegglist > li > img[src*='img/pkmn/v/s/i/u.png'] + div::after {content: "Tapu Bulu";}
+#egglist > div > img[src*='img/pkmn/g/r/d/9.png'] + p::before, div.egg[style*='img/pkmn/g/r/d/9.png']::before, #dcegglist > li > img[src*='img/pkmn/g/r/d/9.png'] + div::after {content: "Tapu Fini";}
+#egglist > div > img[src*='img/pkmn/j/0/4/4.png'] + p::before, div.egg[style*='img/pkmn/j/0/4/4.png']::before, #dcegglist > li > img[src*='img/pkmn/j/0/4/4.png'] + div::after {content: "Cosmog";}
+#egglist > div > img[src*='img/pkmn/z/c/i/w.png'] + p::before, div.egg[style*='img/pkmn/z/c/i/w.png']::before, #dcegglist > li > img[src*='img/pkmn/z/c/i/w.png'] + div::after {content: "Nihilego";}
+#egglist > div > img[src*='img/pkmn/2/n/1/d.png'] + p::before, div.egg[style*='img/pkmn/2/n/1/d.png']::before, #dcegglist > li > img[src*='img/pkmn/2/n/1/d.png'] + div::after {content: "Buzzwole";}
+#egglist > div > img[src*='img/pkmn/d/e/3/i.png'] + p::before, div.egg[style*='img/pkmn/d/e/3/i.png']::before, #dcegglist > li > img[src*='img/pkmn/d/e/3/i.png'] + div::after {content: "Pheromosa";}
+#egglist > div > img[src*='img/pkmn/3/0/r/9.png'] + p::before, div.egg[style*='img/pkmn/3/0/r/9.png']::before, #dcegglist > li > img[src*='img/pkmn/3/0/r/9.png'] + div::after {content: "Xurkitree";}
+#egglist > div > img[src*='img/pkmn/m/a/v/e.png'] + p::before, div.egg[style*='img/pkmn/m/a/v/e.png']::before, #dcegglist > li > img[src*='img/pkmn/m/a/v/e.png'] + div::after {content: "Celesteela";}
+#egglist > div > img[src*='img/pkmn/e/r/7/r.png'] + p::before, div.egg[style*='img/pkmn/e/r/7/r.png']::before, #dcegglist > li > img[src*='img/pkmn/e/r/7/r.png'] + div::after {content: "Kartana";}
+#egglist > div > img[src*='img/pkmn/p/k/v/c.png'] + p::before, div.egg[style*='img/pkmn/p/k/v/c.png']::before, #dcegglist > li > img[src*='img/pkmn/p/k/v/c.png'] + div::after {content: "Guzzlord";}
+#egglist > div > img[src*='img/pkmn/e/x/w/e.png'] + p::before, div.egg[style*='img/pkmn/e/x/w/e.png']::before, #dcegglist > li > img[src*='img/pkmn/e/x/w/e.png'] + div::after {content: "Poipole";}
+#egglist > div > img[src*='img/pkmn/k/o/h/o.png'] + p::before, div.egg[style*='img/pkmn/k/o/h/o.png']::before, #dcegglist > li > img[src*='img/pkmn/k/o/h/o.png'] + div::after {content: "Stakataka";}
+#egglist > div > img[src*='img/pkmn/n/b/1/m.png'] + p::before, div.egg[style*='img/pkmn/n/b/1/m.png']::before, #dcegglist > li > img[src*='img/pkmn/n/b/1/m.png'] + div::after {content: "Blacephalon";}
+#egglist > div > img[src*='img/pkmn/n/3/v/v.png'] + p::before, div.egg[style*='img/pkmn/n/3/v/v.png']::before, #dcegglist > li > img[src*='img/pkmn/n/3/v/v.png'] + div::after {content: "Necrozma";}
+#egglist > div > img[src*='img/pkmn/3/o/f/g.png'] + p::before, div.egg[style*='img/pkmn/3/o/f/g.png']::before, #dcegglist > li > img[src*='img/pkmn/3/o/f/g.png'] + div::after {content: "Magearna";}
+#egglist > div > img[src*='img/pkmn/9/8/0/i.png'] + p::before, div.egg[style*='img/pkmn/9/8/0/i.png']::before, #dcegglist > li > img[src*='img/pkmn/9/8/0/i.png'] + div::after {content: "Marshadow";}
+#egglist > div > img[src*='img/pkmn/7/c/y/3.png'] + p::before, div.egg[style*='img/pkmn/7/c/y/3.png']::before, #dcegglist > li > img[src*='img/pkmn/7/c/y/3.png'] + div::after {content: "Zeraora";}
+#egglist > div > img[src*='img/pkmn/q/g/3/y.png'] + p::before, div.egg[style*='img/pkmn/q/g/3/y.png']::before, #dcegglist > li > img[src*='img/pkmn/q/g/3/y.png'] + div::after {content: "Meltan";}
+#egglist > div > img[src*='img/pkmn/4/3/d/z.png'] + p::before, div.egg[style*='img/pkmn/4/3/d/z.png']::before, #dcegglist > li > img[src*='img/pkmn/4/3/d/z.png'] + div::after {content: "Grookey";}
+#egglist > div > img[src*='img/pkmn/f/9/1/w.png'] + p::before, div.egg[style*='img/pkmn/f/9/1/w.png']::before, #dcegglist > li > img[src*='img/pkmn/f/9/1/w.png'] + div::after {content: "Scorbunny";}
+#egglist > div > img[src*='img/pkmn/e/1/2/0.png'] + p::before, div.egg[style*='img/pkmn/e/1/2/0.png']::before, #dcegglist > li > img[src*='img/pkmn/e/1/2/0.png'] + div::after {content: "Sobble";}
+#egglist > div > img[src*='img/pkmn/w/y/c/n.png'] + p::before, div.egg[style*='img/pkmn/w/y/c/n.png']::before, #dcegglist > li > img[src*='img/pkmn/w/y/c/n.png'] + div::after {content: "Skwovet";}
+#egglist > div > img[src*='img/pkmn/r/d/j/o.png'] + p::before, div.egg[style*='img/pkmn/r/d/j/o.png']::before, #dcegglist > li > img[src*='img/pkmn/r/d/j/o.png'] + div::after {content: "Rookidee";}
+#egglist > div > img[src*='img/pkmn/s/7/c/o.png'] + p::before, div.egg[style*='img/pkmn/s/7/c/o.png']::before, #dcegglist > li > img[src*='img/pkmn/s/7/c/o.png'] + div::after {content: "Blipbug";}
+#egglist > div > img[src*='img/pkmn/i/q/e/3.png'] + p::before, div.egg[style*='img/pkmn/i/q/e/3.png']::before, #dcegglist > li > img[src*='img/pkmn/i/q/e/3.png'] + div::after {content: "Nickit";}
+#egglist > div > img[src*='img/pkmn/8/8/1/5.png'] + p::before, div.egg[style*='img/pkmn/8/8/1/5.png']::before, #dcegglist > li > img[src*='img/pkmn/8/8/1/5.png'] + div::after {content: "Gossifleur";}
+#egglist > div > img[src*='img/pkmn/n/l/h/4.png'] + p::before, div.egg[style*='img/pkmn/n/l/h/4.png']::before, #dcegglist > li > img[src*='img/pkmn/n/l/h/4.png'] + div::after {content: "Wooloo";}
+#egglist > div > img[src*='img/pkmn/e/y/v/x.png'] + p::before, div.egg[style*='img/pkmn/e/y/v/x.png']::before, #dcegglist > li > img[src*='img/pkmn/e/y/v/x.png'] + div::after {content: "Chewtle";}
+#egglist > div > img[src*='img/pkmn/1/x/i/n.png'] + p::before, div.egg[style*='img/pkmn/1/x/i/n.png']::before, #dcegglist > li > img[src*='img/pkmn/1/x/i/n.png'] + div::after {content: "Yamper";}
+#egglist > div > img[src*='img/pkmn/c/r/x/r.png'] + p::before, div.egg[style*='img/pkmn/c/r/x/r.png']::before, #dcegglist > li > img[src*='img/pkmn/c/r/x/r.png'] + div::after {content: "Rolycoly";}
+#egglist > div > img[src*='img/pkmn/3/x/h/z.png'] + p::before, div.egg[style*='img/pkmn/3/x/h/z.png']::before, #dcegglist > li > img[src*='img/pkmn/3/x/h/z.png'] + div::after {content: "Applin";}
+#egglist > div > img[src*='img/pkmn/3/r/a/j.png'] + p::before, div.egg[style*='img/pkmn/3/r/a/j.png']::before, #dcegglist > li > img[src*='img/pkmn/3/r/a/j.png'] + div::after {content: "Silicobra";}
+#egglist > div > img[src*='img/pkmn/a/j/9/2.png'] + p::before, div.egg[style*='img/pkmn/a/j/9/2.png']::before, #dcegglist > li > img[src*='img/pkmn/a/j/9/2.png'] + div::after {content: "Cramorant";}
+#egglist > div > img[src*='img/pkmn/g/d/b/7.png'] + p::before, div.egg[style*='img/pkmn/g/d/b/7.png']::before, #dcegglist > li > img[src*='img/pkmn/g/d/b/7.png'] + div::after {content: "Arrokuda";}
+#egglist > div > img[src*='img/pkmn/8/9/p/k.png'] + p::before, div.egg[style*='img/pkmn/8/9/p/k.png']::before, #dcegglist > li > img[src*='img/pkmn/8/9/p/k.png'] + div::after {content: "Toxel";}
+#egglist > div > img[src*='img/pkmn/f/1/i/9.png'] + p::before, div.egg[style*='img/pkmn/f/1/i/9.png']::before, #dcegglist > li > img[src*='img/pkmn/f/1/i/9.png'] + div::after {content: "Sizzlipede";}
+#egglist > div > img[src*='img/pkmn/9/0/5/n.png'] + p::before, div.egg[style*='img/pkmn/9/0/5/n.png']::before, #dcegglist > li > img[src*='img/pkmn/9/0/5/n.png'] + div::after {content: "Clobbopus";}
+#egglist > div > img[src*='img/pkmn/1/w/r/3.png'] + p::before, div.egg[style*='img/pkmn/1/w/r/3.png']::before, #dcegglist > li > img[src*='img/pkmn/1/w/r/3.png'] + div::after {content: "Sinistea";}
+#egglist > div > img[src*='img/pkmn/m/z/3/5.png'] + p::before, div.egg[style*='img/pkmn/m/z/3/5.png']::before, #dcegglist > li > img[src*='img/pkmn/m/z/3/5.png'] + div::after {content: "Hatenna";}
+#egglist > div > img[src*='img/pkmn/t/4/v/z.png'] + p::before, div.egg[style*='img/pkmn/t/4/v/z.png']::before, #dcegglist > li > img[src*='img/pkmn/t/4/v/z.png'] + div::after {content: "Impidimp";}
+#egglist > div > img[src*='img/pkmn/j/9/0/b.png'] + p::before, div.egg[style*='img/pkmn/j/9/0/b.png']::before, #dcegglist > li > img[src*='img/pkmn/j/9/0/b.png'] + div::after {content: "Milcery";}
+#egglist > div > img[src*='img/pkmn/k/q/l/l.png'] + p::before, div.egg[style*='img/pkmn/k/q/l/l.png']::before, #dcegglist > li > img[src*='img/pkmn/k/q/l/l.png'] + div::after {content: "Falinks";}
+#egglist > div > img[src*='img/pkmn/z/5/5/4.png'] + p::before, div.egg[style*='img/pkmn/z/5/5/4.png']::before, #dcegglist > li > img[src*='img/pkmn/z/5/5/4.png'] + div::after {content: "Pincurchin";}
+#egglist > div > img[src*='img/pkmn/g/o/s/y.png'] + p::before, div.egg[style*='img/pkmn/g/o/s/y.png']::before, #dcegglist > li > img[src*='img/pkmn/g/o/s/y.png'] + div::after {content: "Snom";}
+#egglist > div > img[src*='img/pkmn/k/w/x/2.png'] + p::before, div.egg[style*='img/pkmn/k/w/x/2.png']::before, #dcegglist > li > img[src*='img/pkmn/k/w/x/2.png'] + div::after {content: "Stonjourner";}
+#egglist > div > img[src*='img/pkmn/x/h/a/0.png'] + p::before, div.egg[style*='img/pkmn/x/h/a/0.png']::before, #dcegglist > li > img[src*='img/pkmn/x/h/a/0.png'] + div::after {content: "Eiscue";}
+#egglist > div > img[src*='img/pkmn/j/f/u/s.png'] + p::before, div.egg[style*='img/pkmn/j/f/u/s.png']::before, #dcegglist > li > img[src*='img/pkmn/j/f/u/s.png'] + div::after {content: "Indeedee";}
+#egglist > div > img[src*='img/pkmn/h/8/p/u.png'] + p::before, div.egg[style*='img/pkmn/h/8/p/u.png']::before, #dcegglist > li > img[src*='img/pkmn/h/8/p/u.png'] + div::after {content: "Morpeko";}
+#egglist > div > img[src*='img/pkmn/s/o/r/5.png'] + p::before, div.egg[style*='img/pkmn/s/o/r/5.png']::before, #dcegglist > li > img[src*='img/pkmn/s/o/r/5.png'] + div::after {content: "Cufant";}
+#egglist > div > img[src*='img/pkmn/s/g/m/7.png'] + p::before, div.egg[style*='img/pkmn/s/g/m/7.png']::before, #dcegglist > li > img[src*='img/pkmn/s/g/m/7.png'] + div::after {content: "Dracozolt";}
+#egglist > div > img[src*='img/pkmn/u/0/o/a.png'] + p::before, div.egg[style*='img/pkmn/u/0/o/a.png']::before, #dcegglist > li > img[src*='img/pkmn/u/0/o/a.png'] + div::after {content: "Arctozolt";}
+#egglist > div > img[src*='img/pkmn/3/t/u/l.png'] + p::before, div.egg[style*='img/pkmn/3/t/u/l.png']::before, #dcegglist > li > img[src*='img/pkmn/3/t/u/l.png'] + div::after {content: "Dracovish";}
+#egglist > div > img[src*='img/pkmn/t/r/h/8.png'] + p::before, div.egg[style*='img/pkmn/t/r/h/8.png']::before, #dcegglist > li > img[src*='img/pkmn/t/r/h/8.png'] + div::after {content: "Arctovish";}
+#egglist > div > img[src*='img/pkmn/7/f/8/m.png'] + p::before, div.egg[style*='img/pkmn/7/f/8/m.png']::before, #dcegglist > li > img[src*='img/pkmn/7/f/8/m.png'] + div::after {content: "Duraludon";}
+#egglist > div > img[src*='img/pkmn/f/h/q/m.png'] + p::before, div.egg[style*='img/pkmn/f/h/q/m.png']::before, #dcegglist > li > img[src*='img/pkmn/f/h/q/m.png'] + div::after {content: "Dreepy";}
+#egglist > div > img[src*='img/pkmn/d/u/s/i.png'] + p::before, div.egg[style*='img/pkmn/d/u/s/i.png']::before, #dcegglist > li > img[src*='img/pkmn/d/u/s/i.png'] + div::after {content: "Zacian";}
+#egglist > div > img[src*='img/pkmn/o/2/g/f.png'] + p::before, div.egg[style*='img/pkmn/o/2/g/f.png']::before, #dcegglist > li > img[src*='img/pkmn/o/2/g/f.png'] + div::after {content: "Zamazenta";}
+#egglist > div > img[src*='img/pkmn/m/e/2/i.png'] + p::before, div.egg[style*='img/pkmn/m/e/2/i.png']::before, #dcegglist > li > img[src*='img/pkmn/m/e/2/i.png'] + div::after {content: "Eternatus";}
+#egglist > div > img[src*='img/pkmn/4/i/8/d.png'] + p::before, div.egg[style*='img/pkmn/4/i/8/d.png']::before, #dcegglist > li > img[src*='img/pkmn/4/i/8/d.png'] + div::after {content: "Kubfu";}
+#egglist > div > img[src*='img/pkmn/s/y/k/6.png'] + p::before, div.egg[style*='img/pkmn/s/y/k/6.png']::before, #dcegglist > li > img[src*='img/pkmn/s/y/k/6.png'] + div::after {content: "Zarude";}
+#egglist > div > img[src*='img/pkmn/5/o/q/4.png'] + p::before, div.egg[style*='img/pkmn/5/o/q/4.png']::before, #dcegglist > li > img[src*='img/pkmn/5/o/q/4.png'] + div::after {content: "Regieleki";}
+#egglist > div > img[src*='img/pkmn/h/0/t/b.png'] + p::before, div.egg[style*='img/pkmn/h/0/t/b.png']::before, #dcegglist > li > img[src*='img/pkmn/h/0/t/b.png'] + div::after {content: "Regidrago";}
+#egglist > div > img[src*='img/pkmn/n/7/l/s.png'] + p::before, div.egg[style*='img/pkmn/n/7/l/s.png']::before, #dcegglist > li > img[src*='img/pkmn/n/7/l/s.png'] + div::after {content: "Glastrier";}
+#egglist > div > img[src*='img/pkmn/z/t/3/r.png'] + p::before, div.egg[style*='img/pkmn/z/t/3/r.png']::before, #dcegglist > li > img[src*='img/pkmn/z/t/3/r.png'] + div::after {content: "Spectrier";}
+#egglist > div > img[src*='img/pkmn/o/9/5/u.png'] + p::before, div.egg[style*='img/pkmn/o/9/5/u.png']::before, #dcegglist > li > img[src*='img/pkmn/o/9/5/u.png'] + div::after {content: "Calyrex";}
+#egglist > div > img[src*='img/pkmn/c/q/s/d.png'] + p::before, div.egg[style*='img/pkmn/c/q/s/d.png']::before, #dcegglist > li > img[src*='img/pkmn/c/q/s/d.png'] + div::after {content: "Lunupine";}
+#egglist > div > img[src*='img/pkmn/q/m/5/u.png'] + p::before, div.egg[style*='img/pkmn/q/m/5/u.png']::before, #dcegglist > li > img[src*='img/pkmn/q/m/5/u.png'] + div::after {content: "Blophin";}
+#egglist > div > img[src*='img/pkmn/i/9/v/i.png'] + p::before, div.egg[style*='img/pkmn/i/9/v/i.png']::before, #dcegglist > li > img[src*='img/pkmn/i/9/v/i.png'] + div::after {content: "Orkit";}
+#egglist > div > img[src*='img/pkmn/a/t/0/j.png'] + p::before, div.egg[style*='img/pkmn/a/t/0/j.png']::before, #dcegglist > li > img[src*='img/pkmn/a/t/0/j.png'] + div::after {content: "Faemueno";}
+#egglist > div > img[src*='img/pkmn/y/q/w/s.png'] + p::before, div.egg[style*='img/pkmn/y/q/w/s.png']::before, #dcegglist > li > img[src*='img/pkmn/y/q/w/s.png'] + div::after {content: "Wagell";}
+#egglist > div > img[src*='img/pkmn/c/u/e/3.png'] + p::before, div.egg[style*='img/pkmn/c/u/e/3.png']::before, #dcegglist > li > img[src*='img/pkmn/c/u/e/3.png'] + div::after {content: "Gosold";}
+#egglist > div > img[src*='img/pkmn/q/6/7/a.png'] + p::before, div.egg[style*='img/pkmn/q/6/7/a.png']::before, #dcegglist > li > img[src*='img/pkmn/q/6/7/a.png'] + div::after {content: "Impyre";}
+#egglist > div > img[src*='img/pkmn/e/o/7/7.png'] + p::before, div.egg[style*='img/pkmn/e/o/7/7.png']::before, #dcegglist > li > img[src*='img/pkmn/e/o/7/7.png'] + div::after {content: "Searene";}
+#egglist > div > img[src*='img/pkmn/w/e/u/8.png'] + p::before, div.egg[style*='img/pkmn/w/e/u/8.png']::before, #dcegglist > li > img[src*='img/pkmn/w/e/u/8.png'] + div::after {content: "Solynx";}
+#egglist > div > img[src*='img/pkmn/9/2/e/8.png'] + p::before, div.egg[style*='img/pkmn/9/2/e/8.png']::before, #dcegglist > li > img[src*='img/pkmn/9/2/e/8.png'] + div::after {content: "Ardik";}
+#egglist > div > img[src*='img/pkmn/8/h/p/5.png'] + p::before, div.egg[style*='img/pkmn/8/h/p/5.png']::before, #dcegglist > li > img[src*='img/pkmn/8/h/p/5.png'] + div::after {content: "Boxaby";}
+#egglist > div > img[src*='img/pkmn/5/a/l/e.png'] + p::before, div.egg[style*='img/pkmn/5/a/l/e.png']::before, #dcegglist > li > img[src*='img/pkmn/5/a/l/e.png'] + div::after {content: "Bunbori";}
+#egglist > div > img[src*='img/pkmn/v/v/p/m.png'] + p::before, div.egg[style*='img/pkmn/v/v/p/m.png']::before, #dcegglist > li > img[src*='img/pkmn/v/v/p/m.png'] + div::after {content: "Taiveret";}
+#egglist > div > img[src*='img/pkmn/o/c/k/e.png'] + p::before, div.egg[style*='img/pkmn/o/c/k/e.png']::before, #dcegglist > li > img[src*='img/pkmn/o/c/k/e.png'] + div::after {content: "Flarbat";}
+#egglist > div > img[src*='img/pkmn/7/w/7/v.png'] + p::before, div.egg[style*='img/pkmn/7/w/7/v.png']::before, #dcegglist > li > img[src*='img/pkmn/7/w/7/v.png'] + div::after {content: "Hydrark";}
+#egglist > div > img[src*='img/pkmn/u/4/z/o.png'] + p::before, div.egg[style*='img/pkmn/u/4/z/o.png']::before, #dcegglist > li > img[src*='img/pkmn/u/4/z/o.png'] + div::after {content: "Gragon";}
+#egglist > div > img[src*='img/pkmn/v/k/6/v.png'] + p::before, div.egg[style*='img/pkmn/v/k/6/v.png']::before, #dcegglist > li > img[src*='img/pkmn/v/k/6/v.png'] + div::after {content: "Kinaster";}
+#egglist > div > img[src*='img/pkmn/y/o/0/r.png'] + p::before, div.egg[style*='img/pkmn/y/o/0/r.png']::before, #dcegglist > li > img[src*='img/pkmn/y/o/0/r.png'] + div::after {content: "Luckoo";}
+#egglist > div > img[src*='img/pkmn/7/9/i/m.png'] + p::before, div.egg[style*='img/pkmn/7/9/i/m.png']::before, #dcegglist > li > img[src*='img/pkmn/7/9/i/m.png'] + div::after {content: "Arasprit";}
+#egglist > div > img[src*='img/pkmn/4/i/h/o.png'] + p::before, div.egg[style*='img/pkmn/4/i/h/o.png']::before, #dcegglist > li > img[src*='img/pkmn/4/i/h/o.png'] + div::after {content: "Quetzephyr";}
+#egglist > div > img[src*='img/pkmn/z/a/0/2.png'] + p::before, div.egg[style*='img/pkmn/z/a/0/2.png']::before, #dcegglist > li > img[src*='img/pkmn/z/a/0/2.png'] + div::after {content: "Pixrine";}
+#egglist > div > img[src*='img/pkmn/2/1/j/l.png'] + p::before, div.egg[style*='img/pkmn/2/1/j/l.png']::before, #dcegglist > li > img[src*='img/pkmn/2/1/j/l.png'] + div::after {content: "Kitsunari";}
+#egglist > div > img[src*='img/pkmn/s/m/f/g.png'] + p::before, div.egg[style*='img/pkmn/s/m/f/g.png']::before, #dcegglist > li > img[src*='img/pkmn/s/m/f/g.png'] + div::after {content: "Kryptik";}
+#egglist > div > img[src*='img/pkmn/z/1/o/d.png'] + p::before, div.egg[style*='img/pkmn/z/1/o/d.png']::before, #dcegglist > li > img[src*='img/pkmn/z/1/o/d.png'] + div::after {content: "Bandicoon";}
+#egglist > div > img[src*='img/pkmn/a/0/n/o.png'] + p::before, div.egg[style*='img/pkmn/a/0/n/o.png']::before, #dcegglist > li > img[src*='img/pkmn/a/0/n/o.png'] + div::after {content: "Phastix";}
+#egglist > div > img[src*='img/pkmn/e/c/z/a.png'] + p::before, div.egg[style*='img/pkmn/e/c/z/a.png']::before, #dcegglist > li > img[src*='img/pkmn/e/c/z/a.png'] + div::after {content: "Glaquine";}
+#egglist > div > img[src*='img/pkmn/1/4/k/l.png'] + p::before, div.egg[style*='img/pkmn/1/4/k/l.png']::before, #dcegglist > li > img[src*='img/pkmn/1/4/k/l.png'] + div::after {content: "Minibbit";}
+#egglist > div > img[src*='img/pkmn/7/y/g/4.png'] + p::before, div.egg[style*='img/pkmn/7/y/g/4.png']::before, #dcegglist > li > img[src*='img/pkmn/7/y/g/4.png'] + div::after {content: "Tillink";}
+#egglist > div > img[src*='img/pkmn/7/9/n/x.png'] + p::before, div.egg[style*='img/pkmn/7/9/n/x.png']::before, #dcegglist > li > img[src*='img/pkmn/7/9/n/x.png'] + div::after {content: "Bezerell";}
+#egglist > div > img[src*='img/pkmn/x/6/y/4.png'] + p::before, div.egg[style*='img/pkmn/x/6/y/4.png']::before, #dcegglist > li > img[src*='img/pkmn/x/6/y/4.png'] + div::after {content: "Ayeren";}
+#egglist > div > img[src*='img/pkmn/k/w/j/q.png'] + p::before, div.egg[style*='img/pkmn/k/w/j/q.png']::before, #dcegglist > li > img[src*='img/pkmn/k/w/j/q.png'] + div::after {content: "Skeleco";}
+#egglist > div > img[src*='img/pkmn/1/a/l/m.png'] + p::before, div.egg[style*='img/pkmn/1/a/l/m.png']::before, #dcegglist > li > img[src*='img/pkmn/1/a/l/m.png'] + div::after {content: "Klaatupillar";}
+#egglist > div > img[src*='img/pkmn/e/4/9/m.png'] + p::before, div.egg[style*='img/pkmn/e/4/9/m.png']::before, #dcegglist > li > img[src*='img/pkmn/e/4/9/m.png'] + div::after {content: "Kyutopi";}
+#egglist > div > img[src*='img/pkmn/i/7/l/p.png'] + p::before, div.egg[style*='img/pkmn/i/7/l/p.png']::before, #dcegglist > li > img[src*='img/pkmn/i/7/l/p.png'] + div::after {content: "Kenyip";}
+#egglist > div > img[src*='img/pkmn/g/y/k/l.png'] + p::before, div.egg[style*='img/pkmn/g/y/k/l.png']::before, #dcegglist > li > img[src*='img/pkmn/g/y/k/l.png'] + div::after {content: "Petripeep";}
+#egglist > div > img[src*='img/pkmn/c/0/p/f.png'] + p::before, div.egg[style*='img/pkmn/c/0/p/f.png']::before, #dcegglist > li > img[src*='img/pkmn/c/0/p/f.png'] + div::after {content: "Gumairy";}
+#egglist > div > img[src*='img/pkmn/g/6/g/a.png'] + p::before, div.egg[style*='img/pkmn/g/6/g/a.png']::before, #dcegglist > li > img[src*='img/pkmn/g/6/g/a.png'] + div::after {content: "Puppod";}
+#egglist > div > img[src*='img/pkmn/3/p/c/0.png'] + p::before, div.egg[style*='img/pkmn/3/p/c/0.png']::before, #dcegglist > li > img[src*='img/pkmn/3/p/c/0.png'] + div::after {content: "Rokiwi";}
+#egglist > div > img[src*='img/pkmn/w/7/r/u.png'] + p::before, div.egg[style*='img/pkmn/w/7/r/u.png']::before, #dcegglist > li > img[src*='img/pkmn/w/7/r/u.png'] + div::after {content: "Alicalf";}
+#egglist > div > img[src*='img/pkmn/e/2/x/i.png'] + p::before, div.egg[style*='img/pkmn/e/2/x/i.png']::before, #dcegglist > li > img[src*='img/pkmn/e/2/x/i.png'] + div::after {content: "Valkind";}
+#egglist > div > img[src*='img/pkmn/u/s/8/z.png'] + p::before, div.egg[style*='img/pkmn/u/s/8/z.png']::before, #dcegglist > li > img[src*='img/pkmn/u/s/8/z.png'] + div::after {content: "Croaket";}
+#egglist > div > img[src*='img/pkmn/b/d/c/s.png'] + p::before, div.egg[style*='img/pkmn/b/d/c/s.png']::before, #dcegglist > li > img[src*='img/pkmn/b/d/c/s.png'] + div::after {content: "Slypin";}
+#egglist > div > img[src*='img/pkmn/u/y/z/b.png'] + p::before, div.egg[style*='img/pkmn/u/y/z/b.png']::before, #dcegglist > li > img[src*='img/pkmn/u/y/z/b.png'] + div::after {content: "Selkrub";}
+#egglist > div > img[src*='img/pkmn/8/9/y/e.png'] + p::before, div.egg[style*='img/pkmn/8/9/y/e.png']::before, #dcegglist > li > img[src*='img/pkmn/8/9/y/e.png'] + div::after {content: "Kawotor";}
+#egglist > div > img[src*='img/pkmn/z/w/5/6.png'] + p::before, div.egg[style*='img/pkmn/z/w/5/6.png']::before, #dcegglist > li > img[src*='img/pkmn/z/w/5/6.png'] + div::after {content: "Kitwurm";}
+#egglist > div > img[src*='img/pkmn/3/u/4/u.png'] + p::before, div.egg[style*='img/pkmn/3/u/4/u.png']::before, #dcegglist > li > img[src*='img/pkmn/3/u/4/u.png'] + div::after {content: "Pepyre";}
+#egglist > div > img[src*='img/pkmn/k/r/y/x.png'] + p::before, div.egg[style*='img/pkmn/k/r/y/x.png']::before, #dcegglist > li > img[src*='img/pkmn/k/r/y/x.png'] + div::after {content: "Aphreyd";}
+#egglist > div > img[src*='img/pkmn/4/j/0/7.png'] + p::before, div.egg[style*='img/pkmn/4/j/0/7.png']::before, #dcegglist > li > img[src*='img/pkmn/4/j/0/7.png'] + div::after {content: "Caimaw";}
+#egglist > div > img[src*='img/pkmn/x/9/s/x.png'] + p::before, div.egg[style*='img/pkmn/x/9/s/x.png']::before, #dcegglist > li > img[src*='img/pkmn/x/9/s/x.png'] + div::after {content: "Valimp";}
+#egglist > div > img[src*='img/pkmn/7/y/w/1.png'] + p::before, div.egg[style*='img/pkmn/7/y/w/1.png']::before, #dcegglist > li > img[src*='img/pkmn/7/y/w/1.png'] + div::after {content: "Frusky";}
+#egglist > div > img[src*='img/pkmn/9/i/2/3.png'] + p::before, div.egg[style*='img/pkmn/9/i/2/3.png']::before, #dcegglist > li > img[src*='img/pkmn/9/i/2/3.png'] + div::after {content: "Skyrie";}
+#egglist > div > img[src*='img/pkmn/8/4/r/5.png'] + p::before, div.egg[style*='img/pkmn/8/4/r/5.png']::before, #dcegglist > li > img[src*='img/pkmn/8/4/r/5.png'] + div::after {content: "Shinorin";}
+#egglist > div > img[src*='img/pkmn/b/0/3/n.png'] + p::before, div.egg[style*='img/pkmn/b/0/3/n.png']::before, #dcegglist > li > img[src*='img/pkmn/b/0/3/n.png'] + div::after {content: "Sikannos";}
+#egglist > div > img[src*='img/pkmn/7/d/z/n.png'] + p::before, div.egg[style*='img/pkmn/7/d/z/n.png']::before, #dcegglist > li > img[src*='img/pkmn/7/d/z/n.png'] + div::after {content: "Goschief";}
+#egglist > div > img[src*='img/pkmn/d/w/m/k.png'] + p::before, div.egg[style*='img/pkmn/d/w/m/k.png']::before, #dcegglist > li > img[src*='img/pkmn/d/w/m/k.png'] + div::after {content: "Mocknock";}
+#egglist > div > img[src*='img/pkmn/x/o/u/n.png'] + p::before, div.egg[style*='img/pkmn/x/o/u/n.png']::before, #dcegglist > li > img[src*='img/pkmn/x/o/u/n.png'] + div::after {content: "Flurrawr";}
+#egglist > div > img[src*='img/pkmn/5/t/9/h.png'] + p::before, div.egg[style*='img/pkmn/5/t/9/h.png']::before, #dcegglist > li > img[src*='img/pkmn/5/t/9/h.png'] + div::after {content: "Parapod";}
+#egglist > div > img[src*='img/pkmn/1/1/t/2.png'] + p::before, div.egg[style*='img/pkmn/1/1/t/2.png']::before, #dcegglist > li > img[src*='img/pkmn/1/1/t/2.png'] + div::after {content: "Tenrekki";}
+#egglist > div > img[src*='img/pkmn/c/p/b/b.png'] + p::before, div.egg[style*='img/pkmn/c/p/b/b.png']::before, #dcegglist > li > img[src*='img/pkmn/c/p/b/b.png'] + div::after {content: "Possmol";}
+#egglist > div > img[src*='img/pkmn/g/k/o/9.png'] + p::before, div.egg[style*='img/pkmn/g/k/o/9.png']::before, #dcegglist > li > img[src*='img/pkmn/g/k/o/9.png'] + div::after {content: "Lunamor";}
+#egglist > div > img[src*='img/pkmn/g/a/u/4.png'] + p::before, div.egg[style*='img/pkmn/g/a/u/4.png']::before, #dcegglist > li > img[src*='img/pkmn/g/a/u/4.png'] + div::after {content: "Exilant";}
+#egglist > div > img[src*='img/pkmn/h/y/p/k.png'] + p::before, div.egg[style*='img/pkmn/h/y/p/k.png']::before, #dcegglist > li > img[src*='img/pkmn/h/y/p/k.png'] + div::after {content: "Lyruse";}
+#egglist > div > img[src*='img/pkmn/h/4/9/a.png'] + p::before, div.egg[style*='img/pkmn/h/4/9/a.png']::before, #dcegglist > li > img[src*='img/pkmn/h/4/9/a.png'] + div::after {content: "Smokackle";}
+#egglist > div > img[src*='img/pkmn/a/3/a/u.png'] + p::before, div.egg[style*='img/pkmn/a/3/a/u.png']::before, #dcegglist > li > img[src*='img/pkmn/a/3/a/u.png'] + div::after {content: "Inferial";}
+#egglist > div > img[src*='img/pkmn/r/i/2/z.png'] + p::before, div.egg[style*='img/pkmn/r/i/2/z.png']::before, #dcegglist > li > img[src*='img/pkmn/r/i/2/z.png'] + div::after {content: "Mirrasma";}
+#egglist > div > img[src*='img/pkmn/z/e/9/7.png'] + p::before, div.egg[style*='img/pkmn/z/e/9/7.png']::before, #dcegglist > li > img[src*='img/pkmn/z/e/9/7.png'] + div::after {content: "Slithugi";}
+#egglist > div > img[src*='img/pkmn/q/2/t/a.png'] + p::before, div.egg[style*='img/pkmn/q/2/t/a.png']::before, #dcegglist > li > img[src*='img/pkmn/q/2/t/a.png'] + div::after {content: "Babaisy";}
+#egglist > div > img[src*='img/pkmn/u/i/2/l.png'] + p::before, div.egg[style*='img/pkmn/u/i/2/l.png']::before, #dcegglist > li > img[src*='img/pkmn/u/i/2/l.png'] + div::after {content: "Ryumen";}
+#egglist > div > img[src*='img/pkmn/8/h/j/e.png'] + p::before, div.egg[style*='img/pkmn/8/h/j/e.png']::before, #dcegglist > li > img[src*='img/pkmn/8/h/j/e.png'] + div::after {content: "Schweepy";}
+#egglist > div > img[src*='img/pkmn/n/w/2/s.png'] + p::before, div.egg[style*='img/pkmn/n/w/2/s.png']::before, #dcegglist > li > img[src*='img/pkmn/n/w/2/s.png'] + div::after {content: "Cinnamoru";}
+#egglist > div > img[src*='img/pkmn/5/l/1/5.png'] + p::before, div.egg[style*='img/pkmn/5/l/1/5.png']::before, #dcegglist > li > img[src*='img/pkmn/5/l/1/5.png'] + div::after {content: "Quokuddle";}
+#egglist > div > img[src*='img/pkmn/x/x/y/6.png'] + p::before, div.egg[style*='img/pkmn/x/x/y/6.png']::before, #dcegglist > li > img[src*='img/pkmn/x/x/y/6.png'] + div::after {content: "Chark";}
+#egglist > div > img[src*='img/pkmn/t/7/n/8.png'] + p::before, div.egg[style*='img/pkmn/t/7/n/8.png']::before, #dcegglist > li > img[src*='img/pkmn/t/7/n/8.png'] + div::after {content: "Saiyan Rattata";}
+#egglist > div > img[src*='img/pkmn/b/p/l/8.png'] + p::before, div.egg[style*='img/pkmn/b/p/l/8.png']::before, #dcegglist > li > img[src*='img/pkmn/b/p/l/8.png'] + div::after {content: "Flying Pichu";}
+#egglist > div > img[src*='img/pkmn/q/i/m/w.png'] + p::before, div.egg[style*='img/pkmn/q/i/m/w.png']::before, #dcegglist > li > img[src*='img/pkmn/q/i/m/w.png'] + div::after {content: "Surfing Pichu";}
+#egglist > div > img[src*='img/pkmn/x/u/8/z.png'] + p::before, div.egg[style*='img/pkmn/x/u/8/z.png']::before, #dcegglist > li > img[src*='img/pkmn/x/u/8/z.png'] + div::after {content: "Shooting Star Cleffa";}
+#egglist > div > img[src*='img/pkmn/e/r/g/t.png'] + p::before, div.egg[style*='img/pkmn/e/r/g/t.png']::before, #dcegglist > li > img[src*='img/pkmn/e/r/g/t.png'] + div::after {content: "Koroku";}
+#egglist > div > img[src*='img/pkmn/p/o/p/n.png'] + p::before, div.egg[style*='img/pkmn/p/o/p/n.png']::before, #dcegglist > li > img[src*='img/pkmn/p/o/p/n.png'] + div::after {content: "Guild Igglybuff";}
+#egglist > div > img[src*='img/pkmn/t/k/3/5.png'] + p::before, div.egg[style*='img/pkmn/t/k/3/5.png']::before, #dcegglist > li > img[src*='img/pkmn/t/k/3/5.png'] + div::after {content: "Apocalyptic Growlithe";}
+#egglist > div > img[src*='img/pkmn/h/2/l/9.png'] + p::before, div.egg[style*='img/pkmn/h/2/l/9.png']::before, #dcegglist > li > img[src*='img/pkmn/h/2/l/9.png'] + div::after {content: "Snowpoke";}
+#egglist > div > img[src*='img/pkmn/q/r/9/c.png'] + p::before, div.egg[style*='img/pkmn/q/r/9/c.png']::before, #dcegglist > li > img[src*='img/pkmn/q/r/9/c.png'] + div::after {content: "Death Star Voltorb";}
+#egglist > div > img[src*='img/pkmn/w/q/8/v.png'] + p::before, div.egg[style*='img/pkmn/w/q/8/v.png']::before, #dcegglist > li > img[src*='img/pkmn/w/q/8/v.png'] + div::after {content: "Early Bird Natu";}
+#egglist > div > img[src*='img/pkmn/8/k/t/a.png'] + p::before, div.egg[style*='img/pkmn/8/k/t/a.png']::before, #dcegglist > li > img[src*='img/pkmn/8/k/t/a.png'] + div::after {content: "Galvanic Wooper";}
+#egglist > div > img[src*='img/pkmn/2/a/b/4.png'] + p::before, div.egg[style*='img/pkmn/2/a/b/4.png']::before, #dcegglist > li > img[src*='img/pkmn/2/a/b/4.png'] + div::after {content: "Vampire Gligar";}
+#egglist > div > img[src*='img/pkmn/5/l/v/g.png'] + p::before, div.egg[style*='img/pkmn/5/l/v/g.png']::before, #dcegglist > li > img[src*='img/pkmn/5/l/v/g.png'] + div::after {content: "Scaracross";}
+#egglist > div > img[src*='img/pkmn/y/8/5/p.png'] + p::before, div.egg[style*='img/pkmn/y/8/5/p.png']::before, #dcegglist > li > img[src*='img/pkmn/y/8/5/p.png'] + div::after {content: "Snichu";}
+#egglist > div > img[src*='img/pkmn/9/u/f/z.png'] + p::before, div.egg[style*='img/pkmn/9/u/f/z.png']::before, #dcegglist > li > img[src*='img/pkmn/9/u/f/z.png'] + div::after {content: "Teddicursa";}
+#egglist > div > img[src*='img/pkmn/3/g/i/0.png'] + p::before, div.egg[style*='img/pkmn/3/g/i/0.png']::before, #dcegglist > li > img[src*='img/pkmn/3/g/i/0.png'] + div::after {content: "Blue Moon Slugma";}
+#egglist > div > img[src*='img/pkmn/9/8/x/o.png'] + p::before, div.egg[style*='img/pkmn/9/8/x/o.png']::before, #dcegglist > li > img[src*='img/pkmn/9/8/x/o.png'] + div::after {content: "Orthrus Houndour";}
+#egglist > div > img[src*='img/pkmn/x/0/e/e.png'] + p::before, div.egg[style*='img/pkmn/x/0/e/e.png']::before, #dcegglist > li > img[src*='img/pkmn/x/0/e/e.png'] + div::after {content: "Frosdour";}
+#egglist > div > img[src*='img/pkmn/t/g/4/3.png'] + p::before, div.egg[style*='img/pkmn/t/g/4/3.png']::before, #dcegglist > li > img[src*='img/pkmn/t/g/4/3.png'] + div::after {content: "XD001";}
+#egglist > div > img[src*='img/pkmn/a/t/7/8.png'] + p::before, div.egg[style*='img/pkmn/a/t/7/8.png']::before, #dcegglist > li > img[src*='img/pkmn/a/t/7/8.png'] + div::after {content: "Inferno Torchic";}
+#egglist > div > img[src*='img/pkmn/i/f/i/n.png'] + p::before, div.egg[style*='img/pkmn/i/f/i/n.png']::before, #dcegglist > li > img[src*='img/pkmn/i/f/i/n.png'] + div::after {content: "Apocalyptic Poochyena";}
+#egglist > div > img[src*='img/pkmn/m/6/h/x.png'] + p::before, div.egg[style*='img/pkmn/m/6/h/x.png']::before, #dcegglist > li > img[src*='img/pkmn/m/6/h/x.png'] + div::after {content: "Snoralts";}
+#egglist > div > img[src*='img/pkmn/d/e/w/e.png'] + p::before, div.egg[style*='img/pkmn/d/e/w/e.png']::before, #dcegglist > li > img[src*='img/pkmn/d/e/w/e.png'] + div::after {content: "Apocalyptic Shroomish";}
+#egglist > div > img[src*='img/pkmn/u/h/t/9.png'] + p::before, div.egg[style*='img/pkmn/u/h/t/9.png']::before, #dcegglist > li > img[src*='img/pkmn/u/h/t/9.png'] + div::after {content: "Arctic Numel";}
+#egglist > div > img[src*='img/pkmn/s/k/d/4.png'] + p::before, div.egg[style*='img/pkmn/s/k/d/4.png']::before, #dcegglist > li > img[src*='img/pkmn/s/k/d/4.png'] + div::after {content: "Ryukuza";}
+#egglist > div > img[src*='img/pkmn/p/5/l/k.png'] + p::before, div.egg[style*='img/pkmn/p/5/l/k.png']::before, #dcegglist > li > img[src*='img/pkmn/p/5/l/k.png'] + div::after {content: "Magquaza";}
+#egglist > div > img[src*='img/pkmn/f/k/h/8.png'] + p::before, div.egg[style*='img/pkmn/f/k/h/8.png']::before, #dcegglist > li > img[src*='img/pkmn/f/k/h/8.png'] + div::after {content: "Spring Seasonal Turtwig";}
+#egglist > div > img[src*='img/pkmn/5/g/a/a.png'] + p::before, div.egg[style*='img/pkmn/5/g/a/a.png']::before, #dcegglist > li > img[src*='img/pkmn/5/g/a/a.png'] + div::after {content: "Summer Seasonal Turtwig";}
+#egglist > div > img[src*='img/pkmn/a/s/6/y.png'] + p::before, div.egg[style*='img/pkmn/a/s/6/y.png']::before, #dcegglist > li > img[src*='img/pkmn/a/s/6/y.png'] + div::after {content: "Autumn Seasonal Turtwig";}
+#egglist > div > img[src*='img/pkmn/5/0/6/d.png'] + p::before, div.egg[style*='img/pkmn/5/0/6/d.png']::before, #dcegglist > li > img[src*='img/pkmn/5/0/6/d.png'] + div::after {content: "Winter Seasonal Turtwig";}
+#egglist > div > img[src*='img/pkmn/e/8/4/l.png'] + p::before, div.egg[style*='img/pkmn/e/8/4/l.png']::before, #dcegglist > li > img[src*='img/pkmn/e/8/4/l.png'] + div::after {content: "Igneous Bidoof";}
+#egglist > div > img[src*='img/pkmn/v/h/8/n.png'] + p::before, div.egg[style*='img/pkmn/v/h/8/n.png']::before, #dcegglist > li > img[src*='img/pkmn/v/h/8/n.png'] + div::after {content: "Shinxel";}
+#egglist > div > img[src*='img/pkmn/6/h/b/q.png'] + p::before, div.egg[style*='img/pkmn/6/h/b/q.png']::before, #dcegglist > li > img[src*='img/pkmn/6/h/b/q.png'] + div::after {content: "Snow Combee";}
+#egglist > div > img[src*='img/pkmn/e/p/4/p.png'] + p::before, div.egg[style*='img/pkmn/e/p/4/p.png']::before, #dcegglist > li > img[src*='img/pkmn/e/p/4/p.png'] + div::after {content: "Siberian Glameow";}
+#egglist > div > img[src*='img/pkmn/6/w/1/z.png'] + p::before, div.egg[style*='img/pkmn/6/w/1/z.png']::before, #dcegglist > li > img[src*='img/pkmn/6/w/1/z.png'] + div::after {content: "Gibolu";}
+#egglist > div > img[src*='img/pkmn/9/r/1/3.png'] + p::before, div.egg[style*='img/pkmn/9/r/1/3.png']::before, #dcegglist > li > img[src*='img/pkmn/9/r/1/3.png'] + div::after {content: "Hallowe'en Witch Purrloin";}
+#egglist > div > img[src*='img/pkmn/y/y/8/o.png'] + p::before, div.egg[style*='img/pkmn/y/y/8/o.png']::before, #dcegglist > li > img[src*='img/pkmn/y/y/8/o.png'] + div::after {content: "Bubbly Frillish";}
+#egglist > div > img[src*='img/pkmn/7/p/3/b.png'] + p::before, div.egg[style*='img/pkmn/7/p/3/b.png']::before, #dcegglist > li > img[src*='img/pkmn/7/p/3/b.png'] + div::after {content: "Apocalyptic Golett";}
+#egglist > div > img[src*='img/pkmn/u/7/c/q.png'] + p::before, div.egg[style*='img/pkmn/u/7/c/q.png']::before, #dcegglist > li > img[src*='img/pkmn/u/7/c/q.png'] + div::after {content: "Glileo";}
+#egglist > div > img[src*='img/pkmn/z/6/i.png'] + p::before, div.egg[style*='img/pkmn/z/6/i.png']::before, #dcegglist > li > img[src*='img/pkmn/z/6/i.png'] + div::after {content: "Rose Gift Honedge";}
+#egglist > div > img[src*='img/pkmn/m/q/c/n.png'] + p::before, div.egg[style*='img/pkmn/m/q/c/n.png']::before, #dcegglist > li > img[src*='img/pkmn/m/q/c/n.png'] + div::after {content: "Spritzkrow";}
+#egglist > div > img[src*='img/pkmn/l/s/w/r.png'] + p::before, div.egg[style*='img/pkmn/l/s/w/r.png']::before, #dcegglist > li > img[src*='img/pkmn/l/s/w/r.png'] + div::after {content: "Noismog";}
+#egglist > div > img[src*='img/pkmn/t/r/y/w.png'] + p::before, div.egg[style*='img/pkmn/t/r/y/w.png']::before, #dcegglist > li > img[src*='img/pkmn/t/r/y/w.png'] + div::after {content: "Maravol";}
+#egglist > div > img[src*='img/pkmn/k/3/v/s.png'] + p::before, div.egg[style*='img/pkmn/k/3/v/s.png']::before, #dcegglist > li > img[src*='img/pkmn/k/3/v/s.png'] + div::after {content: "Sprigatito";}
+#egglist > div > img[src*='img/pkmn/6/1/u/b.png'] + p::before, div.egg[style*='img/pkmn/6/1/u/b.png']::before, #dcegglist > li > img[src*='img/pkmn/6/1/u/b.png'] + div::after {content: "Quaxly";}
+#egglist > div > img[src*='img/pkmn/p/w/8/d.png'] + p::before, div.egg[style*='img/pkmn/p/w/8/d.png']::before, #dcegglist > li > img[src*='img/pkmn/p/w/8/d.png'] + div::after {content: "Fuecoco";}
+#egglist > div > img[src*='img/pkmn/8/w/n/i.png'] + p::before, div.egg[style*='img/pkmn/8/w/n/i.png']::before, #dcegglist > li > img[src*='img/pkmn/8/w/n/i.png'] + div::after {content: "Tarountula";}
+#egglist > div > img[src*='img/pkmn/z/1/j/6.png'] + p::before, div.egg[style*='img/pkmn/z/1/j/6.png']::before, #dcegglist > li > img[src*='img/pkmn/z/1/j/6.png'] + div::after {content: "Pawmi";}
+#egglist > div > img[src*='img/pkmn/2/s/3/g.png'] + p::before, div.egg[style*='img/pkmn/2/s/3/g.png']::before, #dcegglist > li > img[src*='img/pkmn/2/s/3/g.png'] + div::after {content: "Lechonk";}
+#egglist > div > img[src*='img/pkmn/z/l/3/n.png'] + p::before, div.egg[style*='img/pkmn/z/l/3/n.png']::before, #dcegglist > li > img[src*='img/pkmn/z/l/3/n.png'] + div::after {content: "Nymble";}
+#egglist > div > img[src*='img/pkmn/o/1/k/q.png'] + p::before, div.egg[style*='img/pkmn/o/1/k/q.png']::before, #dcegglist > li > img[src*='img/pkmn/o/1/k/q.png'] + div::after {content: "Fidough";}
+#egglist > div > img[src*='img/pkmn/1/t/w/n.png'] + p::before, div.egg[style*='img/pkmn/1/t/w/n.png']::before, #dcegglist > li > img[src*='img/pkmn/1/t/w/n.png'] + div::after {content: "Smoliv";}
+#egglist > div > img[src*='img/pkmn/7/r/q/j.png'] + p::before, div.egg[style*='img/pkmn/7/r/q/j.png']::before, #dcegglist > li > img[src*='img/pkmn/7/r/q/j.png'] + div::after {content: "Tandemaus";}
+#egglist > div > img[src*='img/pkmn/o/f/9/s.png'] + p::before, div.egg[style*='img/pkmn/o/f/9/s.png']::before, #dcegglist > li > img[src*='img/pkmn/o/f/9/s.png'] + div::after {content: "Squawkabilly";}
+#egglist > div > img[src*='img/pkmn/b/c/5/f.png'] + p::before, div.egg[style*='img/pkmn/b/c/5/f.png']::before, #dcegglist > li > img[src*='img/pkmn/b/c/5/f.png'] + div::after {content: "Pasovan";}
+#egglist > div > img[src*='img/pkmn/f/1/i/n.png'] + p::before, div.egg[style*='img/pkmn/f/1/i/n.png']::before, #dcegglist > li > img[src*='img/pkmn/f/1/i/n.png'] + div::after {content: "Caprikid";}
+#egglist > div > img[src*='img/pkmn/t/y/r/x.png'] + p::before, div.egg[style*='img/pkmn/t/y/r/x.png']::before, #dcegglist > li > img[src*='img/pkmn/t/y/r/x.png'] + div::after {content: "Charcadet";}
+#egglist > div > img[src*='img/pkmn/c/u/k/g.png'] + p::before, div.egg[style*='img/pkmn/c/u/k/g.png']::before, #dcegglist > li > img[src*='img/pkmn/c/u/k/g.png'] + div::after {content: "Nacli";}
+#egglist > div > img[src*='img/pkmn/c/u/h.png'] + p::before, div.egg[style*='img/pkmn/c/u/h.png']::before, #dcegglist > li > img[src*='img/pkmn/c/u/h.png'] + div::after {content: "Tadbulb";}
+#egglist > div > img[src*='img/pkmn/r/2/j/0.png'] + p::before, div.egg[style*='img/pkmn/r/2/j/0.png']::before, #dcegglist > li > img[src*='img/pkmn/r/2/j/0.png'] + div::after {content: "Wattrel";}
+#egglist > div > img[src*='img/pkmn/w/n/i/z.png'] + p::before, div.egg[style*='img/pkmn/w/n/i/z.png']::before, #dcegglist > li > img[src*='img/pkmn/w/n/i/z.png'] + div::after {content: "Seistatic";}
+#egglist > div > img[src*='img/pkmn/e/7/f/o.png'] + p::before, div.egg[style*='img/pkmn/e/7/f/o.png']::before, #dcegglist > li > img[src*='img/pkmn/e/7/f/o.png'] + div::after {content: "Dribbit";}
+#egglist > div > img[src*='img/pkmn/n/b/s/j.png'] + p::before, div.egg[style*='img/pkmn/n/b/s/j.png']::before, #dcegglist > li > img[src*='img/pkmn/n/b/s/j.png'] + div::after {content: "Toedscool";}
+#egglist > div > img[src*='img/pkmn/7/t/b/r.png'] + p::before, div.egg[style*='img/pkmn/7/t/b/r.png']::before, #dcegglist > li > img[src*='img/pkmn/7/t/b/r.png'] + div::after {content: "Shroodle";}
+#egglist > div > img[src*='img/pkmn/8/4/y/d.png'] + p::before, div.egg[style*='img/pkmn/8/4/y/d.png']::before, #dcegglist > li > img[src*='img/pkmn/8/4/y/d.png'] + div::after {content: "Maschiff";}
+#egglist > div > img[src*='img/pkmn/n/f/s/q.png'] + p::before, div.egg[style*='img/pkmn/n/f/s/q.png']::before, #dcegglist > li > img[src*='img/pkmn/n/f/s/q.png'] + div::after {content: "Bramblin";}
+#egglist > div > img[src*='img/pkmn/s/p/4/9.png'] + p::before, div.egg[style*='img/pkmn/s/p/4/9.png']::before, #dcegglist > li > img[src*='img/pkmn/s/p/4/9.png'] + div::after {content: "Capsakid";}
+#egglist > div > img[src*='img/pkmn/5/g/f/z.png'] + p::before, div.egg[style*='img/pkmn/5/g/f/z.png']::before, #dcegglist > li > img[src*='img/pkmn/5/g/f/z.png'] + div::after {content: "Rellor";}
+#egglist > div > img[src*='img/pkmn/9/9/g/n.png'] + p::before, div.egg[style*='img/pkmn/9/9/g/n.png']::before, #dcegglist > li > img[src*='img/pkmn/9/9/g/n.png'] + div::after {content: "Klawf";}
+#egglist > div > img[src*='img/pkmn/3/o/z/y.png'] + p::before, div.egg[style*='img/pkmn/3/o/z/y.png']::before, #dcegglist > li > img[src*='img/pkmn/3/o/z/y.png'] + div::after {content: "Flittle";}
