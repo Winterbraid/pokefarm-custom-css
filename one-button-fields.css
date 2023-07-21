@@ -52,6 +52,43 @@
     right: 15px;
     transform-origin: 0px 0px;
     z-index: 999;
+    user-select: none;
+}
+
+.mq25 body:has(#field_field[data-mode='public'])::after {
+    content: '';
+    display: block;
+    height: 60vw;
+    user-select: none;
+}
+
+.mq25 #field_field[data-mode='public'] .field::after {
+    content: '';
+    background-color: white;
+    display: block;
+    position: fixed;
+    height: 60vw;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    user-select: none;
+}
+
+.mq25 [href='/user/~online']::before,
+.mq25 #field_nav button[data-action='next']::before,
+.mq25 #field_berries a[data-berry]::before,
+.mq25 .fieldmon.cormyr::before,
+.mq25 [href='/user/~online']::before {
+    font-size: 64pt;
+    border: none;
+    border-top: 3px solid black;
+    border-radius: 0;
+    width: auto;
+    height: 20vw;
+    padding: 20vw;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 #core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]) [href='/user/~online']::before {
@@ -59,6 +96,10 @@
 }
 
 #core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has([data-action='jump'][disabled]) [href='/user/~online']::before {
+    content: none;
+}
+
+#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~online']::before {
     content: none;
 }
 
