@@ -1,0 +1,54 @@
+#partybox [data-pid] .name,
+#partybox [data-pid] .taste,
+#partybox [data-pid] .extra,
+#summarypage [data-pid] .name,
+#summarypage [data-pid] .taste,
+#summarypage [data-pid] .extra {
+    position: relative;
+}
+
+#partybox [data-pid]::before,
+#summarypage [data-pid]::before {
+    opacity: 0.2;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 0;
+    background-image:
+        linear-gradient(100deg, transparent 90%, red 90%),
+        linear-gradient(100deg, transparent 82%, red 82%, red 88%, transparent 88%),
+        linear-gradient(100deg, transparent 76%, red 76%, red 80%, transparent 80%),
+        linear-gradient(100deg, transparent 72%, red 72%, red 74%, transparent 74%),
+        linear-gradient(100deg, transparent 69%, red 69%, red 70%, transparent 70%);
+}
+
+#partybox [data-pid]:has(img[title='[ALBINO]'])::before,
+#summarypage [data-pid]:has(img[title='[ALBINO]'])::before {
+    content: '';
+    filter: saturate(50%) brightness(400%);
+}
+
+#partybox [data-pid]:has(img[title='[SHINY]'])::before,
+#summarypage [data-pid]:has(img[title='[SHINY]'])::before {
+    content: '';
+    filter: hue-rotate(60deg) brightness(333%);
+}
+
+#partybox [data-pid]:has(img[title='[MELANISTIC]'])::before,
+#summarypage [data-pid]:has(img[title='[MELANISTIC]'])::before {
+    content: '';
+    filter: hue-rotate(270deg) brightness(70%);
+}
+
+#partybox [data-pid]:has(img[title='[STARTER]'])::before,
+#summarypage [data-pid]:has(img[title='[STARTER]'])::before {
+    content: '';
+    filter: hue-rotate(120deg) saturate(50%) brightness(150%);
+}
+
+.qolPartyHideAll #partybox [data-pid]::before {
+    display: none;
+}
