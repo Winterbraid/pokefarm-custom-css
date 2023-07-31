@@ -1,4 +1,4 @@
-#egglist > div:has(img),
+#egglist > div,
 #dcegglist > li {
     position: relative;
 }
@@ -703,3 +703,4 @@ div.egg[style*="pkmn"]::before {
 #egglist > div > img[src*='img/pkmn/5/g/f/z.png'] + p::before, div.egg[style*='img/pkmn/5/g/f/z.png']::before, #dcegglist > li > img[src*='img/pkmn/5/g/f/z.png'] + div::after {content: "Rellor";}
 #egglist > div > img[src*='img/pkmn/9/9/g/n.png'] + p::before, div.egg[style*='img/pkmn/9/9/g/n.png']::before, #dcegglist > li > img[src*='img/pkmn/9/9/g/n.png'] + div::after {content: "Klawf";}
 #egglist > div > img[src*='img/pkmn/3/o/z/y.png'] + p::before, div.egg[style*='img/pkmn/3/o/z/y.png']::before, #dcegglist > li > img[src*='img/pkmn/3/o/z/y.png'] + div::after {content: "Flittle";}
+#egglist > div > img[src*='img/pkmn/2/2/a/h.png'] + p::before, div.egg[style*='img/pkmn/2/2/a/h.png']::before, #dcegglist > li > img[src*='img/pkmn/2/2/a/h.png'] + div::after {content: "Savage Spearow";}
