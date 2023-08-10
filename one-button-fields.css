@@ -55,14 +55,14 @@
     user-select: none;
 }
 
-.mq25 body:has(#field_field[data-mode='public'])::after {
+.mq25:has([data-key="fieldClickCount"]:checked) body:has(#field_field[data-mode='public'])::after {
     content: '';
     display: block;
     height: 60vw;
     user-select: none;
 }
 
-.mq25 #field_field[data-mode='public'] .field::after {
+.mq25:has([data-key="fieldClickCount"]:checked) #field_field[data-mode='public'] .field::after {
     content: '';
     background-color: white;
     display: block;
@@ -141,4 +141,21 @@ button[data-action='next']:not([disabled])::before {
 
 #content:has(.fieldmon.cormyr:not(.nothungry)) a[data-berry]::before {
     content: none;
+}
+
+/* Hide with "Click counter" checkbox */
+
+label:has([data-key="fieldClickCount"]) {
+    font-size: 0;
+}
+
+label:has([data-key="fieldClickCount"])::after {
+    content: ' Extra UI';
+    font-size: 12pt;
+}
+
+#content:has([data-key="fieldClickCount"]:not(:checked)) .fieldmon.cormyr::before,
+#content:has([data-key="fieldClickCount"]:not(:checked)) button[data-action='next']::before,
+#content:has([data-key="fieldClickCount"]:not(:checked)) [href='/user/~online']::before {
+    content: none!important;
 }
