@@ -709,3 +709,4 @@ div.egg[style*="pkmn"]::before {
 #egglist > div > img[src*='img/pkmn/y/z/y/n.png'] + p::before, div.egg[style*='img/pkmn/y/z/y/n.png']::before, #dcegglist > li > img[src*='img/pkmn/y/z/y/n.png'] + div::after {content: "Bombirdier";}
 #egglist > div > img[src*='img/pkmn/a/l/e/n.png'] + p::before, div.egg[style*='img/pkmn/a/l/e/n.png']::before, #dcegglist > li > img[src*='img/pkmn/a/l/e/n.png'] + div::after {content: "Finizen";}
 #egglist > div > img[src*='img/pkmn/o/q/e/v.png'] + p::before, div.egg[style*='img/pkmn/o/q/e/v.png']::before, #dcegglist > li > img[src*='img/pkmn/o/q/e/v.png'] + div::after {content: "Varoom";}
+#egglist > div > img[src*='img/pkmn/3/t/z/8.png'] + p::before, div.egg[style*='img/pkmn/3/t/z/8.png']::before, #dcegglist > li > img[src*='img/pkmn/3/t/z/8.png'] + div::after {content: "Embretta";}
