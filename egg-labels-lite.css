@@ -716,3 +716,11 @@ div.egg[style*="pkmn"]::before {
 #egglist > div > img[src*='img/pkmn/o/4/e/7.png'] + p::before, div.egg[style*='img/pkmn/o/4/e/7.png']::before, #dcegglist > li > img[src*='img/pkmn/o/4/e/7.png'] + div::after {content: "Greavard";}
 #egglist > div > img[src*='img/pkmn/k/l/y/k.png'] + p::before, div.egg[style*='img/pkmn/k/l/y/k.png']::before, #dcegglist > li > img[src*='img/pkmn/k/l/y/k.png'] + div::after {content: "Flamigo";}
 #egglist > div > img[src*='img/pkmn/c/x/q/t.png'] + p::before, div.egg[style*='img/pkmn/c/x/q/t.png']::before, #dcegglist > li > img[src*='img/pkmn/c/x/q/t.png'] + div::after {content: "Jestur";}
+#egglist > div > img[src*='img/pkmn/u/y/q/5.png'] + p::before, div.egg[style*='img/pkmn/u/y/q/5.png']::before, #dcegglist > li > img[src*='img/pkmn/u/y/q/5.png'] + div::after {content: "Cetoddle";}
+#egglist > div > img[src*='img/pkmn/v/f/j/t.png'] + p::before, div.egg[style*='img/pkmn/v/f/j/t.png']::before, #dcegglist > li > img[src*='img/pkmn/v/f/j/t.png'] + div::after {content: "Aqua Tauros";}
+#egglist > div > img[src*='img/pkmn/r/1/a/y.png'] + p::before, div.egg[style*='img/pkmn/r/1/a/y.png']::before, #dcegglist > li > img[src*='img/pkmn/r/1/a/y.png'] + div::after {content: "Blaze Tauros";}
+#egglist > div > img[src*='img/pkmn/d/a/0/j.png'] + p::before, div.egg[style*='img/pkmn/d/a/0/j.png']::before, #dcegglist > li > img[src*='img/pkmn/d/a/0/j.png'] + div::after {content: "Combat Tauros";}
+#egglist > div > img[src*='img/pkmn/j/u/z/g.png'] + p::before, div.egg[style*='img/pkmn/j/u/z/g.png']::before, #dcegglist > li > img[src*='img/pkmn/j/u/z/g.png'] + div::after {content: "Paldean Wooper";}
+#egglist > div > img[src*='img/pkmn/u/o/x/l.png'] + p::before, div.egg[style*='img/pkmn/u/o/x/l.png']::before, #dcegglist > li > img[src*='img/pkmn/u/o/x/l.png'] + div::after {content: "Veluza";}
+#egglist > div > img[src*='img/pkmn/m/n/b/5.png'] + p::before, div.egg[style*='img/pkmn/m/n/b/5.png']::before, #dcegglist > li > img[src*='img/pkmn/m/n/b/5.png'] + div::after {content: "Dondozo";}
+#egglist > div > img[src*='img/pkmn/7/k/t/e.png'] + p::before, div.egg[style*='img/pkmn/7/k/t/e.png']::before, #dcegglist > li > img[src*='img/pkmn/7/k/t/e.png'] + div::after {content: "Tatsugiri";}
