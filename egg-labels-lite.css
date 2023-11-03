@@ -726,3 +726,4 @@ div.egg[style*="pkmn"]::before {
 #egglist > div > img[src*='img/pkmn/7/k/t/e.png'] + p::before, div.egg[style*='img/pkmn/7/k/t/e.png']::before, #dcegglist > li > img[src*='img/pkmn/7/k/t/e.png'] + div::after {content: "Tatsugiri";}
 #egglist > div > img[src*='img/pkmn/6/t/7/e.png'] + p::before, div.egg[style*='img/pkmn/6/t/7/e.png']::before, #dcegglist > li > img[src*='img/pkmn/6/t/7/e.png'] + div::after {content: "Frigibax";}
 #egglist > div > img[src*='img/pkmn/8/6/d/g.png'] + p::before, div.egg[style*='img/pkmn/8/6/d/g.png']::before, #dcegglist > li > img[src*='img/pkmn/8/6/d/g.png'] + div::after {content: "Gimmighoul";}
+#egglist > div > img[src*='img/pkmn/a/k/t/n.png'] + p::before, div.egg[style*='img/pkmn/a/k/t/n.png']::before, #dcegglist > li > img[src*='img/pkmn/a/k/t/n.png'] + div::after {content: "Cactaboo";}
