@@ -1,0 +1,171 @@
+:root {
+    --one-button-width: 130px;
+    --one-button-height: 130px;
+    --one-button-position-bottom: 30px;
+    --one-button-position-right: 15px;
+    
+    --open-10-button-delay: 6s;
+    --open-10-position-bottom: 175px;
+    --open-10-position-right: 15px;
+}
+
+@keyframes fadeIn {
+    82% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    83% {
+        visibility: visible;
+        opacity: 0;
+    }
+    
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+#field_field {
+    user-select: none;
+}
+
+#field_berries.selected > div > a {
+    opacity: 1;
+}
+
+#field_berries.selected > div > a > img {
+    opacity: 0.5;
+    transition: opacity 0.4s linear;
+}
+
+#field_berries.selected > div > a.selected > img {
+    opacity: 1;
+}
+
+[href='/user/~online']::before,
+#field_nav button[data-action='next']::before,
+#field_berries a[data-berry]::before,
+.fieldmon.cormyr::before,
+[href='/user/~online']::before,
+#claimfreeclick::before {
+    cursor: pointer;
+    font-size: 48pt;
+    line-height: 0;
+    text-align: center;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 16px;
+    position: fixed;
+    width: var(--one-button-width);
+    height: 0;
+    padding: calc(var(--one-button-height) / 2) 0;
+    bottom: var(--one-button-position-bottom);
+    right: var(--one-button-position-right);
+    transform-origin: 0px 0px;
+    z-index: 999;
+    user-select: none;
+}
+
+.mq25 [href='/user/~online']::before,
+.mq25 #field_nav button[data-action='next']::before,
+.mq25 #field_berries a[data-berry]::before,
+.mq25 .fieldmon.cormyr::before,
+.mq25 [href='/user/~online']::before,
+.mq25 #claimfreeclick::before {
+    font-size: 64pt;
+    border: none;
+    border-top: 3px solid black;
+    border-radius: 0;
+    width: auto;
+    height: 0;
+    padding: calc(var(--mobile-height) / 2) 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+[href='/user/~online']::before {
+    visibility: hidden;
+    opacity: 0;
+    bottom: var(--open-10-position-bottom);
+    right: var(--open-10-position-right);
+}
+
+#claimfreeclick::before {
+    content: '✅';
+}
+
+#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]) [href='/user/~online']::before {
+    content: none;
+    content: '👥';
+    animation: var(--open-10-button-delay) fadeIn;
+    animation-fill-mode: forwards;
+
+}
+
+#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has([data-action='jump'][disabled]) [href='/user/~online']::before {
+    content: none;
+}
+
+#core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~online']::before {
+    content: none;
+}
+
+button[data-action='next']:not([disabled])::before {
+    content: '👉';
+}
+
+#content:has(#field_field[data-mode='private']) button[data-action='next']::before,
+#content:has(.fieldmon:not(.nothungry)) button[data-action='next']::before,
+#core:has(#field_field[data-mode='public']):has(button[data-action='next'][disabled]):has(.fieldmon:not(.nothungry)) [href='/user/~online']::before {
+    content: none;
+}
+
+#content:has(.fieldmon[data-flavour^='sour']:not(.nothungry)) a[data-berry='aspear']::before,
+#content:has(.fieldmon[data-flavour^='any']:not(.nothungry)) a[data-berry='aspear']::before,
+#content:has(a.selected[data-berry='aspear']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🍐';
+}
+
+#content:has(.fieldmon[data-flavour^='spicy']:not(.nothungry)) a[data-berry='cheri']::before,
+#content:has(a.selected[data-berry='cheri']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🍒';
+}
+
+#content:has(.fieldmon[data-flavour^='dry']:not(.nothungry)) a[data-berry='chesto']::before,
+#content:has(a.selected[data-berry='chesto']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🌰';
+}
+
+#content:has(.fieldmon[data-flavour^='sweet']:not(.nothungry)) a[data-berry='pecha']::before,
+#content:has(a.selected[data-berry='pecha']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🍑';
+}
+
+#content:has(.fieldmon[data-flavour^='bitter']:not(.nothungry)) a[data-berry='rawst']::before,
+#content:has(a.selected[data-berry='rawst']) .fieldmon.cormyr:not(.nothungry)::before {
+    content: '🍓';
+}
+
+#content:has(.fieldmon.cormyr:not(.nothungry)) a[data-berry]::before {
+    content: none;
+}
+
+/* Hide with "Click counter" checkbox */
+
+label:has([data-key="fieldClickCount"]) {
+    font-size: 0;
+}
+
+label:has([data-key="fieldClickCount"])::after {
+    content: ' 1 Button Feed';
+    font-size: 12pt;
+}
+
+#content:has([data-key="fieldClickCount"]:not(:checked)) a[data-berry]::before,
+#content:has([data-key="fieldClickCount"]:not(:checked)) .fieldmon.cormyr::before,
+#content:has([data-key="fieldClickCount"]:not(:checked)) button[data-action='next']::before,
+#content:has([data-key="fieldClickCount"]:not(:checked)) [href='/user/~online']::before {
+    content: none!important;
+}
