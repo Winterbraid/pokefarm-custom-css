@@ -1,0 +1,156 @@
+:root {
+    --one-button-width: 130px;
+    --one-button-height: 130px;
+    --one-button-position-bottom: 30px;
+    --one-button-position-right: 15px;
+}
+
+#multiuser {
+    user-select: none;
+}
+
+#thisisyourprofile {
+    display:none;
+}
+
+#partybox .party {
+    z-index: 999;
+}
+
+.mu_navlink.next {
+    z-index: 888;
+}
+
+#content #partybox .action a::before {
+    z-index: 999!important;
+}
+
+.mu_navlink.next::before,
+#partybox [data-berry]::before,
+#partybox [data-hatch]::before,
+#interactionlist > div > p > a::before,
+[href='/interactions']::before,
+[href='/user/~online']::before,
+.fieldslink::before {
+    cursor: pointer;
+    font-size: 48pt;
+    line-height: 0;
+    text-align: center;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 16px;
+    position: fixed;
+    width: var(--one-button-width);
+    height: 0;
+    padding: calc(var(--one-button-height) / 2) 0;
+    bottom: var(--one-button-position-bottom);
+    right: var(--one-button-position-right);
+    transform-origin: 0px 0px;
+    user-select: none;
+}
+
+.mq25:has(#profilepage [data-berry]) body::after {
+    content: '';
+    display: block;
+    height: 60vw;
+    user-select: none;
+}
+
+.mq25 #multiuser #trainercard {
+    display: none;
+}
+
+.mq25 #profilepage .mu_navlink.next::before,
+.mq25 #profilepage #partybox [data-berry]::before,
+.mq25 #profilepage #interactionlist > div > p > a::before,
+.mq25 #profilepage [href='/interactions']::before,
+.mq25 #profilepage [href='/user/~online']::before,
+.mq25 #profilepage .fieldslink::before {
+    font-size: 64pt;
+    border: none;
+    border-top: 3px solid black;
+    border-radius: 0;
+    width: auto;
+    height: 20vw;
+    padding: 20vw;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#profilepage:has([href$='/report']) .fieldslink::before {
+    content: '🌁';
+    z-index: 999;
+}
+
+#profilepage:has(#partybox .action a) .fieldslink::before {
+    content: none;
+}
+
+#core:has(#multiuser li.tab-active:last-child):has(#multiuser .next.disabled) [href='/interactions']::before {
+    content: '👥';
+    content: none;
+}
+
+#core:has(#partybox .action a):has(#multiuser li.tab-active:last-child):has(#multiuser .next.disabled) [href='/interactions']::before {
+    content: '⏳';
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+#core:has(#partybox .action:not(.working) a):has(#multiuser li.tab-active:last-child):has(#multiuser .next.disabled) [href='/interactions']::before {
+    content: none;
+}
+
+#interactionlist > div:first-of-type > p > a::before,
+#interactionlist > div:nth-of-type(2) > p > a::before {
+    content: '👥';
+}
+
+#interactionlist:has(> div:first-of-type > p > a) > div:nth-of-type(2) > p > a::before {
+    content: none;
+}
+
+#partybox .action.working a::before {
+    display: none;
+}
+
+#partybox [data-up='any'] > [data-berry='aspear']::before,
+#partybox [data-up='any'] > [data-berry='oran']::before,
+#partybox [data-up='sour'] > [data-berry='aspear']::before {
+    content: '🍐';
+}
+
+#partybox [data-up='spicy'] > [data-berry='cheri']::before {
+    content: '🍒';
+}
+
+#partybox [data-up='dry'] > [data-berry='chesto']::before {
+    content: '🌰';
+}
+
+#partybox [data-up='sweet'] > [data-berry='pecha']::before {
+    content: '🍑';
+}
+
+#partybox [data-up='bitter'] > [data-berry='rawst']::before {
+    content: '🍓';
+}
+
+#partybox .action > [data-berry='aspear']::before {
+    content: '🥚';
+}
+
+.mu_navlink.next::before {
+    content: '👉';
+}
+
+#core:has(.tab-active .action a):has(#multiuser .tab-active:last-child) .mu_navlink.next::before {
+    content: '⏳';
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+.mu_navlink.next.disabled::before {
+    visibility: hidden;
+}
