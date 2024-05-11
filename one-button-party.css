@@ -49,35 +49,6 @@
     user-select: none;
 }
 
-.mq25:has(#profilepage [data-berry]) body::after {
-    content: '';
-    display: block;
-    height: 60vw;
-    user-select: none;
-}
-
-.mq25 #multiuser #trainercard {
-    display: none;
-}
-
-.mq25 #profilepage .mu_navlink.next::before,
-.mq25 #profilepage #partybox [data-berry]::before,
-.mq25 #profilepage #interactionlist > div > p > a::before,
-.mq25 #profilepage [href='/interactions']::before,
-.mq25 #profilepage [href='/user/~online']::before,
-.mq25 #profilepage .fieldslink::before {
-    font-size: 64pt;
-    border: none;
-    border-top: 3px solid black;
-    border-radius: 0;
-    width: auto;
-    height: 20vw;
-    padding: 20vw;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 #profilepage:has([href$='/report']) .fieldslink::before {
     content: '🌁';
     z-index: 999;
