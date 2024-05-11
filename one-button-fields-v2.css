@@ -159,7 +159,7 @@ label:has([data-key="fieldClickCount"]) {
 }
 
 label:has([data-key="fieldClickCount"])::after {
-    content: ' 1 Button Feed';
+    content: ' One Button';
     font-size: 12pt;
 }
 
