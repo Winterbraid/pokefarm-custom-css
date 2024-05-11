@@ -4,6 +4,15 @@
     --one-button-position-bottom: 30px;
     --one-button-position-right: 15px;
     
+    
+    /*
+        Set text to none (without quotation marks) to disable
+        Default setting: 
+            --open-10-button-text: '👥';
+        Disable:
+            --open-10-button-text: none; 
+    */
+    --open-10-button-text: '👥';
     --open-10-button-delay: 6s;
     --open-10-position-bottom: 175px;
     --open-10-position-right: 15px;
@@ -97,8 +106,7 @@
 }
 
 #core:has(#field_field[data-mode='public']):has([data-action='next'][disabled]) [href='/user/~online']::before {
-    content: none;
-    content: '👥';
+    content: var(--open-10-button-text);
     animation: var(--open-10-button-delay) fadeIn;
     animation-fill-mode: forwards;
 
