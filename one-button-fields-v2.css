@@ -80,24 +80,6 @@
     user-select: none;
 }
 
-.mq25 [href='/user/~online']::before,
-.mq25 #field_nav button[data-action='next']::before,
-.mq25 #field_berries a[data-berry]::before,
-.mq25 .fieldmon.cormyr::before,
-.mq25 [href='/user/~online']::before,
-.mq25 #claimfreeclick::before {
-    font-size: 64pt;
-    border: none;
-    border-top: 3px solid black;
-    border-radius: 0;
-    width: auto;
-    height: 0;
-    padding: calc(var(--mobile-height) / 2) 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-}
-
 [href='/user/~online']::before {
     visibility: hidden;
     opacity: 0;
