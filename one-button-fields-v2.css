@@ -14,6 +14,10 @@
     */
     --open-10-button-text: '👥';
     --open-10-button-delay: 6s;
+    /* 
+        Shifted up a bit by default to prevent clicking through too quickly and wasting interactions
+        Set these to the same as One Button if you're fine with blindly mashing from the fields into the party interactions
+    */
     --open-10-position-bottom: 175px;
     --open-10-position-right: 15px;
 }
